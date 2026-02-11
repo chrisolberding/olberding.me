@@ -21,12 +21,7 @@ import Header from '../components/Header.astro';
     <!-- Right: scrollable content -->
     <main class="about__content">
 
-      <!-- ======================================== -->
-      <!-- OPTION A: Typographic Intersection        -->
-      <!-- Large overlapping domain words as visual  -->
-      <!-- element, prose weaves in credibility       -->
-      <!-- ======================================== -->
-      <section class="about-section about-intro option-a">
+      <section class="about-section about-intro">
         <div class="type-intersection">
           <span class="type-intersection__word type-intersection__word--1">Brand</span>
           <span class="type-intersection__word type-intersection__word--2">Technology</span>
@@ -35,52 +30,63 @@ import Header from '../components/Header.astro';
         <p class="about-intro__body">I've spent nearly two decades operating at the intersection of these three disciplines — building brands from scratch, leading digital transformation at scale, and running the campaigns that connect the two. From founding and growing a marketing agency to leading enterprise strategy as a VP, the through-line has always been the same: using technology to make brands matter more.</p>
       </section>
 
-      <!-- ======================================== -->
-      <!-- OPTION B: Three-line Manifesto            -->
-      <!-- Punchy domain statements + connector      -->
-      <!-- ======================================== -->
-      <section class="about-section about-intro option-b">
+      <section class="about-section about-intro">
         <div class="manifesto">
           <div class="manifesto__line">
             <span class="manifesto__domain">Brand</span>
-            <span class="manifesto__dash">&mdash;</span>
             <span class="manifesto__text">Built them from nothing, reshaped them at scale.</span>
           </div>
           <div class="manifesto__line">
             <span class="manifesto__domain">Technology</span>
-            <span class="manifesto__dash">&mdash;</span>
             <span class="manifesto__text">From writing code to leading digital transformation.</span>
           </div>
           <div class="manifesto__line">
             <span class="manifesto__domain">Marketing</span>
-            <span class="manifesto__dash">&mdash;</span>
             <span class="manifesto__text">450+ campaigns, from startup scrappiness to enterprise precision.</span>
           </div>
         </div>
-        <p class="about-intro__connector">The common thread is leadership — finding the signal in complexity and building teams that can execute against it. Nearly two decades of doing this across agencies, startups, and Fortune 500s.</p>
       </section>
 
       <!-- ============ SKILLS ============ -->
       <section class="about-section">
         <h2 class="section-heading">What I Do</h2>
-        <div class="skill-group">
-          <h3 class="skill-group__title">Strategy & Leadership</h3>
-          <div class="skill-bar" style="--pct: 92%"><span class="skill-bar__label">Product Strategy</span><span class="skill-bar__fill"></span></div>
-          <div class="skill-bar" style="--pct: 88%"><span class="skill-bar__label">Team Leadership</span><span class="skill-bar__fill"></span></div>
-          <div class="skill-bar" style="--pct: 85%"><span class="skill-bar__label">Stakeholder Management</span><span class="skill-bar__fill"></span></div>
-          <div class="skill-bar" style="--pct: 80%"><span class="skill-bar__label">Business Development</span><span class="skill-bar__fill"></span></div>
-        </div>
-        <div class="skill-group">
-          <h3 class="skill-group__title">Design & Technology</h3>
-          <div class="skill-bar" style="--pct: 95%"><span class="skill-bar__label">Frontend Development</span><span class="skill-bar__fill"></span></div>
-          <div class="skill-bar" style="--pct: 85%"><span class="skill-bar__label">UX / Interaction Design</span><span class="skill-bar__fill"></span></div>
-          <div class="skill-bar" style="--pct: 78%"><span class="skill-bar__label">Systems Architecture</span><span class="skill-bar__fill"></span></div>
-          <div class="skill-bar" style="--pct: 72%"><span class="skill-bar__label">Data & Analytics</span><span class="skill-bar__fill"></span></div>
+        <div class="skill-icon-grid">
+          <div class="skill-icon-card">
+            <svg class="skill-icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            <h3 class="skill-icon-card__title">Product Strategy</h3>
+            <p class="skill-icon-card__desc">Roadmap and go-to-market from zero to scale</p>
+          </div>
+          <div class="skill-icon-card">
+            <svg class="skill-icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h3 class="skill-icon-card__title">Team Leadership</h3>
+            <p class="skill-icon-card__desc">Built and led teams of 3 to 25 across product and engineering</p>
+          </div>
+          <div class="skill-icon-card">
+            <svg class="skill-icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <h3 class="skill-icon-card__title">Brand Architecture</h3>
+            <p class="skill-icon-card__desc">From naming to visual identity systems at enterprise scale</p>
+          </div>
+          <div class="skill-icon-card">
+            <svg class="skill-icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <h3 class="skill-icon-card__title">Campaign Strategy</h3>
+            <p class="skill-icon-card__desc">450+ campaigns from startup scrappiness to enterprise precision</p>
+          </div>
+          <div class="skill-icon-card">
+            <svg class="skill-icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h3 class="skill-icon-card__title">Frontend Development</h3>
+            <p class="skill-icon-card__desc">Modern web platforms, React, TypeScript, design systems</p>
+          </div>
+          <div class="skill-icon-card">
+            <svg class="skill-icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <h3 class="skill-icon-card__title">Data & Analytics</h3>
+            <p class="skill-icon-card__desc">Measurement frameworks, BI, and data-informed decisions</p>
+          </div>
         </div>
       </section>
 
+
       <!-- ============ EXPERIENCE TIMELINE ============ -->
-      <section class="about-section">
+      <section class="about-section about-section--timeline">
         <h2 class="section-heading">Where I've Been</h2>
         <div class="timeline">
           <div class="timeline__item">
@@ -122,78 +128,157 @@ import Header from '../components/Header.astro';
         </div>
       </section>
 
-      <!-- ============ INTERESTS / TIME SPLIT ============ -->
+      <!-- ============ HOW I WORK ============ -->
       <section class="about-section">
-        <h2 class="section-heading">How I Spend My Time</h2>
-        <div class="interests-grid">
-          <div class="donut-chart">
-            <svg viewBox="0 0 200 200" class="donut-chart__svg">
-              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 0; --pct: 30; --color: var(--color-accent)" />
-              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 30; --pct: 25; --color: var(--color-text)" />
-              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 55; --pct: 20; --color: var(--color-accent-text)" />
-              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 75; --pct: 15; --color: var(--color-text-light)" />
-              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 90; --pct: 10; --color: #d5d0c8" />
-            </svg>
+        <h2 class="section-heading">How I Work</h2>
+        <div class="skill-icon-grid">
+          <div class="skill-icon-card">
+            <h3 class="skill-icon-card__title">Start with the problem, not the tool.</h3>
+            <p class="skill-icon-card__desc">Every engagement begins by understanding the real constraint, not jumping to the trending solution.</p>
           </div>
-          <div class="interests-legend">
-            <div class="legend-item"><span class="legend-swatch" style="background: var(--color-accent)"></span><span class="legend-label">Technology</span><span class="legend-pct">30%</span></div>
-            <div class="legend-item"><span class="legend-swatch" style="background: var(--color-text)"></span><span class="legend-label">Reading</span><span class="legend-pct">25%</span></div>
-            <div class="legend-item"><span class="legend-swatch" style="background: var(--color-accent-text)"></span><span class="legend-label">Design</span><span class="legend-pct">20%</span></div>
-            <div class="legend-item"><span class="legend-swatch" style="background: var(--color-text-light)"></span><span class="legend-label">Writing</span><span class="legend-pct">15%</span></div>
-            <div class="legend-item"><span class="legend-swatch" style="background: #d5d0c8"></span><span class="legend-label">Everything Else</span><span class="legend-pct">10%</span></div>
+          <div class="skill-icon-card">
+            <h3 class="skill-icon-card__title">Write it down.</h3>
+            <p class="skill-icon-card__desc">If a strategy can't be explained in plain language, it's not a strategy yet.</p>
+          </div>
+          <div class="skill-icon-card">
+            <h3 class="skill-icon-card__title">Ship, then refine.</h3>
+            <p class="skill-icon-card__desc">Iteration beats perfection. The first version teaches you what the second version should be.</p>
+          </div>
+          <div class="skill-icon-card">
+            <h3 class="skill-icon-card__title">Build around the mission.</h3>
+            <p class="skill-icon-card__desc">Small, trusted teams with clear ownership outperform large organizations every time.</p>
+          </div>
+          <div class="skill-icon-card">
+            <h3 class="skill-icon-card__title">Measure what matters.</h3>
+            <p class="skill-icon-card__desc">The most important metrics are rarely the ones that come out of the box.</p>
+          </div>
+          <div class="skill-icon-card">
+            <h3 class="skill-icon-card__title">Stay technical.</h3>
+            <p class="skill-icon-card__desc">Leaders who can't read the code, read the data, or sketch the wireframe are managing blind.</p>
           </div>
         </div>
       </section>
 
-      <!-- ============ READING / INFLUENCES ============ -->
+      <!-- ============ SHAPED BY ============ -->
       <section class="about-section">
-        <h2 class="section-heading">What I'm Reading</h2>
-        <p class="about-reading__intro">I read widely and promiscuously — across technology, history, philosophy, and design. A few that have shaped how I think:</p>
+        <h2 class="section-heading">Shaped By</h2>
+        <p class="about-reading__intro">The thinkers and ideas that permanently changed how I see my work.</p>
         <div class="book-grid">
           <div class="book-card">
             <div class="book-card__spine"></div>
             <div class="book-card__info">
-              <span class="book-card__title">The Master Switch</span>
-              <span class="book-card__author">Tim Wu</span>
-            </div>
-          </div>
-          <div class="book-card">
-            <div class="book-card__spine"></div>
-            <div class="book-card__info">
-              <span class="book-card__title">Thinking in Systems</span>
+              <span class="book-card__title">Systems thinking</span>
               <span class="book-card__author">Donella Meadows</span>
+              <span class="book-card__takeaway">Every problem is a system. Change the system, not the symptom.</span>
             </div>
           </div>
           <div class="book-card">
             <div class="book-card__spine"></div>
             <div class="book-card__info">
-              <span class="book-card__title">The Design of Everyday Things</span>
+              <span class="book-card__title">The Cycle</span>
+              <span class="book-card__author">Tim Wu</span>
+              <span class="book-card__takeaway">Every open technology eventually gets captured. Then the cycle restarts.</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-card__spine"></div>
+            <div class="book-card__info">
+              <span class="book-card__title">Design as ethics</span>
               <span class="book-card__author">Don Norman</span>
+              <span class="book-card__takeaway">Every design decision is a decision about who gets included.</span>
             </div>
           </div>
           <div class="book-card">
             <div class="book-card__spine"></div>
             <div class="book-card__info">
-              <span class="book-card__title">Seeing Like a State</span>
+              <span class="book-card__title">Legibility vs. reality</span>
               <span class="book-card__author">James C. Scott</span>
+              <span class="book-card__takeaway">The map is never the territory, especially when institutions draw it.</span>
             </div>
           </div>
           <div class="book-card">
             <div class="book-card__spine"></div>
             <div class="book-card__info">
-              <span class="book-card__title">Meditations</span>
+              <span class="book-card__title">Stoic pragmatism</span>
               <span class="book-card__author">Marcus Aurelius</span>
+              <span class="book-card__takeaway">Control what you can. Release the rest.</span>
             </div>
           </div>
           <div class="book-card">
             <div class="book-card__spine"></div>
             <div class="book-card__info">
-              <span class="book-card__title">Range</span>
+              <span class="book-card__title">Range over specialization</span>
               <span class="book-card__author">David Epstein</span>
+              <span class="book-card__takeaway">Generalists find what specialists miss.</span>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- ============ OUTSIDE OF WORK ============ -->
+
+      <!-- Option A: Spine accent — bento grid with left accent stripe instead of fill -->
+      <section class="about-section">
+        <h2 class="section-heading">Outside of Work — A</h2>
+        <div class="bento">
+          <div class="bento__card bento__card--wide bento__card--spine">
+            <span class="bento__label">Fatherhood</span>
+            <p class="bento__desc">The most important work I'll ever do. Two kids who keep me honest and humble.</p>
+          </div>
+          <div class="bento__card">
+            <span class="bento__label">Arsenal</span>
+            <p class="bento__desc">Lifelong Gooner. The hope and heartbreak are part of the deal.</p>
+          </div>
+          <div class="bento__card">
+            <span class="bento__label">Cello</span>
+            <p class="bento__desc">Late starter, slow learner, completely hooked.</p>
+          </div>
+          <div class="bento__card bento__card--wide">
+            <span class="bento__label">Philosophy & History</span>
+            <p class="bento__desc">Stoics, systems thinkers, and the patterns that repeat across centuries.</p>
+          </div>
+          <div class="bento__card bento__card--spine">
+            <span class="bento__label">Watercolor</span>
+            <p class="bento__desc">The only medium that punishes you for trying to control it.</p>
+          </div>
+          <div class="bento__card">
+            <span class="bento__label">Sci-Fi</span>
+            <p class="bento__desc">Still convinced the best business books are actually Asimov novels.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Option D: Top-stripe cards — uniform cards with thin accent top border -->
+      <section class="about-section">
+        <h2 class="section-heading">Outside of Work — D</h2>
+        <div class="stripe-grid">
+          <div class="stripe-card">
+            <span class="stripe-card__label">Fatherhood</span>
+            <p class="stripe-card__desc">The most important work I'll ever do. Two kids who keep me honest and humble.</p>
+          </div>
+          <div class="stripe-card">
+            <span class="stripe-card__label">Arsenal</span>
+            <p class="stripe-card__desc">Lifelong Gooner. The hope and heartbreak are part of the deal.</p>
+          </div>
+          <div class="stripe-card">
+            <span class="stripe-card__label">Cello</span>
+            <p class="stripe-card__desc">Late starter, slow learner, completely hooked.</p>
+          </div>
+          <div class="stripe-card">
+            <span class="stripe-card__label">Philosophy & History</span>
+            <p class="stripe-card__desc">Stoics, systems thinkers, and the patterns that repeat across centuries.</p>
+          </div>
+          <div class="stripe-card">
+            <span class="stripe-card__label">Watercolor</span>
+            <p class="stripe-card__desc">The only medium that punishes you for trying to control it.</p>
+          </div>
+          <div class="stripe-card">
+            <span class="stripe-card__label">Sci-Fi</span>
+            <p class="stripe-card__desc">Still convinced the best business books are actually Asimov novels.</p>
+          </div>
+        </div>
+      </section>
+
 
       <!-- ============ CLOSING CTA ============ -->
       <section class="about-section about-cta">
@@ -220,16 +305,35 @@ import Header from '../components/Header.astro';
     });
 
     const bars = document.querySelectorAll('.scroll-progress, .about__scroll-progress') as NodeListOf<HTMLElement>;
-    if (bars.length) {
-      function updateProgress() {
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
-        bars.forEach(bar => { bar.style.transform = `scaleY(${pct})`; });
+    const words = document.querySelectorAll('.type-intersection__word') as NodeListOf<HTMLElement>;
+    const intersection = document.querySelector('.type-intersection') as HTMLElement | null;
+
+    // Each word drifts at a different rate [x, y] per px scrolled
+    const driftRates = [[0.15, -0.08], [-0.1, 0], [0.2, 0.06]];
+    const baseOpacities = [0.12, 0.08, 0.12];
+
+    function updateScroll() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+      bars.forEach(bar => { bar.style.transform = `scaleY(${pct})`; });
+
+      // Parallax + fade for type intersection words
+      if (intersection && words.length) {
+        // Simple scroll-based fade — words are near top, so fade over first 600px of scroll
+        const fadeMul = Math.max(0, 1 - scrollTop / 600);
+
+        words.forEach((word, i) => {
+          const driftX = scrollTop * driftRates[i][0];
+          const driftY = scrollTop * driftRates[i][1];
+          word.style.transform = `translate(${driftX}px, ${driftY}px)`;
+          word.style.opacity = String(baseOpacities[i] * fadeMul);
+        });
       }
-      window.addEventListener('scroll', updateProgress, { passive: true });
-      updateProgress();
     }
+
+    window.addEventListener('scroll', updateScroll, { passive: true });
+    updateScroll();
   });
 </script>
 
@@ -328,16 +432,16 @@ import Header from '../components/Header.astro';
   .about__content {
     margin-left: 40%;
     width: 60%;
-    padding: 6rem 4rem 4rem 4rem;
+    padding: 4rem 4rem 4rem 4rem;
   }
 
   /* ===== SECTIONS ===== */
   .about-section {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-sm) 0;
   }
 
-  .about-section + .about-section {
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  .about-section--timeline {
+    padding-top: var(--spacing-md);
   }
 
   .section-heading {
@@ -355,19 +459,10 @@ import Header from '../components/Header.astro';
     padding-top: 0;
   }
 
-  .about-intro__lead {
-    font-family: 'Outfit', var(--font-sans);
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    margin-bottom: var(--spacing-md);
-  }
-
-  /* ===== OPTION A: Typographic Intersection ===== */
+  /* ===== Typographic Intersection ===== */
   .type-intersection {
     position: relative;
-    height: 10rem;
+    height: 11.5rem;
     margin-bottom: var(--spacing-md);
     overflow: hidden;
   }
@@ -382,6 +477,7 @@ import Header from '../components/Header.astro';
     color: var(--color-text);
     opacity: 0.08;
     user-select: none;
+    will-change: transform, opacity;
   }
 
   .type-intersection__word--1 {
@@ -410,15 +506,15 @@ import Header from '../components/Header.astro';
     color: var(--color-text);
   }
 
-  /* ===== OPTION B: Manifesto ===== */
+  /* ===== MANIFESTO ===== */
   .manifesto {
     margin-bottom: var(--spacing-md);
   }
 
   .manifesto__line {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6em;
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1.2em;
     padding: 0.8em 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   }
@@ -427,20 +523,16 @@ import Header from '../components/Header.astro';
     padding-top: 0;
   }
 
+  .manifesto__line:last-child {
+    border-bottom: none;
+  }
+
   .manifesto__domain {
     font-family: 'Outfit', var(--font-sans);
     font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: var(--color-accent-text);
-    flex-shrink: 0;
-    min-width: 8rem;
-  }
-
-  .manifesto__dash {
-    color: var(--color-text-light);
-    opacity: 0.4;
-    flex-shrink: 0;
   }
 
   .manifesto__text {
@@ -450,72 +542,60 @@ import Header from '../components/Header.astro';
     color: var(--color-text);
   }
 
-  .about-intro__connector {
+
+  /* ===== SKILLS: Icon + Label Grid ===== */
+  .skill-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .skill-icon-card {
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: border-color 0.2s;
+  }
+
+  .skill-icon-card:hover {
+    border-color: var(--color-accent);
+  }
+
+  .skill-icon-card__icon {
+    width: 22px;
+    height: 22px;
+    color: var(--color-accent-text);
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+
+  .skill-icon-card__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+
+  .skill-icon-card__desc {
     font-family: 'Literata', var(--font-serif);
-    font-size: 0.95rem;
-    line-height: 1.65;
+    font-size: 0.8rem;
+    line-height: 1.5;
     color: var(--color-text-light);
   }
 
-  /* ===== SKILLS ===== */
-  .skill-group {
-    margin-bottom: var(--spacing-md);
-  }
-
-  .skill-group:last-child {
-    margin-bottom: 0;
-  }
-
-  .skill-group__title {
-    font-family: 'Outfit', var(--font-sans);
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: var(--spacing-sm);
-  }
-
-  .skill-bar {
-    margin-bottom: 0.9rem;
-  }
-
-  .skill-bar__label {
-    display: block;
-    font-family: 'Outfit', var(--font-sans);
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-    color: var(--color-text);
-  }
-
-  .skill-bar__fill {
-    display: block;
-    height: 5px;
-    background: var(--color-text);
-    width: var(--pct);
-    border-radius: 3px;
-    position: relative;
-  }
-
-  .skill-bar__fill::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--color-accent);
-    border-radius: 3px;
-    opacity: 0.4;
-  }
 
   /* ===== TIMELINE ===== */
   .timeline {
     position: relative;
     padding-left: 2rem;
+    padding-bottom: 1px;
   }
 
   .timeline::before {
     content: '';
     position: absolute;
     left: 5px;
-    top: 8px;
-    bottom: 8px;
+    top: 15px;
+    bottom: 0;
     width: 2px;
     background: var(--color-text);
     opacity: 0.15;
@@ -533,12 +613,12 @@ import Header from '../components/Header.astro';
   .timeline__marker {
     position: absolute;
     left: -2rem;
-    top: 6px;
+    top: 9px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: var(--color-accent);
-    border: 2px solid var(--color-text);
+    border: 1px solid var(--color-accent-text);
   }
 
   .timeline__date {
@@ -571,60 +651,6 @@ import Header from '../components/Header.astro';
     font-size: 0.9rem;
     line-height: 1.6;
     color: var(--color-text);
-  }
-
-  /* ===== DONUT CHART ===== */
-  .interests-grid {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: var(--spacing-lg);
-    align-items: center;
-  }
-
-  .donut-chart__svg {
-    width: 100%;
-    transform: rotate(-90deg);
-  }
-
-  .donut-seg {
-    fill: none;
-    stroke: var(--color);
-    stroke-width: 28;
-    stroke-dasharray: calc(var(--pct) * 4.398) 439.8;
-    stroke-dashoffset: calc(var(--offset) * -4.398);
-  }
-
-  .interests-legend {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-  }
-
-  .legend-swatch {
-    width: 12px;
-    height: 12px;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
-
-  .legend-label {
-    font-family: 'Outfit', var(--font-sans);
-    font-size: 0.9rem;
-    font-weight: 600;
-    flex: 1;
-  }
-
-  .legend-pct {
-    font-family: 'Outfit', var(--font-sans);
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--color-accent-text);
   }
 
   /* ===== BOOKS ===== */
@@ -679,6 +705,85 @@ import Header from '../components/Header.astro';
     font-family: 'Literata', var(--font-serif);
     font-size: 0.75rem;
     color: var(--color-text-light);
+  }
+
+  /* ===== OUTSIDE OF WORK: Option A — Spine accent bento ===== */
+  .bento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .bento__card {
+    padding: 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .bento__card--wide {
+    grid-column: span 2;
+  }
+
+  .bento__card--spine {
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .bento__label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+  }
+
+  .bento__desc {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--color-text-light);
+  }
+
+  /* ===== OUTSIDE OF WORK: Option D — Top-stripe cards ===== */
+  .stripe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+  }
+
+  .stripe-card {
+    padding: 1rem;
+    border-top: 3px solid var(--color-accent);
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .stripe-card__label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+  }
+
+  .stripe-card__desc {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--color-text-light);
+  }
+
+  /* ===== Shaped By (takeaway line) ===== */
+  .book-card__takeaway {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.7rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--color-text-light);
+    margin-top: 0.2rem;
   }
 
   /* ===== CTA ===== */
@@ -772,20 +877,8 @@ import Header from '../components/Header.astro';
     }
 
     .manifesto__line {
-      flex-direction: column;
+      grid-template-columns: 1fr;
       gap: 0.2em;
-    }
-
-    .manifesto__dash {
-      display: none;
-    }
-
-    .manifesto__domain {
-      min-width: auto;
-    }
-
-    .interests-grid {
-      grid-template-columns: 150px 1fr;
     }
 
     .book-grid {
@@ -807,10 +900,6 @@ import Header from '../components/Header.astro';
       font-size: 2rem;
     }
 
-    .about-intro__lead {
-      font-size: 1.5rem;
-    }
-
     .type-intersection {
       height: 6.5rem;
     }
@@ -829,15 +918,6 @@ import Header from '../components/Header.astro';
 
     .manifesto__domain {
       font-size: 1.2rem;
-    }
-
-    .interests-grid {
-      grid-template-columns: 1fr;
-      justify-items: center;
-    }
-
-    .donut-chart {
-      max-width: 180px;
     }
   }
 </style>
