@@ -1,0 +1,70 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  href: string;
+  date?: Date;
+}
+
+const { title, description, href, date } = Astro.props;
+
+const formattedDate = date
+  ? date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
+  : null;
+---
+
+<article class="article-card">
+  <a href={href}>
+    {formattedDate && <span class="article-card__date">{formattedDate}</span>}
+    <h2 class="article-card__title">{title}</h2>
+    {description && <p class="article-card__description">{description}</p>}
+  </a>
+</article>
+
+<style>
+  .article-card {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .article-card a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .article-card__date {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: var(--color-accent-text);
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .article-card__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    transition: color 0.2s;
+  }
+
+  .article-card a:hover .article-card__title {
+    color: var(--color-accent-text);
+  }
+
+  .article-card__description {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 0.3em;
+  }
+</style>

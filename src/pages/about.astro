@@ -1,0 +1,843 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+---
+
+<BaseLayout title="Christopher Olberding | About" description="About Chris Olberding — skills, experience, and interests.">
+  <Header variant="page" />
+  <div class="page-top-border" aria-hidden="true"></div>
+  <div class="scroll-progress scroll-progress--right" aria-hidden="true"></div>
+
+  <div class="about">
+    <!-- Left: sticky headshot fills the column -->
+    <div class="about__photo">
+      <img src="/headshot-placeholder2.jpg" alt="Chris Olberding" class="about__photo-img" />
+      <div class="about__photo-overlay">
+        <h1 class="about__photo-name">Christopher<br/>Olberding</h1>
+      </div>
+      <div class="about__scroll-progress" aria-hidden="true"></div>
+    </div>
+
+    <!-- Right: scrollable content -->
+    <main class="about__content">
+
+      <!-- ======================================== -->
+      <!-- OPTION A: Typographic Intersection        -->
+      <!-- Large overlapping domain words as visual  -->
+      <!-- element, prose weaves in credibility       -->
+      <!-- ======================================== -->
+      <section class="about-section about-intro option-a">
+        <div class="type-intersection">
+          <span class="type-intersection__word type-intersection__word--1">Brand</span>
+          <span class="type-intersection__word type-intersection__word--2">Technology</span>
+          <span class="type-intersection__word type-intersection__word--3">Marketing</span>
+        </div>
+        <p class="about-intro__body">I've spent nearly two decades operating at the intersection of these three disciplines — building brands from scratch, leading digital transformation at scale, and running the campaigns that connect the two. From founding and growing a marketing agency to leading enterprise strategy as a VP, the through-line has always been the same: using technology to make brands matter more.</p>
+      </section>
+
+      <!-- ======================================== -->
+      <!-- OPTION B: Three-line Manifesto            -->
+      <!-- Punchy domain statements + connector      -->
+      <!-- ======================================== -->
+      <section class="about-section about-intro option-b">
+        <div class="manifesto">
+          <div class="manifesto__line">
+            <span class="manifesto__domain">Brand</span>
+            <span class="manifesto__dash">&mdash;</span>
+            <span class="manifesto__text">Built them from nothing, reshaped them at scale.</span>
+          </div>
+          <div class="manifesto__line">
+            <span class="manifesto__domain">Technology</span>
+            <span class="manifesto__dash">&mdash;</span>
+            <span class="manifesto__text">From writing code to leading digital transformation.</span>
+          </div>
+          <div class="manifesto__line">
+            <span class="manifesto__domain">Marketing</span>
+            <span class="manifesto__dash">&mdash;</span>
+            <span class="manifesto__text">450+ campaigns, from startup scrappiness to enterprise precision.</span>
+          </div>
+        </div>
+        <p class="about-intro__connector">The common thread is leadership — finding the signal in complexity and building teams that can execute against it. Nearly two decades of doing this across agencies, startups, and Fortune 500s.</p>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="about-section">
+        <h2 class="section-heading">What I Do</h2>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Strategy & Leadership</h3>
+          <div class="skill-bar" style="--pct: 92%"><span class="skill-bar__label">Product Strategy</span><span class="skill-bar__fill"></span></div>
+          <div class="skill-bar" style="--pct: 88%"><span class="skill-bar__label">Team Leadership</span><span class="skill-bar__fill"></span></div>
+          <div class="skill-bar" style="--pct: 85%"><span class="skill-bar__label">Stakeholder Management</span><span class="skill-bar__fill"></span></div>
+          <div class="skill-bar" style="--pct: 80%"><span class="skill-bar__label">Business Development</span><span class="skill-bar__fill"></span></div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Design & Technology</h3>
+          <div class="skill-bar" style="--pct: 95%"><span class="skill-bar__label">Frontend Development</span><span class="skill-bar__fill"></span></div>
+          <div class="skill-bar" style="--pct: 85%"><span class="skill-bar__label">UX / Interaction Design</span><span class="skill-bar__fill"></span></div>
+          <div class="skill-bar" style="--pct: 78%"><span class="skill-bar__label">Systems Architecture</span><span class="skill-bar__fill"></span></div>
+          <div class="skill-bar" style="--pct: 72%"><span class="skill-bar__label">Data & Analytics</span><span class="skill-bar__fill"></span></div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE TIMELINE ============ -->
+      <section class="about-section">
+        <h2 class="section-heading">Where I've Been</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2020 – Present</span>
+              <h3 class="timeline__role">VP of Digital Strategy</h3>
+              <p class="timeline__org">Financial Services Company</p>
+              <p class="timeline__desc">Leading digital transformation across consumer-facing platforms. Overseeing product, design, and engineering teams building the next generation of banking experiences.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2015 – 2020</span>
+              <h3 class="timeline__role">Director of Product</h3>
+              <p class="timeline__org">Enterprise SaaS Platform</p>
+              <p class="timeline__desc">Built and scaled a product organization from 3 to 25 people. Launched a self-service platform that grew to 10K+ monthly active users within 18 months.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2011 – 2015</span>
+              <h3 class="timeline__role">Senior Engineer & Tech Lead</h3>
+              <p class="timeline__org">Digital Agency</p>
+              <p class="timeline__desc">Designed and built web applications for clients across healthcare, education, and media. Introduced modern frontend practices and mentored junior developers.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2007 – 2011</span>
+              <h3 class="timeline__role">Web Developer</h3>
+              <p class="timeline__org">Startup & Freelance</p>
+              <p class="timeline__desc">Cut my teeth building everything from marketing sites to early web apps. Learned that shipping matters more than perfection.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INTERESTS / TIME SPLIT ============ -->
+      <section class="about-section">
+        <h2 class="section-heading">How I Spend My Time</h2>
+        <div class="interests-grid">
+          <div class="donut-chart">
+            <svg viewBox="0 0 200 200" class="donut-chart__svg">
+              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 0; --pct: 30; --color: var(--color-accent)" />
+              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 30; --pct: 25; --color: var(--color-text)" />
+              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 55; --pct: 20; --color: var(--color-accent-text)" />
+              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 75; --pct: 15; --color: var(--color-text-light)" />
+              <circle class="donut-seg" cx="100" cy="100" r="70" style="--offset: 90; --pct: 10; --color: #d5d0c8" />
+            </svg>
+          </div>
+          <div class="interests-legend">
+            <div class="legend-item"><span class="legend-swatch" style="background: var(--color-accent)"></span><span class="legend-label">Technology</span><span class="legend-pct">30%</span></div>
+            <div class="legend-item"><span class="legend-swatch" style="background: var(--color-text)"></span><span class="legend-label">Reading</span><span class="legend-pct">25%</span></div>
+            <div class="legend-item"><span class="legend-swatch" style="background: var(--color-accent-text)"></span><span class="legend-label">Design</span><span class="legend-pct">20%</span></div>
+            <div class="legend-item"><span class="legend-swatch" style="background: var(--color-text-light)"></span><span class="legend-label">Writing</span><span class="legend-pct">15%</span></div>
+            <div class="legend-item"><span class="legend-swatch" style="background: #d5d0c8"></span><span class="legend-label">Everything Else</span><span class="legend-pct">10%</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ READING / INFLUENCES ============ -->
+      <section class="about-section">
+        <h2 class="section-heading">What I'm Reading</h2>
+        <p class="about-reading__intro">I read widely and promiscuously — across technology, history, philosophy, and design. A few that have shaped how I think:</p>
+        <div class="book-grid">
+          <div class="book-card">
+            <div class="book-card__spine"></div>
+            <div class="book-card__info">
+              <span class="book-card__title">The Master Switch</span>
+              <span class="book-card__author">Tim Wu</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-card__spine"></div>
+            <div class="book-card__info">
+              <span class="book-card__title">Thinking in Systems</span>
+              <span class="book-card__author">Donella Meadows</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-card__spine"></div>
+            <div class="book-card__info">
+              <span class="book-card__title">The Design of Everyday Things</span>
+              <span class="book-card__author">Don Norman</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-card__spine"></div>
+            <div class="book-card__info">
+              <span class="book-card__title">Seeing Like a State</span>
+              <span class="book-card__author">James C. Scott</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-card__spine"></div>
+            <div class="book-card__info">
+              <span class="book-card__title">Meditations</span>
+              <span class="book-card__author">Marcus Aurelius</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-card__spine"></div>
+            <div class="book-card__info">
+              <span class="book-card__title">Range</span>
+              <span class="book-card__author">David Epstein</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CLOSING CTA ============ -->
+      <section class="about-section about-cta">
+        <h2 class="about-cta__heading">Let's connect.</h2>
+        <p class="about-cta__text">I'm always happy to talk about technology, design, or whatever interesting problem you're working on.</p>
+        <div class="about-cta__links">
+          <a href="#" class="about-cta__btn" data-email-link>Email me</a>
+          <a href="https://www.linkedin.com/in/chrisolberding/" target="_blank" rel="noopener noreferrer" class="about-cta__btn about-cta__btn--outline">LinkedIn</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="page-bottom-border" aria-hidden="true"></div>
+</BaseLayout>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    document.querySelectorAll('[data-email-link]').forEach((el) => {
+      const u = 'chris';
+      const d = 'olberding.me';
+      el.setAttribute('href', 'mailto:' + u + '@' + d);
+    });
+
+    const bars = document.querySelectorAll('.scroll-progress, .about__scroll-progress') as NodeListOf<HTMLElement>;
+    if (bars.length) {
+      function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+        bars.forEach(bar => { bar.style.transform = `scaleY(${pct})`; });
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+  });
+</script>
+
+<style>
+  /* ===== SHARED ===== */
+  .page-top-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-accent);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .page-bottom-border {
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-accent);
+  }
+
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--color-accent);
+    transform-origin: top;
+    transform: scaleY(0);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .scroll-progress--left { left: 0; }
+  .scroll-progress--right { right: 0; }
+
+  /* ===== TWO-COLUMN: photo left, content right ===== */
+  .about {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* Fixed photo panel */
+  .about__photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .about__photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    filter: grayscale(100%);
+  }
+
+  .about__photo-overlay {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-lg) var(--spacing-md);
+    background: var(--color-accent);
+  }
+
+  .about__photo-name {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 0.8;
+    letter-spacing: -0.053em;
+    color: var(--color-text);
+    text-align: right;
+  }
+
+  /* Scroll progress — right edge of photo panel */
+  .about__scroll-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--color-accent);
+    transform-origin: top;
+    transform: scaleY(0);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  /* Scrollable content column */
+  .about__content {
+    margin-left: 40%;
+    width: 60%;
+    padding: 6rem 4rem 4rem 4rem;
+  }
+
+  /* ===== SECTIONS ===== */
+  .about-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .about-section + .about-section {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .section-heading {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent-text);
+    margin-bottom: var(--spacing-md);
+  }
+
+  /* ===== INTRO (shared) ===== */
+  .about-intro {
+    padding-top: 0;
+  }
+
+  .about-intro__lead {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--spacing-md);
+  }
+
+  /* ===== OPTION A: Typographic Intersection ===== */
+  .type-intersection {
+    position: relative;
+    height: 10rem;
+    margin-bottom: var(--spacing-md);
+    overflow: hidden;
+  }
+
+  .type-intersection__word {
+    position: absolute;
+    font-family: 'Outfit', var(--font-sans);
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--color-text);
+    opacity: 0.08;
+    user-select: none;
+  }
+
+  .type-intersection__word--1 {
+    top: 0;
+    left: -0.1em;
+    color: var(--color-accent-text);
+    opacity: 0.12;
+  }
+
+  .type-intersection__word--2 {
+    top: 2.8rem;
+    left: 1.5rem;
+  }
+
+  .type-intersection__word--3 {
+    top: 5.6rem;
+    left: -0.1em;
+    color: var(--color-accent-text);
+    opacity: 0.12;
+  }
+
+  .about-intro__body {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--color-text);
+  }
+
+  /* ===== OPTION B: Manifesto ===== */
+  .manifesto {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .manifesto__line {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6em;
+    padding: 0.8em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .manifesto__line:first-child {
+    padding-top: 0;
+  }
+
+  .manifesto__domain {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--color-accent-text);
+    flex-shrink: 0;
+    min-width: 8rem;
+  }
+
+  .manifesto__dash {
+    color: var(--color-text-light);
+    opacity: 0.4;
+    flex-shrink: 0;
+  }
+
+  .manifesto__text {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+  }
+
+  .about-intro__connector {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--color-text-light);
+  }
+
+  /* ===== SKILLS ===== */
+  .skill-group {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .skill-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .skill-group__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .skill-bar {
+    margin-bottom: 0.9rem;
+  }
+
+  .skill-bar__label {
+    display: block;
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--color-text);
+  }
+
+  .skill-bar__fill {
+    display: block;
+    height: 5px;
+    background: var(--color-text);
+    width: var(--pct);
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .skill-bar__fill::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-accent);
+    border-radius: 3px;
+    opacity: 0.4;
+  }
+
+  /* ===== TIMELINE ===== */
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--color-text);
+    opacity: 0.15;
+  }
+
+  .timeline__item {
+    position: relative;
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .timeline__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline__marker {
+    position: absolute;
+    left: -2rem;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 2px solid var(--color-text);
+  }
+
+  .timeline__date {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-accent-text);
+  }
+
+  .timeline__role {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.2rem 0 0.1rem;
+    line-height: 1.2;
+  }
+
+  .timeline__org {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline__desc {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  /* ===== DONUT CHART ===== */
+  .interests-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+  }
+
+  .donut-chart__svg {
+    width: 100%;
+    transform: rotate(-90deg);
+  }
+
+  .donut-seg {
+    fill: none;
+    stroke: var(--color);
+    stroke-width: 28;
+    stroke-dasharray: calc(var(--pct) * 4.398) 439.8;
+    stroke-dashoffset: calc(var(--offset) * -4.398);
+  }
+
+  .interests-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .legend-label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .legend-pct {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-accent-text);
+  }
+
+  /* ===== BOOKS ===== */
+  .about-reading__intro {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .book-card {
+    display: flex;
+    gap: 0.8rem;
+    align-items: stretch;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: border-color 0.2s;
+  }
+
+  .book-card:hover {
+    border-color: var(--color-accent);
+  }
+
+  .book-card__spine {
+    width: 5px;
+    flex-shrink: 0;
+    background: var(--color-accent);
+    border-radius: 2px;
+  }
+
+  .book-card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.15rem;
+  }
+
+  .book-card__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .book-card__author {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+  }
+
+  /* ===== CTA ===== */
+  .about-cta {
+    text-align: center;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+  }
+
+  .about-cta__heading {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-cta__text {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about-cta__links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .about-cta__btn {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.7em 1.8em;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    background: var(--color-text);
+    color: var(--color-bg);
+  }
+
+  .about-cta__btn:hover {
+    opacity: 0.85;
+  }
+
+  .about-cta__btn--outline {
+    background: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--color-text);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .about {
+      flex-direction: column;
+    }
+
+    .about__photo {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+    }
+
+    .about__photo-name {
+      font-size: 2.4rem;
+    }
+
+    .about__content {
+      margin-left: 0;
+      width: 100%;
+      padding: var(--spacing-lg) var(--spacing-md);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .type-intersection {
+      height: 8rem;
+    }
+
+    .type-intersection__word {
+      font-size: 3.5rem;
+    }
+
+    .type-intersection__word--2 {
+      top: 2.2rem;
+    }
+
+    .type-intersection__word--3 {
+      top: 4.4rem;
+    }
+
+    .manifesto__line {
+      flex-direction: column;
+      gap: 0.2em;
+    }
+
+    .manifesto__dash {
+      display: none;
+    }
+
+    .manifesto__domain {
+      min-width: auto;
+    }
+
+    .interests-grid {
+      grid-template-columns: 150px 1fr;
+    }
+
+    .book-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-cta__links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about__photo {
+      height: 50vh;
+    }
+
+    .about__photo-name {
+      font-size: 2rem;
+    }
+
+    .about-intro__lead {
+      font-size: 1.5rem;
+    }
+
+    .type-intersection {
+      height: 6.5rem;
+    }
+
+    .type-intersection__word {
+      font-size: 2.8rem;
+    }
+
+    .type-intersection__word--2 {
+      top: 1.8rem;
+    }
+
+    .type-intersection__word--3 {
+      top: 3.6rem;
+    }
+
+    .manifesto__domain {
+      font-size: 1.2rem;
+    }
+
+    .interests-grid {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .donut-chart {
+      max-width: 180px;
+    }
+  }
+</style>
