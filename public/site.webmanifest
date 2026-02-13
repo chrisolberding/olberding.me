@@ -1,0 +1,11 @@
+{
+  "name": "Christopher Olberding",
+  "short_name": "Olberding",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "display": "browser",
+  "background_color": "#faf8f0",
+  "theme_color": "#f3ec50"
+}

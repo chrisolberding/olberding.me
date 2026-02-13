@@ -6,6 +6,16 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
 ---
 
 <BaseLayout title="Christopher Olberding | About" description="About Chris Olberding: skills, experience, and interests.">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Christopher Olberding",
+    "url": "https://olberding.me",
+    "jobTitle": "Marketing & Technology Leader",
+    "sameAs": [
+      "https://www.linkedin.com/in/chrisolberding/"
+    ]
+  })} />
   <Header variant="page" />
   <div class="page-top-border" aria-hidden="true"></div>
   <div class="scroll-progress scroll-progress--right" aria-hidden="true"></div>

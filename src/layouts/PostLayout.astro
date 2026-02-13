@@ -41,7 +41,23 @@ const publishedDate = date
   : null;
 ---
 
-<BaseLayout title={pageTitle || `Chris Olberding | ${title}`} description={description}>
+<BaseLayout title={pageTitle || `Chris Olberding | ${title}`} description={description} ogType="article">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": {
+      "@type": "Person",
+      "name": author,
+      "url": "https://olberding.me/about"
+    },
+    ...(date && { "datePublished": date.toISOString() }),
+    "publisher": {
+      "@type": "Person",
+      "name": "Chris Olberding"
+    }
+  })} />
   <Header variant="page" />
   <div class="page-top-border" aria-hidden="true"></div>
   <div class="scroll-progress scroll-progress--left" aria-hidden="true"></div>
