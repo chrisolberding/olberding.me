@@ -65,7 +65,7 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
           <div class="skill-icon-card">
             <svg class="skill-icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             <h3 class="skill-icon-card__title">Digital Native</h3>
-            <p class="skill-icon-card__desc">Two decades building for the web, now building at the systems level with AI. I read code, design interfaces, and think in workflows and infrastructure because that's where I started.</p>
+            <p class="skill-icon-card__desc">Two decades across design, development, and marketing — now applying that to how AI fits into the way teams actually work. I've been a designer and developer, and built and managed teams of both.</p>
           </div>
         </div>
       </section>
@@ -97,7 +97,7 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
             <div class="timeline__marker"></div>
             <div class="timeline__content">
               <span class="timeline__date">2007 – 2021</span>
-              <h3 class="timeline__role">Founder & CEO</h3>
+              <h3 class="timeline__role">Founder & Managing Director</h3>
               <p class="timeline__org">Full-Service Digital Agency</p>
               <p class="timeline__desc">Built the region's largest digital agency from nothing: $3MM+ revenue, 25 people, enterprise clients across government, sports, financial services, and healthcare. Exited via acquisition.</p>
             </div>
@@ -105,7 +105,7 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
           <div class="timeline__item">
             <div class="timeline__marker"></div>
             <div class="timeline__content">
-              <span class="timeline__date">2003 – 2006</span>
+              <span class="timeline__date">1998 – 2006</span>
               <h3 class="timeline__role">University of Florida</h3>
               <p class="timeline__org">BA, Political Science / Doctoral Program (ABD), Comparative Politics & Statistics</p>
               <p class="timeline__desc">The quantitative training that still shapes how I think about measurement, and the political theory that taught me every system has incentives worth understanding.</p>
@@ -255,7 +255,7 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
         <h2 class="about-cta__heading">Let's connect.</h2>
         <p class="about-cta__text">I'm always happy to talk about technology, design, or whatever interesting problem you're working on.</p>
         <div class="about-cta__links">
-          <a href="#" class="about-cta__btn" data-email-link>Email me</a>
+          <a href="#" class="about-cta__btn" data-contact-open>Email me</a>
           <a href="https://www.linkedin.com/in/chrisolberding/" target="_blank" rel="noopener noreferrer" class="about-cta__btn about-cta__btn--outline">LinkedIn</a>
         </div>
       </section>
@@ -268,12 +268,6 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
 
 <script>
   document.addEventListener('astro:page-load', () => {
-    document.querySelectorAll('[data-email-link]').forEach((el) => {
-      const u = 'chris';
-      const d = 'olberding.me';
-      el.setAttribute('href', 'mailto:' + u + '@' + d);
-    });
-
     const bars = document.querySelectorAll('.scroll-progress, .about__scroll-progress') as NodeListOf<HTMLElement>;
     const words = document.querySelectorAll('.type-intersection__word') as NodeListOf<HTMLElement>;
     const intersection = document.querySelector('.type-intersection') as HTMLElement | null;
@@ -722,6 +716,12 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
   .stripe-card__icon--watercolor {
     width: 44px;
     height: 44px;
+  }
+
+  .stripe-card__icon--ufo {
+    width: 42px;
+    height: 42px;
+    top: -22px;
   }
 
   /* Heart 3D flip on hover */

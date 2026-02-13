@@ -70,7 +70,7 @@ const publishedDate = date
           <div class="post__bio-header">
             <strong>{author}</strong>
             <div class="post__bio-icons">
-              <a href="#" aria-label="Email me" data-email-link>
+              <a href="#" aria-label="Email me" data-contact-open>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
               </a>
               <a href="https://www.linkedin.com/in/chrisolberding/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -116,12 +116,6 @@ const publishedDate = date
 
 <script>
   document.addEventListener('astro:page-load', () => {
-    document.querySelectorAll('[data-email-link]').forEach((el) => {
-      const u = 'chris';
-      const d = 'olberding.me';
-      el.setAttribute('href', 'mailto:' + u + '@' + d);
-    });
-
     const bars = document.querySelectorAll('.scroll-progress') as NodeListOf<HTMLElement>;
     if (bars.length) {
       function updateProgress() {

@@ -25,7 +25,7 @@ const { variant = 'page' } = Astro.props;
     <li><a href="/about">Me</a></li>
   </ul>
   <div class="mobile-nav__icons">
-    <a href="#" aria-label="Email" data-email-link>
+    <a href="#" aria-label="Email" data-contact-open>
       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
     </a>
     <a href="https://www.linkedin.com/in/chrisolberding/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -33,6 +33,29 @@ const { variant = 'page' } = Astro.props;
     </a>
   </div>
 </nav>
+
+<div class="contact-modal" id="contact-modal" aria-hidden="true">
+  <button class="contact-modal__close" id="contact-close" aria-label="Close">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <form class="contact-modal__form" id="contact-form" action="https://formspree.io/f/mykdevel" method="POST" novalidate>
+    <h2 class="contact-modal__title">Get in touch</h2>
+    <label class="contact-modal__label">
+      Name
+      <input type="text" name="name" required class="contact-modal__input" autocomplete="name" />
+    </label>
+    <label class="contact-modal__label">
+      Email
+      <input type="email" name="email" required class="contact-modal__input" autocomplete="email" />
+    </label>
+    <label class="contact-modal__label">
+      Message
+      <textarea name="message" required rows="5" class="contact-modal__input contact-modal__textarea"></textarea>
+    </label>
+    <button type="submit" class="contact-modal__submit">Send</button>
+    <p class="contact-modal__status" id="contact-status"></p>
+  </form>
+</div>
 
 <style>
   .header {
@@ -130,12 +153,17 @@ const { variant = 'page' } = Astro.props;
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, z-index 0s 0.3s;
+    box-shadow: inset 10px 0 0 0 var(--color-accent),
+                inset -10px 0 0 0 var(--color-accent),
+                inset 0 -10px 0 0 var(--color-accent);
   }
 
   .mobile-nav.is-open {
     opacity: 1;
     pointer-events: auto;
+    z-index: 260;
+    transition: opacity 0.3s ease, z-index 0s 0s;
   }
 
   .mobile-nav__links {
@@ -174,6 +202,174 @@ const { variant = 'page' } = Astro.props;
 
   .mobile-nav__icons a:hover {
     color: var(--color-accent-text);
+  }
+
+  /* Contact modal overlay */
+  .contact-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+    z-index: 250;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow: inset 10px 0 0 0 var(--color-accent),
+                inset -10px 0 0 0 var(--color-accent),
+                inset 0 -10px 0 0 var(--color-accent);
+  }
+
+  .contact-modal.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .contact-modal__close {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+    padding: 0;
+    line-height: 0;
+    transition: color 0.2s;
+  }
+
+  .contact-modal__close:hover {
+    color: var(--color-accent-text);
+  }
+
+  .contact-modal__form {
+    width: 100%;
+    max-width: 480px;
+    padding: 0 var(--spacing-md);
+  }
+
+  .contact-modal__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+  }
+
+  .contact-modal__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    width: 10px;
+    height: 100%;
+    background-color: var(--color-accent);
+  }
+
+  @media (max-width: 640px) {
+    .contact-modal__title::before {
+      display: none;
+    }
+  }
+
+  .contact-modal__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .contact-modal__input {
+    flex-basis: 100%;
+    width: 100%;
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.9rem;
+    padding: 0.6em;
+    margin-top: 0.3em;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: var(--color-bg);
+    color: var(--color-text);
+    border-radius: 0;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .contact-modal__input:focus {
+    border-color: var(--color-accent);
+  }
+
+  .contact-modal__input.is-invalid {
+    border-color: var(--color-accent-text);
+  }
+
+  .contact-modal__error {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent-text);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .contact-modal__error.is-visible {
+    opacity: 1;
+  }
+
+  .contact-modal__textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .contact-modal__submit {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.7em 1.8em;
+    background: var(--color-text);
+    color: var(--color-bg);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: var(--spacing-sm);
+  }
+
+  .contact-modal__submit:hover {
+    background: var(--color-accent-text);
+  }
+
+  .contact-modal__submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .contact-modal__status {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.85rem;
+    margin-top: var(--spacing-sm);
+    min-height: 1.2em;
+  }
+
+  .contact-modal__status--success {
+    color: var(--color-accent-text);
+  }
+
+  .contact-modal__status--error {
+    color: #c0392b;
   }
 </style>
 
@@ -216,6 +412,9 @@ const { variant = 'page' } = Astro.props;
       }
     });
 
+    // Contact modal ref (used by scroll handler below)
+    const contactModal = document.getElementById('contact-modal');
+
     // Scroll-to-hide on page variant at narrow widths
     const header = document.querySelector('.header') as HTMLElement | null;
     const isPage = header?.classList.contains('header--page');
@@ -231,6 +430,11 @@ const { variant = 'page' } = Astro.props;
         if (ticking) return;
         ticking = true;
         requestAnimationFrame(() => {
+          // Don't hide while contact modal is open
+          if (contactModal?.classList.contains('is-open')) {
+            ticking = false;
+            return;
+          }
           const y = window.scrollY;
           // detect direction change and reset anchor
           const nowDown = y > prevY;
@@ -255,11 +459,140 @@ const { variant = 'page' } = Astro.props;
       }, { passive: true });
     }
 
-    // Build mailto at runtime so bots don't scrape the address
-    document.querySelectorAll('[data-email-link]').forEach((el) => {
-      const u = 'chris';
-      const d = 'olberding.me';
-      el.setAttribute('href', 'mailto:' + u + '@' + d);
+    // Contact modal
+    const contactClose = document.getElementById('contact-close');
+    const contactForm = document.getElementById('contact-form') as HTMLFormElement | null;
+    const contactStatus = document.getElementById('contact-status');
+
+    function openContact() {
+      // Close nav if open
+      if (nav?.classList.contains('is-open')) {
+        nav.classList.remove('is-open');
+        nav.setAttribute('aria-hidden', 'true');
+      }
+      contactModal?.classList.add('is-open');
+      contactModal?.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeContact() {
+      contactModal?.classList.remove('is-open');
+      contactModal?.setAttribute('aria-hidden', 'true');
+    }
+
+    // Any element with data-contact-open opens the modal
+    document.querySelectorAll('[data-contact-open]').forEach((el) => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        openContact();
+      });
+    });
+
+    contactClose?.addEventListener('click', closeContact);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && contactModal?.classList.contains('is-open')) {
+        closeContact();
+      }
+    });
+
+    // Clear validation on input
+    contactForm?.querySelectorAll('.contact-modal__input').forEach((input) => {
+      input.addEventListener('input', () => {
+        input.classList.remove('is-invalid');
+        const err = input.parentElement?.querySelector('.contact-modal__error') as HTMLElement | null;
+        if (err) {
+          err.classList.remove('is-visible');
+          err.textContent = '';
+        }
+      });
+    });
+
+    // Validate and submit
+    function getOrCreateError(label: Element): HTMLElement {
+      let err = label.querySelector('.contact-modal__error') as HTMLElement | null;
+      if (!err) {
+        err = document.createElement('span');
+        err.className = 'contact-modal__error';
+        // Copy Astro scoped attribute so scoped CSS applies
+        const scopeAttr = Array.from(label.attributes).find(a => a.name.startsWith('data-astro-cid-'));
+        if (scopeAttr) err.setAttribute(scopeAttr.name, scopeAttr.value);
+        // Insert before the input (after the label text)
+        const input = label.querySelector('.contact-modal__input');
+        if (input) label.insertBefore(err, input);
+      }
+      return err;
+    }
+
+    function validateForm(): boolean {
+      if (!contactForm) return false;
+      let valid = true;
+      contactForm.querySelectorAll('.contact-modal__input').forEach((input) => {
+        const field = input as HTMLInputElement | HTMLTextAreaElement;
+        const label = field.parentElement!;
+        const err = getOrCreateError(label);
+        if (!field.value.trim()) {
+          field.classList.add('is-invalid');
+          err.textContent = 'Required';
+          requestAnimationFrame(() => err.classList.add('is-visible'));
+          valid = false;
+        } else if (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim())) {
+          field.classList.add('is-invalid');
+          err.textContent = 'Invalid email';
+          requestAnimationFrame(() => err.classList.add('is-visible'));
+          valid = false;
+        } else {
+          field.classList.remove('is-invalid');
+          err.classList.remove('is-visible');
+          err.textContent = '';
+        }
+      });
+      return valid;
+    }
+
+    contactForm?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!validateForm()) return;
+      const submitBtn = contactForm.querySelector('.contact-modal__submit') as HTMLButtonElement;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      if (contactStatus) {
+        contactStatus.textContent = '';
+        contactStatus.className = 'contact-modal__status';
+      }
+
+      try {
+        const res = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' },
+        });
+        if (res.ok) {
+          contactForm.reset();
+          contactForm.querySelectorAll('.contact-modal__input').forEach((input) => {
+            input.classList.remove('is-invalid');
+          });
+          contactForm.querySelectorAll('.contact-modal__error').forEach((err) => {
+            (err as HTMLElement).classList.remove('is-visible');
+            err.textContent = '';
+          });
+          if (contactStatus) {
+            contactStatus.textContent = "Message sent. You're the best!";
+            contactStatus.classList.add('contact-modal__status--success');
+          }
+        } else {
+          if (contactStatus) {
+            contactStatus.textContent = 'Something went wrong. Please try again.';
+            contactStatus.classList.add('contact-modal__status--error');
+          }
+        }
+      } catch {
+        if (contactStatus) {
+          contactStatus.textContent = 'Something went wrong. Please try again.';
+          contactStatus.classList.add('contact-modal__status--error');
+        }
+      }
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send';
     });
   });
 </script>
