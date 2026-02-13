@@ -27,24 +27,7 @@ import Header from '../components/Header.astro';
           <span class="type-intersection__word type-intersection__word--2">Technology</span>
           <span class="type-intersection__word type-intersection__word--3">Marketing</span>
         </div>
-        <p class="about-intro__body">I've spent nearly two decades operating at the intersection of these three disciplines — founding and scaling a digital agency, leading acquisition strategy for a Top 50 U.S. bank, and building the measurement frameworks that connect spend to outcomes. The through-line has always been the same: marketing should shape business strategy, not just execute it.</p>
-      </section>
-
-      <section class="about-section about-intro">
-        <div class="manifesto">
-          <div class="manifesto__line">
-            <span class="manifesto__domain">Brand</span>
-            <span class="manifesto__text">Built a $3MM agency from scratch, led brand strategy for enterprise clients from the Pentagon to the NBA.</span>
-          </div>
-          <div class="manifesto__line">
-            <span class="manifesto__domain">Technology</span>
-            <span class="manifesto__text">From writing code to architecting martech stacks, attribution systems, and AI-enhanced workflows.</span>
-          </div>
-          <div class="manifesto__line">
-            <span class="manifesto__domain">Marketing</span>
-            <span class="manifesto__text">Eight-figure budgets, $2B+ in deposit acquisition, omni-channel from paid search to CTV.</span>
-          </div>
-        </div>
+        <p class="about-intro__body">I've built and sold an agency, managed eight-figure media budgets, and led acquisition strategy for a Top 50 U.S. bank. What makes me different is that I've done the work across all three of these disciplines, not just managed people who do. That changes how I build teams, evaluate performance, and make decisions.</p>
       </section>
 
       <!-- ============ SKILLS ============ -->
@@ -487,42 +470,6 @@ import Header from '../components/Header.astro';
   }
 
   /* ===== MANIFESTO ===== */
-  .manifesto {
-    margin-bottom: var(--spacing-md);
-  }
-
-  .manifesto__line {
-    display: grid;
-    grid-template-columns: 9rem 1fr;
-    gap: 1.2em;
-    padding: 0.8em 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  }
-
-  .manifesto__line:first-child {
-    padding-top: 0;
-  }
-
-  .manifesto__line:last-child {
-    border-bottom: none;
-  }
-
-  .manifesto__domain {
-    font-family: 'Outfit', var(--font-sans);
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: var(--color-accent-text);
-  }
-
-  .manifesto__text {
-    font-family: 'Literata', var(--font-serif);
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text);
-  }
-
-
   /* ===== SKILLS: Icon + Label Grid ===== */
   .skill-icon-grid {
     display: grid;
@@ -942,11 +889,6 @@ import Header from '../components/Header.astro';
       top: 4.4rem;
     }
 
-    .manifesto__line {
-      grid-template-columns: 1fr;
-      gap: 0.2em;
-    }
-
     .book-grid {
       grid-template-columns: 1fr;
     }
@@ -982,8 +924,5 @@ import Header from '../components/Header.astro';
       top: 3.6rem;
     }
 
-    .manifesto__domain {
-      font-size: 1.2rem;
-    }
   }
 </style>
