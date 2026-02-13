@@ -1,0 +1,327 @@
+# Chris Olberding
+
+> Marketing executive and technologist writing about brand, technology, and marketing at olberding.me. VP of Marketing at a Top 50 U.S. commercial bank. Former agency founder and CEO.
+
+Chris Olberding has spent nearly two decades at the intersection of brand, technology, and marketing. He built and sold a digital agency, managed eight-figure media budgets, and leads acquisition strategy for a Top 50 U.S. bank. He writes about marketing measurement, organizational design, AI in marketing, and leadership.
+
+## About
+
+I've built and sold an agency, managed eight-figure media budgets, and led acquisition strategy for a Top 50 U.S. bank. What makes me different is that I've done the work across all three of these disciplines, not just managed people who do. That changes how I build teams, evaluate performance, and make decisions.
+
+### What I Do
+
+- **Strategy & Growth**: Marketing strategy, go-to-market planning, and customer acquisition tied directly to business objectives.
+- **Brand & Positioning**: Brand development, messaging, and market entry — from early-stage positioning to enterprise repositioning.
+- **Team Building**: Hiring, developing, and structuring marketing teams from startup to enterprise scale.
+- **Data & Measurement**: Attribution frameworks, media mix modeling, analytics infrastructure, and honest reporting on what's actually working.
+- **Media & Channel Optimization**: Paid search, social, programmatic, CTV, direct mail — channel strategy, budget allocation, and performance management across the full mix.
+- **Digital Native**: Two decades building for the web. I read code, design interfaces, and think in platforms and user experience because that's where I started.
+
+### Where I've Been
+
+- **2023–Present**: VP, Marketing — Top 50 U.S. Commercial Bank. Leading consumer acquisition during a major corporate transition. Eight-figure budgets, $3B in new deposit acquisition in 2025, and building the measurement infrastructure to know what's actually working.
+- **2021–2022**: Fractional CMO & CPO — B2G Data Platform / B2C Content Platform. Repositioned a government-focused SaaS company for investor readiness. Led product and technology for a subscription content platform with 100K+ active subscribers.
+- **2007–2021**: Founder & CEO — Full-Service Digital Agency. Built the region's largest digital agency from nothing — $3MM+ revenue, 25 people, enterprise clients across government, sports, financial services, and healthcare. Exited via acquisition.
+- **2003–2006**: University of Florida — BA, Political Science / Doctoral Program (ABD), Comparative Politics & Statistics.
+
+### How I Work
+
+- **Align the incentives.** Customer value, employee investment, and profitability are in constant tension. The discipline is refusing to sacrifice one for the others, and being honest when they pull against each other.
+- **Profit isn't a secret.** Everyone in an organization is engaged in making money. When leadership pretends otherwise, every hard decision looks arbitrary or dishonest. Name the goal and people can actually work toward it.
+- **Invest in your people. Mean it.** My team gives effort and results. In return, I owe them development, honest feedback, and genuine investment in where they're going next. That's the deal, and I take it seriously.
+- **Lead from the front.** I've worked across brand, product, technology, and performance marketing throughout my career and I stay current. That fluency makes me a better leader and a better partner to my team.
+- **Do the research.** "Data-driven" has become a way to sound rigorous while still deciding from the gut. I take the time to understand what the evidence actually says, even when the answer is complicated or inconvenient.
+- **Tribal knowledge doesn't scale.** Most organizations solve the same problems over and over. I invest in rigorous testing, capturing what's learned, and applying it broadly. Progress should be an upward arrow, not a loop.
+
+### Shaped By
+
+- **Donella Meadows** — Systems thinking: Every problem is a system. Change the system, not the symptom.
+- **James C. Scott** — Legibility vs. reality: The map is never the territory, especially when institutions draw it.
+- **Carl Sagan** — The baloney detection kit: The first step is wanting the truth more than wanting to be right.
+- **Tim Wu** — The cycle: Every open technology eventually gets captured. Then the cycle restarts.
+- **Kurt Vonnegut** — The humanist skeptic: See the absurdity clearly. Stay kind anyway.
+- **David Epstein** — Range over specialization: Generalists find what specialists miss.
+
+### Contact
+
+- Email: chris@olberding.me
+- LinkedIn: https://www.linkedin.com/in/chrisolberding/
+
+---
+
+## Blog Posts
+
+### Putting GEO Into Context: Lessons for Executives from Early Days of SEO
+
+*Published February 2026*
+
+Generative Engine Optimization (GEO) is emerging as a buzzword in the AI era, promising visibility in LLM-generated answers. Before investing heavily, we should learn from the early SEO era (1997–2012), which was marked by uncertainty, opportunistic consulting, and rapid algorithm shifts. Today's LLM landscape is even more fragmented and opaque, creating higher risk for misinformation and wasted spend.
+
+**Recommendation:** Treat GEO as an experimental lane, not a core investment. Focus on durable content, provenance, and compliance—not hacks or speculative tools.
+
+#### Historical Parallel: Early SEO
+
+**Uncertainty bred snake oil.** In the 2000s, consultants exploited gaps in knowledge with tactics like keyword stuffing and link farms.
+
+**Google's communication stabilized the market.** Matt Cutts and Webmaster Guidelines gave clarity, aligning webmasters with Google's interests.
+
+**Single dominant platform.** By 2005, Google overtook Yahoo; by 2007, it was the clear leader. Optimization became predictable and scalable.
+
+The early SEO playbook eventually coalesced around a few core tactics:
+
+1. Keyword research and on-page optimization
+2. Quality backlink acquisition
+3. Technical crawlability and site architecture
+4. Content freshness and relevance signals
+5. User experience metrics (bounce rate, time on page)
+
+*Key dynamic: Deterministic algorithms + one platform = eventual playbook.*
+
+> The SEO era taught us something important: when the rules are unclear, the loudest voices aren't always the most accurate. Clarity comes from the platforms themselves — and it takes years.
+
+#### Today's Reality: LLMs & GEO
+
+**Fragmented ecosystem.** Multiple engines (OpenAI, Anthropic, Google, Meta, Cohere, Mistral) with different behaviors and fast update cycles.
+
+**Opaque, probabilistic outputs.** Unlike search rankings, LLM responses are stochastic and prompt-dependent; tactics rarely generalize.
+
+**No incentive for guidance.** Vendors prioritize model capability and safety—not marketer education.
+
+**Tooling risk.** Most GEO tools are thin wrappers over LLM APIs, scraping outputs and extrapolating from questionable data. Expect high churn; few moats exist.
+
+Key differences from the SEO era include:
+
+- No single dominant platform to optimize for
+- Outputs are non-deterministic — the same query produces different results each time
+- No equivalent of Google's Webmaster Guidelines or Search Console
+- Model updates happen silently and frequently, invalidating prior observations
+- Attribution and sourcing remain inconsistent across engines
+
+*Implication: Even if a tactic "works" today, it may fail tomorrow—or on another engine.*
+
+#### Recommendations
+
+**Anchor to durable principles:** Maintain strong SEO (crawlability, structured data, E-E-A-T) and layer GEO-friendly content (clear Q&A, attribution, licensing).
+
+**Prioritize provenance:** Embed author, date, and rights metadata; publish canonical, self-contained assets.
+
+**Limit GEO spend:** Avoid over-investing in consultants or tools; insist on short-term contracts and compliance documentation.
+
+**Build internal monitoring:** Run small, controlled tests across engines; track mentions and citations without over-interpreting short-term lifts.
+
+**Defend our properties:** Implement bot management and AI crawler controls to manage bandwidth and licensing.
+
+**Focus on customer utility:** Content should answer banking questions accurately and safely—resilient across engines and time.
+
+#### Bottom Line
+
+GEO is real but immature. The early SEO era taught us that clarity and standards take years to emerge. Until then, avoid chasing hacks or speculative tools. Invest in content quality, provenance, and compliance—the only strategies likely to endure.
+
+---
+
+### The Beer-Belly Organization
+
+*Published January 2026*
+
+Every organization, given enough time and success, develops a beer belly. Not literally, of course — but structurally. Layers of middle management accumulate. Processes designed for coordination become ends in themselves. The distance between the people making decisions and the people doing the work grows wider, and the midsection of the org chart expands to fill it.
+
+#### How the belly grows
+
+It starts innocently enough. A team ships something important. The company grows. New people join, and the original team can't manage everything directly anymore. So you add a layer — a director here, a program manager there. Perfectly reasonable.
+
+But then that layer needs coordination too. And the people doing the coordination need their own meetings, their own status updates, their own frameworks for prioritization. Before long, you have an entire stratum of the organization whose primary job is to manage the complexity created by... the previous stratum.
+
+> The most dangerous kind of organizational debt isn't technical — it's structural. It compounds silently, and by the time you notice, the interest payments are enormous.
+
+#### The symptoms
+
+You can diagnose a beer-belly organization by a few reliable signals:
+
+1. **Meeting-to-making ratio skews heavily toward meetings.** Individual contributors spend more time reporting on work than doing it.
+2. **Decisions travel upward, then sideways, then back down.** What should be a direct conversation between two teams becomes a multi-week escalation chain.
+3. **Strategy becomes indistinguishable from planning.** The organization produces beautiful decks about what it intends to do, but the gap between intention and execution grows every quarter.
+4. **New hires in the middle outnumber new hires at the edges.** You're adding program managers faster than you're adding engineers, designers, or customer-facing staff.
+5. **"Alignment" becomes a full-time job.** When getting people on the same page requires dedicated headcount, something has gone wrong.
+
+#### Why it's hard to fix
+
+The beer-belly organization is resilient because the people in the middle are often talented, well-intentioned, and genuinely busy. They're not dead weight — they're load-bearing walls in a building that was designed wrong. Removing them without redesigning the structure just makes things collapse faster.
+
+This is why reorganizations so often fail. They move boxes on an org chart without addressing the underlying dynamics that created the bloat. Six months later, the belly grows back.
+
+#### A different approach
+
+The alternative isn't to eliminate middle management. It's to change what middle management does. The best organizations I've seen treat the middle layer not as a coordination layer but as a *context* layer. Their job isn't to pass information up and down — it's to ensure that the people doing the work have enough context to make good decisions on their own.
+
+This requires three things:
+
+- **Radical transparency about strategy.** Not quarterly town halls — real, ongoing visibility into what the company is trying to achieve and why.
+- **Decision rights pushed to the edges.** If a team needs permission to ship, you have a structural problem. Permission should be the default; escalation should be the exception.
+- **Measurement oriented toward outcomes, not activity.** The moment you start measuring how many meetings happened or how many status updates were sent, you've incentivized the belly to grow.
+
+#### The fitness test
+
+Here's a simple diagnostic: pick any important initiative in your company. Count the number of people involved who neither *created the strategy* nor *will execute the work*. That number is your organizational BMI. If it's higher than the number of people actually doing the thing, you have a beer belly.
+
+The good news is that organizational fitness, like physical fitness, is recoverable. It just requires honesty about the current state, willingness to make uncomfortable changes, and the discipline to maintain them over time.
+
+The bad news is that most organizations would rather buy a bigger belt.
+
+---
+
+### Beyond GEO and SEO: The Case for a Unified Digital Brand Presence Model
+
+*Published January 2026*
+
+For two decades, SEO has been the dominant framework for thinking about digital visibility. More recently, GEO — Generative Engine Optimization — has emerged as its AI-era counterpart. But treating these as separate disciplines is a mistake. They share a common foundation, and the organizations that recognize this earliest will have a significant advantage.
+
+#### The false dichotomy
+
+The marketing industry loves a dichotomy. Traditional vs. digital. Brand vs. performance. And now: SEO vs. GEO. Each time, what starts as a useful distinction calcifies into separate teams, separate budgets, and separate strategies — even when the underlying dynamics are deeply intertwined.
+
+SEO optimizes for how search engines index and rank content. GEO optimizes for how language models retrieve and synthesize information. But from the perspective of the content itself, these are two consumers of the same underlying asset. The question isn't "how do we optimize for Google?" or "how do we optimize for ChatGPT?" — it's "how do we create content that is maximally useful, findable, and trustworthy regardless of how it's accessed?"
+
+#### The Digital Brand Presence Model
+
+A unified framework resting on four pillars:
+
+**1. Content Authority** — Authority isn't a score — it's a reputation. It's built through consistent, accurate, well-sourced content published over time. Both search engines and language models reward authority, just through different mechanisms.
+
+**2. Structural Discoverability** — Content must be structured for machines to parse, regardless of which machine is doing the parsing. Clean semantic HTML, structured data, clear Q&A patterns, self-contained pages.
+
+**3. Provenance & Trust** — As AI-generated content floods the web, provenance becomes a competitive advantage. Content with clear authorship, publication dates, editorial standards, and institutional backing will be preferentially surfaced.
+
+> In a world where anyone can generate content instantly, the scarce resource isn't information — it's trust.
+
+**4. Adaptive Distribution** — Content should be designed for adaptation across channels: long-form for owned properties, structured snippets for featured results, conversational formats for chatbot integrations, canonical sources that all derivatives point back to.
+
+#### Why this matters now
+
+The window for establishing this unified approach is narrow. Organizations that build separate SEO and GEO silos will spend the next five years trying to merge them. Organizations that start unified will compound their advantage with every piece of content they publish.
+
+---
+
+### Building an AI-Empowered Marketing Organization
+
+*Published January 2026*
+
+Every marketing leader I talk to is grappling with the same question: what does an AI-empowered marketing organization actually look like? Not in a keynote slide or a vendor pitch — in practice. What changes? What stays the same? Where do you start?
+
+#### The wrong mental model
+
+Most organizations approach AI integration through the lens of automation: identify repetitive tasks, apply AI, reduce headcount. This is the wrong frame for two reasons.
+
+First, it optimizes for cost reduction rather than capability expansion. The most valuable applications of AI in marketing aren't about doing the same things cheaper — they're about doing things that were previously impossible.
+
+Second, it treats AI as a replacement for human judgment when it's actually an amplifier of it.
+
+#### A capability-first framework
+
+Instead of asking "what can we automate?", ask "what capabilities do we want that we don't have today?" The highest-value capabilities fall into four categories:
+
+- **Speed of insight**: Customer journey analysis across millions of touchpoints, competitive intelligence, anomaly detection
+- **Personalization at scale**: Dynamic content adaptation, predictive next-best-action, real-time offer optimization
+- **Creative velocity**: Rapid concept generation, automated versioning, first-draft production
+- **Strategic modeling**: Scenario modeling, budget allocation optimization, market simulation
+
+#### The organizational design
+
+**Embed, don't centralize.** Don't create an "AI team" that serves the marketing org. Embed AI capabilities into every functional team.
+
+**Create an AI enablement function.** Small team (3-5 people) responsible for tool selection, training, governance, and best practice development.
+
+**Invest in prompt engineering as a core skill.** The ability to effectively direct AI systems is becoming as important as the ability to write a creative brief.
+
+**Redesign workflows before deploying tools.** Start with the outcome you want, design the ideal workflow, then identify where AI fits.
+
+#### What doesn't change
+
+- **Customer empathy.** AI can process data about customers. It cannot understand what it feels like to be one.
+- **Strategic judgment.** AI can model scenarios. It cannot decide which future to build toward.
+- **Creative taste.** AI can generate a thousand options. It cannot tell you which one is right.
+- **Ethical responsibility.** AI can optimize for metrics. It cannot decide which metrics are worth optimizing for.
+
+> The best AI-empowered marketing organizations won't be the ones with the most sophisticated technology. They'll be the ones where technology amplifies the judgment of people who deeply understand their customers.
+
+---
+
+### Building a Marketing Organization: Models and Structures of Agency Utilization
+
+*Published December 2025*
+
+Every head of marketing eventually confronts the agency question. Not whether to use agencies — almost everyone does — but how. How much to outsource, what to keep in-house, how to structure the relationship, and how to avoid the dysfunction that plagues so many client-agency partnerships.
+
+Having sat on both sides of this table — as an agency owner and as a client — I've seen nearly every model. None of them are perfect. But some are dramatically better than others.
+
+#### The models that actually work
+
+**Model 1: Strategic core + specialist agencies.** The in-house team owns strategy, brand, and the customer relationship. Specialist agencies handle execution in domains that require deep technical expertise.
+
+**Model 2: In-house studio + agency of record.** The organization builds a full internal creative studio capable of handling 70-80% of production. A single agency of record handles big-bet campaigns and brand evolution.
+
+**Model 3: Embedded agency teams.** Agency staff are embedded full-time within the client organization, functioning as an extension of the team.
+
+#### Principles for making any model work
+
+1. **Own your strategy.** Never outsource strategic thinking.
+2. **Define the operating model explicitly.** Who briefs whom? Who approves what? Write it down.
+3. **Align incentives.** The best arrangements tie compensation to business outcomes.
+4. **Invest in the relationship, not just the contract.** The quality of work an agency produces is directly proportional to the quality of the relationship.
+5. **Plan for transition.** Every agency relationship ends eventually. Build so that knowledge transfer is continuous, not catastrophic.
+
+---
+
+### Triangulating Truth: A Model for Marketing Measurement
+
+*Published November 2025*
+
+Here's a dirty secret about marketing measurement: every methodology lies. Attribution models over-credit the last touch. Media mix models are backward-looking and coarse. Survey-based approaches are biased by memory and social desirability. Incrementality tests are expensive and narrow in scope.
+
+The question isn't which methodology to trust — it's how to use multiple imperfect signals to approximate something closer to truth.
+
+#### The three vertices
+
+**Vertex 1: Algorithmic attribution** — Multi-touch attribution, last-click, and other model-based approaches. Good at showing relative channel performance within digital. Lies by mistaking correlation for causation.
+
+**Vertex 2: Experimentation and incrementality** — Controlled experiments that measure causal impact. The gold standard for proving marketing caused an outcome. Limited by cost, speed, and scope.
+
+**Vertex 3: Econometric modeling** — Marketing mix modeling and regression analysis. Good at big-picture allocation guidance. Limited by being backward-looking and requiring significant historical data.
+
+#### How triangulation works
+
+1. Run your attribution model continuously for tactical decisions.
+2. Run incrementality tests quarterly to calibrate attribution.
+3. Update your econometric model semi-annually.
+4. Look for convergence — and investigate divergence.
+
+> The goal of measurement isn't certainty. It's calibrated confidence. You'll never know exactly what's working. But you can know enough to make decisions that are better than guessing.
+
+#### The meta-lesson
+
+Marketing measurement is not a technology problem. It's an epistemology problem. We're trying to understand a complex, dynamic system with imperfect tools. The organizations that accept this — that embrace uncertainty and build frameworks for navigating it — will consistently make better decisions than those chasing the mirage of perfect attribution.
+
+---
+
+### Neither Friends nor Servants: Lessons About Building Teams from a Young Agency Owner
+
+*Published October 2025*
+
+I started my first agency at 26. By 28, I had fifteen employees, a handful of significant clients, and absolutely no idea what I was doing as a leader. I knew how to do the work — that's how I'd gotten here. But managing people? I was making it up as I went.
+
+#### Key lessons
+
+**Your employees are not your friends.** There's a power dynamic that friendship can't erase. You can be warm, genuine, and deeply invested in your people's success. But you are not their friend — you are their leader.
+
+**Your employees are not your servants.** Some leaders, having learned that employees aren't friends, overcorrect into treating them as resources to be optimized. People are not instruments of your ambition.
+
+**Clarity is kindness.** Vague feedback is not kind. It's cowardly. The kindest thing you can do for someone is tell them the truth clearly, early, and with enough specificity that they can act on it.
+
+**Culture is what you tolerate.** Every time you tolerate a behavior, you're endorsing it. Your team is watching what you accept, what you ignore, and what you reward.
+
+**Hire for the team, not the role.** The best teams aren't collections of the best individuals. They're groups of good people who make each other better.
+
+**Your job changes, and you have to let it.** Leadership requires letting go of the thing you're best at to focus on the thing only you can do.
+
+#### The synthesis
+
+Leadership is fundamentally about managing the distance between yourself and the people you lead. Too close (friends), and you lose the ability to make hard decisions. Too far (servants), and you lose the trust that makes good work possible. The right distance is professional respect infused with genuine care.
