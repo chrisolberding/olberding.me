@@ -9,8 +9,9 @@ const { variant = 'page' } = Astro.props;
 <header class:list={['header', `header--${variant}`]}>
   <button class="logo-btn" aria-label="Toggle navigation" id="nav-toggle">
     <svg class="logo-mark" width="44" height="44" viewBox="0 0 120 120" fill="none">
+      <circle class="logo-mark__bg" cx="60" cy="60" r="49" fill="rgba(255,255,255,0.9)" opacity="0"/>
       <g class="logo-mark__outer">
-        <path d="M75.7 103.2 A 46 46 0 0 0 75.7 16.8" stroke="#d5d0c8" stroke-width="7" stroke-linecap="round"/>
+        <path d="M75.7 103.2 A 46 46 0 0 0 75.7 16.8" stroke="var(--color-accent)" stroke-width="7" stroke-linecap="round"/>
         <path d="M75.7 16.8 A 46 46 0 1 0 75.7 103.2" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
       </g>
       <circle class="logo-mark__inner" cx="60" cy="60" r="22" stroke="currentColor" stroke-width="7" fill="none"/>
@@ -45,6 +46,15 @@ const { variant = 'page' } = Astro.props;
     align-items: flex-start;
     padding: var(--spacing-md);
     pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  @media (max-width: 1100px) {
+    .header--page.is-hidden {
+      opacity: 0;
+      transform: translateY(-100%);
+      pointer-events: none;
+    }
   }
 
   .header--home {
@@ -62,6 +72,16 @@ const { variant = 'page' } = Astro.props;
     height: 44px;
     color: var(--color-text);
     line-height: 0;
+  }
+
+  .logo-mark__bg {
+    transition: opacity 0.3s ease;
+  }
+
+  @media (max-width: 1100px) {
+    .header--page.is-scrolled .logo-mark__bg {
+      opacity: 1;
+    }
   }
 
   /* Logo mark animations */
@@ -151,7 +171,7 @@ const { variant = 'page' } = Astro.props;
   }
 
   .mobile-nav__icons a:hover {
-    opacity: 0.6;
+    color: var(--color-accent-text);
   }
 </style>
 
@@ -193,6 +213,43 @@ const { variant = 'page' } = Astro.props;
         nav?.setAttribute('aria-hidden', 'false');
       }
     });
+
+    // Scroll-to-hide on page variant at narrow widths
+    const header = document.querySelector('.header') as HTMLElement | null;
+    if (header?.classList.contains('header--page')) {
+      let prevY = window.scrollY;
+      let dirY = window.scrollY;
+      let goingDown = false;
+      let ticking = false;
+      const threshold = 15;
+      const delta = 8;
+      window.addEventListener('scroll', () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const y = window.scrollY;
+          // detect direction change and reset anchor
+          const nowDown = y > prevY;
+          if (nowDown !== goingDown) {
+            dirY = prevY;
+            goingDown = nowDown;
+          }
+          const travel = Math.abs(y - dirY);
+          if (y <= threshold) {
+            header.classList.remove('is-hidden', 'is-scrolled');
+          } else {
+            header.classList.add('is-scrolled');
+            if (goingDown && travel > delta) {
+              header.classList.add('is-hidden');
+            } else if (!goingDown && travel > delta) {
+              header.classList.remove('is-hidden');
+            }
+          }
+          prevY = y;
+          ticking = false;
+        });
+      }, { passive: true });
+    }
 
     // Build mailto at runtime so bots don't scrape the address
     document.querySelectorAll('[data-email-link]').forEach((el) => {

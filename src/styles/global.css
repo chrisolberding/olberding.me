@@ -103,7 +103,7 @@ p {
 }
 
 .prose blockquote {
-  border-left: 3px solid var(--color-accent-text);
+  border-left: 5px solid var(--color-accent);
   padding-left: var(--spacing-sm);
   margin: var(--spacing-md) 0;
   font-style: italic;
