@@ -18,6 +18,7 @@ const latestPost = posts[0];
   <Header variant="home" />
   <div class="page-top-border" aria-hidden="true" style="position:fixed;top:0;left:0;right:var(--sidebar-width);height:10px;background:var(--color-accent);z-index:400;pointer-events:none;"></div>
   <div class="scroll-progress" aria-hidden="true" style="position:fixed;top:0;left:0;width:10px;height:100%;background:var(--color-accent);transform-origin:top;transform:scaleY(0);z-index:400;pointer-events:none;"></div>
+  <div class="scroll-progress-right" aria-hidden="true"></div>
 
   <div class="home">
     <main class="home__main">
@@ -46,13 +47,13 @@ const latestPost = posts[0];
 
 <script>
   document.addEventListener('astro:page-load', () => {
-    const bar = document.querySelector('.scroll-progress') as HTMLElement | null;
-    if (bar) {
+    const bars = document.querySelectorAll('.scroll-progress, .scroll-progress-right') as NodeListOf<HTMLElement>;
+    if (bars.length) {
       function updateProgress() {
         const scrollTop = window.scrollY;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
-        bar!.style.transform = `scaleY(${pct})`;
+        bars.forEach(bar => { bar.style.transform = `scaleY(${pct})`; });
       }
       window.addEventListener('scroll', updateProgress, { passive: true });
       updateProgress();
@@ -114,8 +115,25 @@ const latestPost = posts[0];
 
   }
 
+  .scroll-progress-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background-color: var(--color-accent);
+    transform-origin: top;
+    transform: scaleY(0);
+    z-index: 400;
+    pointer-events: none;
+    display: none;
+  }
+
   /* Responsive */
   @media (max-width: 900px) {
+    .scroll-progress-right {
+      display: block;
+    }
     .page-top-border {
       right: 0 !important;
     }
@@ -151,6 +169,13 @@ const latestPost = posts[0];
       padding-left: 6rem;
       max-width: 680px;
       margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 685px) {
+    .home__articles {
+      padding-left: var(--spacing-lg);
+      padding-right: var(--spacing-lg);
     }
   }
 </style>

@@ -49,8 +49,9 @@ const { variant = 'page' } = Astro.props;
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
-  @media (max-width: 1100px) {
-    .header--page.is-hidden {
+  @media (max-width: 900px) {
+    .header--page.is-hidden,
+    .header--home.is-hidden {
       opacity: 0;
       transform: translateY(-100%);
       pointer-events: none;
@@ -78,8 +79,9 @@ const { variant = 'page' } = Astro.props;
     transition: opacity 0.3s ease;
   }
 
-  @media (max-width: 1100px) {
-    .header--page.is-scrolled .logo-mark__bg {
+  @media (max-width: 900px) {
+    .header--page.is-scrolled .logo-mark__bg,
+    .header--home.is-scrolled .logo-mark__bg {
       opacity: 1;
     }
   }
@@ -216,7 +218,9 @@ const { variant = 'page' } = Astro.props;
 
     // Scroll-to-hide on page variant at narrow widths
     const header = document.querySelector('.header') as HTMLElement | null;
-    if (header?.classList.contains('header--page')) {
+    const isPage = header?.classList.contains('header--page');
+    const isNarrowHome = header?.classList.contains('header--home') && window.matchMedia('(max-width: 685px)').matches;
+    if (header && (isPage || isNarrowHome)) {
       let prevY = window.scrollY;
       let dirY = window.scrollY;
       let goingDown = false;

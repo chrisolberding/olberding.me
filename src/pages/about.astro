@@ -9,6 +9,7 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
   <Header variant="page" />
   <div class="page-top-border" aria-hidden="true"></div>
   <div class="scroll-progress scroll-progress--right" aria-hidden="true"></div>
+  <div class="scroll-progress scroll-progress--left" aria-hidden="true"></div>
 
   <div class="about">
     <!-- Left: sticky headshot fills the column -->
@@ -337,8 +338,12 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
     pointer-events: none;
   }
 
-  .scroll-progress--left { left: 0; }
+  .scroll-progress--left { left: 0; display: none; }
   .scroll-progress--right { right: 0; }
+
+  @media (max-width: 900px) {
+    .scroll-progress--left { display: block; }
+  }
 
   /* ===== TWO-COLUMN: photo left, content right ===== */
   .about {
@@ -908,6 +913,16 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
     .about-cta__links {
       flex-direction: column;
       align-items: center;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .skill-icon-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .stripe-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
