@@ -57,12 +57,14 @@ const latestPost = posts[0];
     right: 0;
     width: var(--sidebar-width);
     height: 100vh;
+    height: 100dvh;
     overflow-y: auto;
     z-index: 10;
   }
 
   /* Hero stays in place behind the articles panel */
   .home__hero {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
@@ -89,6 +91,7 @@ const latestPost = posts[0];
     padding-left: 6rem;
     padding-right: 6rem;
     min-height: 100vh;
+    min-height: 100dvh;
 
   }
 
