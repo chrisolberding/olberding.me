@@ -47,8 +47,8 @@ const { variant = 'page' } = Astro.props;
     pointer-events: none;
   }
 
-  .header > * {
-    pointer-events: auto;
+  .header--home {
+    right: var(--sidebar-width);
   }
 
   /* Logo button */
@@ -56,7 +56,10 @@ const { variant = 'page' } = Astro.props;
     background: none;
     border: none;
     cursor: pointer;
+    pointer-events: auto;
     padding: 0;
+    width: 44px;
+    height: 44px;
     color: var(--color-text);
     line-height: 0;
   }
