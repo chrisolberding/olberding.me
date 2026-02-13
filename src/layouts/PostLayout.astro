@@ -1,6 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
+import headshotAuthor from '../assets/headshot-author.jpg';
 
 interface PostLink {
   title: string;
@@ -63,7 +65,7 @@ const publishedDate = date
 
       <!-- Author bio + contact -->
       <div class="post__bio">
-        <img src="/--chris-olberding-first-pass-2-51-author.jpg" alt="" class="post__bio-photo" />
+        <Image src={headshotAuthor} alt="" class="post__bio-photo" width={144} />
         <div class="post__bio-body">
           <div class="post__bio-header">
             <strong>{author}</strong>

@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Type Intersection Variations" description="Test page for type intersection opacity/color variations.">
+  <div class="test-page">
+    <h1 class="test-page__title">Type Intersection Variations</h1>
+
+    <!-- Variation A: Current (accent-text on 1&3, dark on 2) -->
+    <div class="test-card">
+      <span class="test-card__label">A — Current: accent-text on Brand/Marketing, dark on Technology</span>
+      <div class="type-intersection">
+        <span class="word w1-a">Brand</span>
+        <span class="word w2-a">Technology</span>
+        <span class="word w3-a">Marketing</span>
+      </div>
+    </div>
+
+    <!-- Variation B: All accent-text, uniform opacity -->
+    <div class="test-card">
+      <span class="test-card__label">B — All accent-text, uniform opacity 0.15</span>
+      <div class="type-intersection">
+        <span class="word w1-b">Brand</span>
+        <span class="word w2-b">Technology</span>
+        <span class="word w3-b">Marketing</span>
+      </div>
+    </div>
+
+    <!-- Variation C: All dark, higher opacity -->
+    <div class="test-card">
+      <span class="test-card__label">C — All dark (#1a1a1a), opacity 0.06</span>
+      <div class="type-intersection">
+        <span class="word w1-c">Brand</span>
+        <span class="word w2-c">Technology</span>
+        <span class="word w3-c">Marketing</span>
+      </div>
+    </div>
+
+    <!-- Variation D: Accent color (not text), bolder -->
+    <div class="test-card">
+      <span class="test-card__label">D — Accent color (var(--color-accent)), opacity 0.35</span>
+      <div class="type-intersection">
+        <span class="word w1-d">Brand</span>
+        <span class="word w2-d">Technology</span>
+        <span class="word w3-d">Marketing</span>
+      </div>
+    </div>
+
+    <!-- Variation E: Cascading opacity (dark → light) -->
+    <div class="test-card">
+      <span class="test-card__label">E — Cascading: Brand 0.15, Technology 0.08, Marketing 0.04</span>
+      <div class="type-intersection">
+        <span class="word w1-e">Brand</span>
+        <span class="word w2-e">Technology</span>
+        <span class="word w3-e">Marketing</span>
+      </div>
+    </div>
+
+    <!-- Variation F: Mixed — accent-text bold, dark subtle -->
+    <div class="test-card">
+      <span class="test-card__label">F — Brand/Marketing accent-text 0.25, Technology dark 0.05</span>
+      <div class="type-intersection">
+        <span class="word w1-f">Brand</span>
+        <span class="word w2-f">Technology</span>
+        <span class="word w3-f">Marketing</span>
+      </div>
+    </div>
+
+  </div>
+</BaseLayout>
+
+<style>
+  .test-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  .test-page__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .test-card {
+    margin-bottom: 3rem;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    background: var(--color-bg);
+  }
+
+  .test-card__label {
+    display: block;
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-accent-text);
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+  }
+
+  .type-intersection {
+    position: relative;
+    height: 11.5rem;
+    overflow: hidden;
+  }
+
+  .word {
+    position: absolute;
+    font-family: 'Outfit', var(--font-sans);
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    user-select: none;
+  }
+
+  /* Shared positions */
+  .word:nth-child(1) { top: 0; left: -0.1em; }
+  .word:nth-child(2) { top: 2.8rem; left: 1.5rem; }
+  .word:nth-child(3) { top: 5.6rem; left: -0.1em; }
+
+  /* A — Current */
+  .w1-a { color: var(--color-accent-text); opacity: 0.12; }
+  .w2-a { color: var(--color-text); opacity: 0.08; }
+  .w3-a { color: var(--color-accent-text); opacity: 0.12; }
+
+  /* B — All accent-text, uniform */
+  .w1-b { color: var(--color-accent-text); opacity: 0.15; }
+  .w2-b { color: var(--color-accent-text); opacity: 0.15; }
+  .w3-b { color: var(--color-accent-text); opacity: 0.15; }
+
+  /* C — All dark, subtle */
+  .w1-c { color: var(--color-text); opacity: 0.06; }
+  .w2-c { color: var(--color-text); opacity: 0.06; }
+  .w3-c { color: var(--color-text); opacity: 0.06; }
+
+  /* D — Accent color, bolder */
+  .w1-d { color: var(--color-accent); opacity: 0.35; }
+  .w2-d { color: var(--color-accent); opacity: 0.35; }
+  .w3-d { color: var(--color-accent); opacity: 0.35; }
+
+  /* E — Cascading opacity */
+  .w1-e { color: var(--color-text); opacity: 0.15; }
+  .w2-e { color: var(--color-text); opacity: 0.08; }
+  .w3-e { color: var(--color-text); opacity: 0.04; }
+
+  /* F — Mixed bold accent + subtle dark */
+  .w1-f { color: var(--color-accent-text); opacity: 0.25; }
+  .w2-f { color: var(--color-text); opacity: 0.05; }
+  .w3-f { color: var(--color-accent-text); opacity: 0.25; }
+</style>

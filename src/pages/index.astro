@@ -1,9 +1,11 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Sidebar from '../components/Sidebar.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
+import heroImg from '../assets/hero.jpg';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -18,7 +20,7 @@ const latestPost = posts[0];
   <div class="home">
     <main class="home__main">
       <div class="home__hero">
-        <img src="/hero.jpg" alt="" class="home__hero-img" />
+        <Image src={heroImg} alt="" class="home__hero-img" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 65vw" />
       </div>
 
       <section class="home__articles">
