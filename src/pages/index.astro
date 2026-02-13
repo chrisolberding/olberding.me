@@ -16,12 +16,14 @@ const latestPost = posts[0];
 
 <BaseLayout title="The Life and Times of Christopher Olberding">
   <Header variant="home" />
+  <div class="page-top-border" aria-hidden="true" style="position:fixed;top:0;left:0;right:var(--sidebar-width);height:10px;background:var(--color-accent);z-index:400;pointer-events:none;"></div>
+  <div class="scroll-progress" aria-hidden="true" style="position:fixed;top:0;left:0;width:10px;height:100%;background:var(--color-accent);transform-origin:top;transform:scaleY(0);z-index:400;pointer-events:none;"></div>
 
   <div class="home">
     <main class="home__main">
-      <div class="home__hero">
+      <!-- <div class="home__hero">
         <Image src={heroImg} alt="" class="home__hero-img" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 65vw" />
-      </div>
+      </div> -->
 
       <section class="home__articles">
         {posts.map((post) => (
@@ -39,7 +41,24 @@ const latestPost = posts[0];
       <Sidebar />
     </div>
   </div>
+  <div class="page-bottom-border" aria-hidden="true" style="width:100%;height:10px;background:var(--color-accent);margin-right:var(--sidebar-width);"></div>
 </BaseLayout>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const bar = document.querySelector('.scroll-progress') as HTMLElement | null;
+    if (bar) {
+      function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+        bar!.style.transform = `scaleY(${pct})`;
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+  });
+</script>
 
 <style>
   .home {
@@ -88,7 +107,7 @@ const latestPost = posts[0];
     z-index: 1;
     background-color: var(--color-bg);
     padding: var(--spacing-lg) var(--spacing-md);
-    padding-left: 6rem;
+    padding-left: 8rem;
     padding-right: 6rem;
     min-height: 100vh;
     min-height: 100dvh;
