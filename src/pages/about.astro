@@ -265,7 +265,7 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
         <h2 class="about-cta__heading">Let's connect.</h2>
         <p class="about-cta__text">I'm always happy to talk about technology, design, or whatever interesting problem you're working on.</p>
         <div class="about-cta__links">
-          <a href="#" class="about-cta__btn" data-contact-open>Email me</a>
+          <a href="#" class="about-cta__btn" data-contact-open>Get in touch</a>
           <a href="https://www.linkedin.com/in/chrisolberding/" target="_blank" rel="noopener noreferrer" class="about-cta__btn about-cta__btn--outline">LinkedIn</a>
         </div>
       </section>
@@ -861,19 +861,25 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
     font-weight: 700;
     padding: 0.7em 1.8em;
     text-decoration: none;
-    transition: opacity 0.2s;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
     background: var(--color-text);
     color: var(--color-bg);
   }
 
   .about-cta__btn:hover {
-    opacity: 0.85;
+    background: var(--color-accent-text);
   }
 
   .about-cta__btn--outline {
     background: transparent;
     color: var(--color-text);
     border: 2px solid var(--color-text);
+  }
+
+  .about-cta__btn--outline:hover {
+    background: transparent;
+    border-color: var(--color-accent-text);
+    color: var(--color-accent-text);
   }
 
   /* ===== RESPONSIVE ===== */

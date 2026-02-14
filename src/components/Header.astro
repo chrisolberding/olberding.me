@@ -19,7 +19,7 @@ const { variant = 'page' } = Astro.props;
   </button>
 </header>
 
-<nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
+<nav class="mobile-nav" id="mobile-nav" aria-hidden="true" inert>
   <ul class="mobile-nav__links">
     <li><a href="/">Writing</a></li>
     <li><a href="/about">Me</a></li>
@@ -34,7 +34,7 @@ const { variant = 'page' } = Astro.props;
   </div>
 </nav>
 
-<div class="contact-modal" id="contact-modal" aria-hidden="true">
+<div class="contact-modal" id="contact-modal" aria-hidden="true" inert>
   <button class="contact-modal__close" id="contact-close" aria-label="Close">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
   </button>
@@ -406,9 +406,11 @@ const { variant = 'page' } = Astro.props;
       if (isOpen) {
         nav?.classList.remove('is-open');
         nav?.setAttribute('aria-hidden', 'true');
+        nav?.setAttribute('inert', '');
       } else {
         nav?.classList.add('is-open');
         nav?.setAttribute('aria-hidden', 'false');
+        nav?.removeAttribute('inert');
       }
     });
 
@@ -469,14 +471,17 @@ const { variant = 'page' } = Astro.props;
       if (nav?.classList.contains('is-open')) {
         nav.classList.remove('is-open');
         nav.setAttribute('aria-hidden', 'true');
+        nav.setAttribute('inert', '');
       }
       contactModal?.classList.add('is-open');
       contactModal?.setAttribute('aria-hidden', 'false');
+      contactModal?.removeAttribute('inert');
     }
 
     function closeContact() {
       contactModal?.classList.remove('is-open');
       contactModal?.setAttribute('aria-hidden', 'true');
+      contactModal?.setAttribute('inert', '');
     }
 
     // Any element with data-contact-open opens the modal

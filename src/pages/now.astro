@@ -1,0 +1,669 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import nowData from '../data/now.json';
+
+const updatedDate = new Date(nowData.updated + 'T00:00:00').toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// Build activity calendar grid (8 weeks, GitHub-style: cols=weeks, rows=days of week)
+const WEEKS = 8;
+const today = new Date(nowData.updated + 'T00:00:00');
+const dayOfWeek = today.getDay(); // 0=Sun
+const startDate = new Date(today);
+startDate.setDate(today.getDate() - (WEEKS * 7 - 1) - dayOfWeek);
+
+// Index activity data by date for fast lookup
+const activityMap = new Map<string, boolean[]>();
+for (const day of nowData.activities.days) {
+  activityMap.set(day.date, day.did);
+}
+
+// Build grid: array of weeks, each week is array of 7 days
+type CellData = { date: string; did: boolean; inRange: boolean };
+type WeekData = CellData[];
+
+function buildGrid(activityIndex: number): WeekData[] {
+  const weeks: WeekData[] = [];
+  const cursor = new Date(startDate);
+  for (let w = 0; w < WEEKS; w++) {
+    const week: WeekData = [];
+    for (let d = 0; d < 7; d++) {
+      const iso = cursor.toISOString().slice(0, 10);
+      const inRange = cursor <= today;
+      const dayData = activityMap.get(iso);
+      week.push({ date: iso, did: dayData ? dayData[activityIndex] : false, inRange });
+      cursor.setDate(cursor.getDate() + 1);
+    }
+    weeks.push(week);
+  }
+  return weeks;
+}
+
+const grids = nowData.activities.labels.map((_label: string, i: number) => buildGrid(i));
+
+// Count stats across the full grid range (not just data days)
+function countStats(activityIndex: number) {
+  let streak = 0;
+  let total = 0;
+  let totalDays = 0;
+  const sorted = [...nowData.activities.days].sort((a, b) => b.date.localeCompare(a.date));
+  // Count total in-range days from the grid
+  const grid = grids[activityIndex];
+  for (const week of grid) {
+    for (const cell of week) {
+      if (cell.inRange) totalDays++;
+    }
+  }
+  // Streak + total from data
+  let streakBroken = false;
+  for (const day of sorted) {
+    if (day.did[activityIndex]) {
+      total++;
+      if (!streakBroken) streak++;
+    } else {
+      streakBroken = true;
+    }
+  }
+  const pct = totalDays > 0 ? Math.round((total / totalDays) * 100) : 0;
+  return { streak, total, totalDays, pct };
+}
+
+const stats = nowData.activities.labels.map((_: string, i: number) => countStats(i));
+
+// Oura: compute min/max for sparkline scaling
+const sleepScores = nowData.oura.sleep.map((d: {score: number}) => d.score);
+const readinessScores = nowData.oura.readiness.map((d: {score: number}) => d.score);
+const hrValues = nowData.oura.resting_hr.map((d: {bpm: number}) => d.bpm);
+
+const dayLabels = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+---
+
+<BaseLayout title="Chris Olberding | Now" description="What I'm working on, reading, and thinking about right now.">
+  <Header variant="page" />
+  <div class="page-top-border" aria-hidden="true"></div>
+  <div class="scroll-progress scroll-progress--left" aria-hidden="true"></div>
+  <div class="scroll-progress scroll-progress--right" aria-hidden="true"></div>
+
+  <main class="now">
+    <header class="now__header">
+      <h1 class="now__title">/now</h1>
+      <p class="now__subtitle">What I'd tell you over coffee if we hadn't talked in a while.</p>
+      <span class="now__updated">Last updated {updatedDate}</span>
+    </header>
+
+    <!-- Activity Calendar -->
+    <section class="now__section">
+      <h2 class="section-heading">Activity Calendar</h2>
+      <div class="activity-calendar">
+        {nowData.activities.labels.map((label: string, i: number) => (
+          <div class="activity-col">
+            <div class="activity-col__header">
+              <span class="activity-col__label">{label}</span>
+              <span class="activity-col__pct">{stats[i].pct}%</span>
+            </div>
+            <div class="activity-grid">
+              <div class="activity-grid__labels">
+                {dayLabels.map((d) => (
+                  <span class="activity-grid__day-label">{d}</span>
+                ))}
+              </div>
+              {grids[i].map((week) => (
+                <div class="activity-grid__week">
+                  {week.map((cell) => (
+                    <div
+                      class={`activity-grid__cell ${cell.did ? 'activity-grid__cell--on' : ''} ${!cell.inRange ? 'activity-grid__cell--future' : ''}`}
+                      title={cell.date}
+                    />
+                  ))}
+                </div>
+              ))}
+            </div>
+            <span class="activity-col__stat">{stats[i].total}/{stats[i].totalDays} days &middot; {stats[i].streak} day streak</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Oura Ring Data -->
+    <section class="now__section">
+      <h2 class="section-heading">Body</h2>
+      <div class="oura-grid">
+        <!-- Sleep Score -->
+        <div class="oura-card">
+          <div class="oura-card__header">
+            <span class="oura-card__label">Sleep</span>
+            <span class="oura-card__value">{sleepScores[0]}</span>
+          </div>
+          <div class="oura-sparkline">
+            {sleepScores.slice().reverse().map((score: number) => (
+              <div class="oura-sparkline__bar" style={`height: ${score}%`} title={`${score}`}></div>
+            ))}
+          </div>
+          <span class="oura-card__range">Last {sleepScores.length} days</span>
+        </div>
+
+        <!-- Readiness Score -->
+        <div class="oura-card">
+          <div class="oura-card__header">
+            <span class="oura-card__label">Readiness</span>
+            <span class="oura-card__value">{readinessScores[0]}</span>
+          </div>
+          <div class="oura-sparkline">
+            {readinessScores.slice().reverse().map((score: number) => (
+              <div class="oura-sparkline__bar" style={`height: ${score}%`} title={`${score}`}></div>
+            ))}
+          </div>
+          <span class="oura-card__range">Last {readinessScores.length} days</span>
+        </div>
+
+        <!-- Resting Heart Rate -->
+        <div class="oura-card">
+          <div class="oura-card__header">
+            <span class="oura-card__label">Resting HR</span>
+            <span class="oura-card__value">{hrValues[0]} <small>bpm</small></span>
+          </div>
+          <div class="oura-sparkline">
+            {hrValues.slice().reverse().map((bpm: number) => {
+              const min = Math.min(...hrValues) - 5;
+              const max = Math.max(...hrValues) + 5;
+              const pct = ((bpm - min) / (max - min)) * 100;
+              return <div class="oura-sparkline__bar oura-sparkline__bar--hr" style={`height: ${pct}%`} title={`${bpm} bpm`}></div>;
+            })}
+          </div>
+          <span class="oura-card__range">Last {hrValues.length} days</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I'm Reading -->
+    <section class="now__section">
+      <h2 class="section-heading">What I'm Reading</h2>
+      <div class="now-reading">
+        {nowData.reading.map((book: {title: string; author: string; progress: number}) => (
+          <div class="now-book">
+            <div class="now-book__card">
+              <div class="now-book__spine"></div>
+              <div class="now-book__info">
+                <span class="now-book__title">{book.title}</span>
+                <span class="now-book__author">{book.author}</span>
+              </div>
+            </div>
+            <div class="now-progress">
+              <div class="now-progress__fill" style={`width: ${book.progress}%`}></div>
+            </div>
+            <span class="now-progress__label">{book.progress}% through</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- The Log -->
+    <section class="now__section">
+      <h2 class="section-heading">The Log</h2>
+      <div class="now-log">
+        {nowData.log.map((entry: {date: string; tag?: string; text: string}) => {
+          const d = new Date(entry.date + 'T00:00:00');
+          const formatted = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+          return (
+            <div class="now-log__item">
+              <div class="now-log__marker"></div>
+              <div class="now-log__content">
+                <div class="now-log__meta">
+                  <span class="now-log__date">{formatted}</span>
+                  {entry.tag && <span class="now-log__tag">{entry.tag}</span>}
+                </div>
+                <p class="now-log__text">{entry.text}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  </main>
+
+  <div class="page-bottom-border" aria-hidden="true"></div>
+</BaseLayout>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const bars = document.querySelectorAll('.scroll-progress') as NodeListOf<HTMLElement>;
+    if (bars.length) {
+      function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+        bars.forEach(bar => { bar.style.transform = `scaleY(${pct})`; });
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+  });
+</script>
+
+<style>
+  /* ===== Page chrome ===== */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: var(--color-accent);
+    transform-origin: top;
+    transform: scaleY(0);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .page-top-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-accent);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .scroll-progress--left { left: 0; }
+  .scroll-progress--right { right: 0; }
+
+  .page-bottom-border {
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-accent);
+  }
+
+  /* ===== Main container ===== */
+  .now {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 6rem var(--spacing-md) var(--spacing-xl);
+  }
+
+  /* ===== Header ===== */
+  .now__header {
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+  }
+
+  .now__header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    width: 10px;
+    height: 100%;
+    background-color: var(--color-accent);
+  }
+
+  .now__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--color-accent-text);
+    margin-bottom: 0.15em;
+  }
+
+  .now__subtitle {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+
+  .now__updated {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+  }
+
+  /* ===== Sections ===== */
+  .now__section {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .section-heading {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent-text);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  /* ===== Activity Calendar ===== */
+  .activity-calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .activity-col__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+  }
+
+  .activity-col__label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .activity-col__pct {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-accent-text);
+  }
+
+  .activity-col__stat {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.65rem;
+    color: var(--color-text-light);
+    margin-top: 0.4rem;
+    display: block;
+  }
+
+  .activity-grid {
+    display: flex;
+    gap: 3px;
+  }
+
+  .activity-grid__labels {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-right: 2px;
+  }
+
+  .activity-grid__day-label {
+    width: 14px;
+    height: 14px;
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .activity-grid__week {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .activity-grid__cell {
+    width: 14px;
+    height: 14px;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+  }
+
+  .activity-grid__cell--on {
+    background: var(--color-accent);
+  }
+
+  .activity-grid__cell--future {
+    opacity: 0.2;
+  }
+
+  /* ===== Oura Ring ===== */
+  .oura-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .oura-card {
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .oura-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.6rem;
+  }
+
+  .oura-card__label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-light);
+  }
+
+  .oura-card__value {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  .oura-card__value small {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+  }
+
+  .oura-sparkline {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 48px;
+  }
+
+  .oura-sparkline__bar {
+    flex: 1;
+    background: var(--color-accent);
+    border-radius: 1px 1px 0 0;
+    min-height: 2px;
+  }
+
+  .oura-sparkline__bar--hr {
+    background: var(--color-accent-text);
+    opacity: 0.5;
+  }
+
+  .oura-card__range {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.65rem;
+    color: var(--color-text-light);
+    margin-top: 0.4rem;
+    display: block;
+  }
+
+  /* ===== Reading ===== */
+  .now-reading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .now-book__card {
+    display: flex;
+    gap: 0.8rem;
+    align-items: stretch;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .now-book__spine {
+    width: 5px;
+    flex-shrink: 0;
+    background: var(--color-accent);
+    border-radius: 2px;
+  }
+
+  .now-book__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.15rem;
+  }
+
+  .now-book__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .now-book__author {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+  }
+
+  .now-progress {
+    height: 4px;
+    background: rgba(0, 0, 0, 0.06);
+    margin-top: 0.5rem;
+  }
+
+  .now-progress__fill {
+    height: 100%;
+    background: var(--color-accent);
+  }
+
+  .now-progress__label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.7rem;
+    color: var(--color-text-light);
+    margin-top: 0.25rem;
+    display: block;
+  }
+
+  /* ===== Log (timeline) ===== */
+  .now-log {
+    position: relative;
+    padding-left: 2rem;
+    padding-bottom: 1px;
+  }
+
+  .now-log::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-text);
+    opacity: 0.15;
+  }
+
+  .now-log__item {
+    position: relative;
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .now-log__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .now-log__marker {
+    position: absolute;
+    left: -2rem;
+    top: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 1px solid var(--color-accent-text);
+  }
+
+  .now-log__meta {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .now-log__date {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-accent-text);
+  }
+
+  .now-log__tag {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.15em 0.5em;
+    border-radius: 2px;
+  }
+
+  .now-log__text {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin-top: 0.3rem;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 1110px) {
+    .now__header::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .now {
+      padding: 5rem var(--spacing-md) var(--spacing-lg);
+    }
+
+    .now__title {
+      font-size: 2.2rem;
+    }
+
+    .now__subtitle {
+      font-size: 1.15rem;
+    }
+
+    .oura-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .activity-calendar {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .activity-grid__cell {
+      width: 11px;
+      height: 11px;
+    }
+
+    .activity-grid__day-label {
+      width: 11px;
+      height: 11px;
+      font-size: 0.45rem;
+    }
+  }
+</style>
