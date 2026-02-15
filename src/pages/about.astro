@@ -306,8 +306,15 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
       }
     }
 
-    window.addEventListener('scroll', updateScroll, { passive: true });
-    updateScroll();
+    let lastScrollY = -1;
+    function tick() {
+      if (window.scrollY !== lastScrollY) {
+        lastScrollY = window.scrollY;
+        updateScroll();
+      }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
   });
 </script>
 
