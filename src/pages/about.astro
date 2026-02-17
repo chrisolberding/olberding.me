@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import headshotAbout from '../assets/headshot-about-v4.jpg';
+import headshotAlt1 from '../assets/headshot-about-alt1-v1.jpg';
+import headshotAlt2 from '../assets/headshot-about-alt2-v1.jpg';
 ---
 
 <BaseLayout title="Christopher Olberding | About" description="About Chris Olberding: skills, experience, and interests.">
@@ -24,7 +26,9 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
   <div class="about">
     <!-- Left: sticky headshot fills the column -->
     <div class="about__photo">
-      <Image src={headshotAbout} alt="Chris Olberding" class="about__photo-img" widths={[400, 600, 800]} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={headshotAbout} alt="Chris Olberding" class="about__photo-img" data-headshot="0" widths={[400, 600, 800]} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={headshotAlt1} alt="Chris Olberding" class="about__photo-img" data-headshot="1" widths={[400, 600, 800]} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={headshotAlt2} alt="Chris Olberding" class="about__photo-img" data-headshot="2" widths={[400, 600, 800]} sizes="(max-width: 768px) 100vw, 50vw" />
       <div class="about__photo-overlay">
         <h1 class="about__photo-name">Christopher<br/>Olberding</h1>
       </div>
@@ -278,6 +282,19 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
 
 <script>
   document.addEventListener('astro:page-load', () => {
+    // Rotate headshot on each page load (mirrors accent color rotation)
+    const headshots = document.querySelectorAll('[data-headshot]') as NodeListOf<HTMLImageElement>;
+    if (headshots.length) {
+      const lastIndex = parseInt(localStorage.getItem('headshotIndex') || '-1', 10);
+      const nextIndex = (lastIndex + 1) % headshots.length;
+      localStorage.setItem('headshotIndex', String(nextIndex));
+      headshots.forEach((img, i) => {
+        const active = i === nextIndex;
+        img.classList.toggle('is-active', active);
+        if (active) img.loading = 'eager';
+      });
+    }
+
     const bars = document.querySelectorAll('.scroll-progress, .about__scroll-progress') as NodeListOf<HTMLElement>;
     const words = document.querySelectorAll('.type-intersection__word') as NodeListOf<HTMLElement>;
     const intersection = document.querySelector('.type-intersection') as HTMLElement | null;
@@ -380,6 +397,14 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
     object-fit: cover;
     object-position: center 20%;
     filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .about__photo-img.is-active {
+    display: block;
   }
 
   .about__photo-overlay {
@@ -974,5 +999,16 @@ import headshotAbout from '../assets/headshot-about-v4.jpg';
       top: 3.6rem;
     }
 
+  }
+
+  @media (max-width: 400px) {
+    .about__photo-overlay {
+      bottom: 0;
+      padding: var(--spacing-sm) var(--spacing-sm);
+    }
+
+    .about__photo-name {
+      font-size: 1.8rem;
+    }
   }
 </style>
