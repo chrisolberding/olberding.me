@@ -1,98 +1,32 @@
 ---
 title: "Putting GEO Into Context: Lessons for Executives from Early Days of SEO"
-subtitle: Before investing heavily in Generative Engine Optimization, we should learn from early SEO's uncertainty, opportunistic consulting, and rapid algorithm shifts.
+subtitle: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
 date: 2026-02-10
-description: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, opportunistic consulting, and rapid shifts that marked the emerging SEO industry.
+description: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
 ---
 
-Generative Engine Optimization (GEO) is emerging as a buzzword in the AI era, promising visibility in LLM-generated answers. Before investing heavily, we should learn from the early SEO era (1997–2012), which was marked by uncertainty, opportunistic consulting, and rapid algorithm shifts. Today's LLM landscape is even more fragmented and opaque, creating higher risk for misinformation and wasted spend.
+I recently consulted with a company whose prior total annual expenditure on SEO, including software subscriptions, was under $10k - well under 1% of their marketing budget. I was asked to help evaluate GEO vendors the executives spoke with at a conference and to determine what other partners they should look at. The budget was 25x of that previous SEO budget.
 
-**Recommendation:** Treat GEO as an experimental lane, not a core investment. Focus on durable content, provenance, and compliance—not hacks or speculative tools.
+I asked for context - what their goals and expectations were, why now, and what conversations they had with those vendors. Then I met with the GEO-specific vendors - analytics platforms and consultants - and I got a familiar feeling that I'd experienced this before. Heavy on time pressure, proprietary metrics, and implicit promises. Light on specifics and pretty critical questions. I was reminded of the SEO industry from the 2000s. Maybe with a little more polish that comes with VC/PE money.
 
-<figure>
-  <img src="/blog/seo-history.jpg" alt="Early days of search engine optimization" />
-  <figcaption>The early SEO era was defined by information asymmetry and rapidly shifting rules — a dynamic that's repeating itself with GEO.</figcaption>
-</figure>
+The SEO space in those years, mid to late 2000s, was the wild west. Information asymmetry between sellers and buyers reigned, metrics were easily gamed, and the delay between contract signature and results means that companies were out a good bit of cash before they realized that they made a mistake. To some extent, the SEO space would clean itself up (again, somewhat), shifting from directory submissions and keyword stuffing to link building to content marketing to authority building. However, the grifters made money, companies wasted time (and said money), and there is still somewhat of a gray cloud over it today.
 
-## Historical Parallel: Early SEO
+So what can we apply from those early days of SEO to what we're seeing in the emerging marketing place for GEO products and services today? Is GEO fundamentally different and should we expect better (or worse) or is this just the next cycle of the SEO grift getting help with cover from some brand new acronym and the next cycle of information asymmetry getting a rebrand?
 
-**Uncertainty bred snake oil.** In the 2000s, consultants exploited gaps in knowledge with tactics like keyword stuffing and link farms.
+## Key Points
 
-**Google's communication stabilized the market.** Matt Cutts and Webmaster Guidelines gave clarity, aligning webmasters with Google's interests.
+- **Companies that weren't investing significantly in SEO are opening their checkbooks for GEO.** The FOMO is real, executives are being bombarded from every angle with urgency about AI-driven discovery, often by the same wave of consultants and vendors has materialized overnight to meet that anxiety with expensive solutions.
 
-**Single dominant platform.** By 2005, Google overtook Yahoo; by 2007, it was the clear leader. Optimization became predictable and scalable.
+- **There are parallels to the early days of SEO** - proprietary and opaque metrics that don't cleanly connect to business value, vendors selling urgency over evidence, and a buyer market that lacks the baseline knowledge to evaluate what's being sold.
 
-The early SEO playbook eventually coalesced around a few core tactics:
+- **However, SEO eventually (sort of) professionalized because of structural conditions that don't exist in the GEO space and show no clear path to emerging.** SEO had one dominant platform, deterministic-ish outputs, roughly aligned incentives between platform and practitioners, and slow enough change cycles for real expertise to develop.
 
-1. Keyword research and on-page optimization
-2. Quality backlink acquisition
-3. Technical crawlability and site architecture
-4. Content freshness and relevance signals
-5. User experience metrics (bounce rate, time on page)
+- **The measurement problem is even harder than the tooling problem.** GEO-specific tools face structurally harder challenges than early SEO tools did, but the real bottleneck is whether organizations can sustain investment and build processes long enough to see measurable value.
 
-*Key dynamic: Deterministic algorithms + one platform = eventual playbook.*
+- **LLMs don't create new demand even though they redistribute how existing demand gets routed.** That redistribution matters, but it doesn't justify the gold rush. Unless you're a major publisher negotiating direct licensing deals with LLM providers, the case for aggressive first-mover investment is weak.
 
-> The SEO era taught us something important: when the rules are unclear, the loudest voices aren't always the most accurate. Clarity comes from the platforms themselves — and it takes years.
+- **The list of things you should be doing differently because of GEO is short.** Most of what's being sold as GEO is repackaged SEO, answer engine optimization, content best practices, PR, and brand/reputation management.
 
-## Today's Reality: LLMs & GEO
+- **None of this is an argument that AI-driven discovery doesn't matter.** It does today and will matter more over time. But many companies investing heavily in GEO-specific efforts will be disappointed by the results they're able to show for it.
 
-**Fragmented ecosystem.** Multiple engines (OpenAI, Anthropic, Google, Meta, Cohere, Mistral) with different behaviors and fast update cycles.
-
-**Opaque, probabilistic outputs.** Unlike search rankings, LLM responses are stochastic and prompt-dependent; tactics rarely generalize.
-
-**No incentive for guidance.** Vendors prioritize model capability and safety—not marketer education.
-
-**Tooling risk.** Most GEO tools are thin wrappers over LLM APIs, scraping outputs and extrapolating from questionable data. Expect high churn; few moats exist.
-
-Key differences from the SEO era include:
-
-- No single dominant platform to optimize for
-- Outputs are non-deterministic — the same query produces different results each time
-- No equivalent of Google's Webmaster Guidelines or Search Console
-- Model updates happen silently and frequently, invalidating prior observations
-- Attribution and sourcing remain inconsistent across engines
-
-<figure>
-  <img src="/blog/llm-landscape.jpg" alt="The modern LLM landscape" />
-  <figcaption>Unlike the search era's consolidation around Google, the LLM landscape remains fragmented across competing providers with divergent approaches.</figcaption>
-</figure>
-
-*Implication: Even if a tactic "works" today, it may fail tomorrow—or on another engine.*
-
-## Recommendations
-
-**Anchor to durable principles:** Maintain strong SEO (crawlability, structured data, E-E-A-T) and layer GEO-friendly content (clear Q&A, attribution, licensing).
-
-**Prioritize provenance:** Embed author, date, and rights metadata; publish canonical, self-contained assets.
-
-**Limit GEO spend:** Avoid over-investing in consultants or tools; insist on short-term contracts and compliance documentation.
-
-**Build internal monitoring:** Run small, controlled tests across engines; track mentions and citations without over-interpreting short-term lifts.
-
-**Defend our properties:** Implement bot management and AI crawler controls to manage bandwidth and licensing.
-
-**Focus on customer utility:** Content should answer banking questions accurately and safely—resilient across engines and time.
-
-## Bottom Line
-
-GEO is real but immature. The early SEO era taught us that clarity and standards take years to emerge. Until then, avoid chasing hacks or speculative tools. Invest in content quality, provenance, and compliance—the only strategies likely to endure.
-
-# Heading Level One
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-## Heading Level Two
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Heading Level Three
-
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida.
-
-#### Heading Level Four
-
-Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.
-
-##### Heading Level Five
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Morbi lacinia molestie dui. Praesent blandit dolor sed nunc feugiat eleifend at erat. Mauris porttitor tempus ligula.
+- **The best GEO strategy is the SEO, content, and brand strategy you should have already been executing.** Focus on the fundamentals that many organizations have been underinvesting in that have value across search, LLM discovery, and brand simultaneously. Keep GEO and SEO efforts unified in tooling and teams, avoid vendor lock-in, and keep GEO-specific investment and expectations modest until the landscape stabilizes.
