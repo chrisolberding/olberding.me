@@ -147,14 +147,28 @@ p {
   margin-bottom: 0.2em;
 }
 
-.prose figure {
+.prose figure,
+.prose > img,
+.prose > p > img {
   margin: var(--spacing-lg) -4rem var(--spacing-md);
+  display: block;
+  width: calc(100% + 8rem);
+  max-width: calc(100% + 8rem);
+}
+
+.prose figure img {
+  width: 100%;
+  display: block;
 }
 
 @media (max-width: 768px) {
-  .prose figure {
+  .prose figure,
+  .prose > img,
+  .prose > p > img {
     margin-left: -1rem;
     margin-right: -1rem;
+    width: calc(100% + 2rem);
+    max-width: calc(100% + 2rem);
   }
 }
 
