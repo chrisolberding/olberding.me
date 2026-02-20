@@ -5,13 +5,15 @@ date: 2026-02-10
 description: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
 ---
 
-I recently consulted with a company whose prior total annual expenditure on SEO, including software subscriptions, was under $10k - well under 1% of their marketing budget. I was asked to help evaluate GEO vendors the executives spoke with at a conference and to determine what other partners they should look at. The budget was 25x of that previous SEO budget.
+I recently consulted with a company whose prior total annual expenditure on SEO, including software subscriptions, was under $10k - well under 1% of their marketing budget. I was asked to help evaluate GEO vendors that the executives spoke with at a conference and to determine what other partners they should look at. The budget was 25x of that previous SEO budget.
 
-I asked for context - what their goals and expectations were, why now, and what conversations they had with those vendors. Then I met with the GEO-specific vendors - analytics platforms and consultants - and I got a familiar feeling that I'd experienced this before. Heavy on time pressure, proprietary metrics, and implicit promises. Light on specifics and pretty critical questions. I was reminded of the SEO industry from the 2000s. Maybe with a little more polish that comes with VC/PE money.
+I asked for context - what were their goals and expectations, why now, and what conversations they had with those vendors. Then I met with the GEO-specific vendors - analytics platforms and consultants - and I got a familiar feeling that I'd experienced this before. Heavy on time pressure, proprietary metrics, and implicit promises. Light on specifics and thin answers to critical questions. I was reminded of the SEO industry from the 2000s. Maybe with a little more polish that comes with VCO money.
 
-The SEO space in those years, mid to late 2000s, was the wild west. Information asymmetry between sellers and buyers reigned, metrics were easily gamed, and the delay between contract signature and results means that companies were out a good bit of cash before they realized that they made a mistake. To some extent, the SEO space would clean itself up (again, somewhat), shifting from directory submissions and keyword stuffing to link building to content marketing to authority building. However, the grifters made money, companies wasted time (and said money), and there is still somewhat of a gray cloud over it today.<sup class="cite-ref" data-ref="1" id="ref-1-back"><a href="#ref-1">1</a></sup>
+The SEO space in those years, mid to late 2000s, was the wild west. Information asymmetry between sellers and buyers reigned, metrics were easily gamed, and the delay between contract signature and results means that companies were out a good bit of cash before they realized that they made a mistake. To some extent, the SEO space would clean itself up (again, somewhat), shifting from directory submissions and keyword stuffing to link building to content marketing to authority building. However, the grifters made money, companies wasted time (and said money), and there is still somewhat of a gray cloud over it today.
 
 So what can we apply from those early days of SEO to what we're seeing in the emerging marketing place for GEO products and services today? Is GEO fundamentally different and should we expect better (or worse) or is this just the next cycle of the SEO grift getting help with cover from some brand new acronym and the next cycle of information asymmetry getting a rebrand?
+
+<div class="key-points">
 
 ## Key Points
 
@@ -21,7 +23,7 @@ So what can we apply from those early days of SEO to what we're seeing in the em
 
 - **However, SEO eventually (sort of) professionalized because of structural conditions that don't exist in the GEO space and show no clear path to emerging.** SEO had one dominant platform, deterministic-ish outputs, roughly aligned incentives between platform and practitioners, and slow enough change cycles for real expertise to develop.
 
-- **The measurement problem is even harder than the tooling problem.**<sup class="cite-ref" data-ref="2" id="ref-2-back"><a href="#ref-2">2</a></sup> GEO-specific tools face structurally harder challenges than early SEO tools did, but the real bottleneck is whether organizations can sustain investment and build processes long enough to see measurable value.
+- **The measurement problem is even harder than the tooling problem.** GEO-specific tools face structurally harder challenges than early SEO tools did, but the real bottleneck is whether organizations can sustain investment and build processes long enough to see measurable value.
 
 - **LLMs don't create new demand even though they redistribute how existing demand gets routed.** That redistribution matters, but it doesn't justify the gold rush. Unless you're a major publisher negotiating direct licensing deals with LLM providers, the case for aggressive first-mover investment is weak.
 
@@ -31,9 +33,114 @@ So what can we apply from those early days of SEO to what we're seeing in the em
 
 - **The best GEO strategy is the SEO, content, and brand strategy you should have already been executing.** Focus on the fundamentals that many organizations have been underinvesting in that have value across search, LLM discovery, and brand simultaneously. Keep GEO and SEO efforts unified in tooling and teams, avoid vendor lock-in, and keep GEO-specific investment and expectations modest until the landscape stabilizes.
 
-## References
+</div>
 
-<ol class="references">
-  <li id="ref-1">Killoran, J.B. (2013). "How to Use Search Engine Optimization Techniques to Increase Website Visibility." <em>IEEE Transactions on Professional Communication</em>, 56(1), 50–66. The paper documents how the SEO consulting industry's reliance on opaque methodologies and unverifiable claims created lasting credibility problems for the field, with client satisfaction surveys showing that over 40% of companies who engaged SEO consultants between 2005–2010 described the ROI as "unclear or negative." <a href="#ref-1-back" class="cite-back" aria-label="Back to reference 1">↩</a></li>
-  <li id="ref-2">Raghavan, M., Barocas, S., & Mulligan, D. (2025). "Measuring Visibility in AI-Generated Responses: Methodological Challenges and Early Frameworks." <em>Proceedings of the ACM Conference on Fairness, Accountability, and Transparency</em>, 312–328. The authors found that existing digital marketing measurement approaches fail to transfer cleanly to LLM-generated outputs, citing non-determinism, lack of stable ranking positions, and the absence of standardized impression metrics as structural barriers. <a href="#ref-2-back" class="cite-back" aria-label="Back to reference 2">↩</a></li>
-</ol>
+## The SEO Wild West - State of Digital in the Mid-2000s
+
+Many, if not most, practitioners in web and digital marketing of this era were self-taught hobbyists or crossed-over from adjacent fields such as graphic design or computer science. Everyone had a "nephew who did websites" and "webmaster" was a legit job title. As Google was becoming the dominant search engine, the middle of the decade saw the launch and quick adoption of YouTube, Twitter, Facebook, and Google Analytics. By 2008 we had a wide rollout of personalized and Universal Search, Facebook Ads and the iPhone.
+
+By the early-to-mid 2000s, most companies had a website but many did little else in the way of digital marketing. Unlike paid media, where the majority of the spend went to the platform, SEO budgets could be captured almost entirely as revenue by a consultant or small agency. The target market was "every business with a website", capabilities among entrenched agencies was minimal, and the barrier to entry was low. While there was a movement full of high ideals pushing to professionalize web development and design, the digital marketing space was more pragmatic and cutthroat - if it worked it worked. It was a gold rush and many of the systemic factors that were in place then, we're seeing today with GEO.
+
+The early SEO market and the emerging GEO market share structural conditions that, historically, have led to vendor overselling and buyer regret. We'll look at the similarities here, then at where the two markets diverge and what that means for business leaders and practitioners.
+
+### Rapidly Changing Environment
+
+SEO in the mid-2000s had a truth problem. Not a dishonesty problem (though it had that too), but an epistemological one: what was "true" about how to rank well in Google changed frequently enough that even well-intentioned practitioners couldn't always separate signal from noise. An approach that produced results in March might stop working by June, and the practitioner's explanation for why it stopped working was heavily shaped by their own world view, business model, and whatever they happened to have tested recently. The forums (WebmasterWorld, SEOChat, later Moz) were full of people arguing with genuine conviction about contradictory approaches, and many of them were right at the time they formed their opinions and wrong by the time they shared them.
+
+GEO has this same dynamic but compressed and multiplied. With SEO, you had one platform updating its algorithm a handful of times a year, and a community that could at least converge on observable patterns between updates. With GEO, you have multiple platforms (ChatGPT, Gemini, Perplexity, Claude, Copilot) updating on different schedules with different architectures, and what a model surfaces for the same query can change between Tuesday and Thursday with no announcement. The window in which any observed pattern remains valid is shorter than most companies' planning cycles, which means the advice you're buying may already be stale by the time you implement it.
+
+### Knowledge Gaps
+
+The information asymmetry between SEO sellers and buyers in the mid-2000s was extreme, and it ran in both directions. The executives signing contracts had built careers in traditional media and had never touched a Google Analytics dashboard. They couldn't distinguish a legitimate technical audit from a generated list of fabricated or low impact issues. They didn't know that "submit your site to 500 search engines" was meaningless when Google already held 80%+ market share. And the language itself created distance: PageRank, relevance/authority, domain authority, link juice, canonical tags. Jargon that sounded sophisticated and made it a challenge for a non-practitioner to evaluate whether they were getting real expertise or theater.
+
+The GEO knowledge gap is, if anything, wider. At least with SEO, practitioners could point to Google's Webmaster Guidelines as a canonical reference, run their own tests against observable rankings, and build pattern recognition over time. GEO practitioners are working with systems that don't publish optimization guidance, don't surface their retrieval logic, and produce outputs that vary probabilistically. When a GEO vendor tells you they know how to improve your AI visibility, ask them how they'd validate that claim and moreover how they recommend tying their visibility metric to actual business value. The honest answer is that the validation infrastructure doesn't exist yet or perhaps we don't have a clean methodology, data, or timescale on how to think about this clearly.
+
+### Missing Infrastructure
+
+The tracking infrastructure of the mid-2000s didn't exist in most cases to keep anyone honest. Google Analytics launched in late 2005 (free, most didn't have access to enterprise tools like Omniture), and suddenly small businesses and agencies had real traffic data for the first time. But having data and knowing what to do with it were different things.
+
+Conversion tracking was possible but mostly binary: you could see if someone hit a thank-you page after filling out a form, and you could assign a static dollar value to that event. Tying actual purchase amounts, lead quality, or downstream revenue to a specific organic search visit required e-commerce tracking code that most companies didn't have in place, and even where it existed, attribution was last-click only.
+
+We did have keyword-level data in Google Analytics (fully visible until Google started limiting it in 2011. RIP), which was genuinely useful. There was this short period where we could connect specific efforts, to ranking changes, to traffic, and sales.
+
+We didn't have an established theory of how SEO performance "should" be monitored. Back then I used WebPosition Gold - a desktop application that ran the search queries (like and AI agent!) from your computer or server in the other room and recorded, tallied, and uploaded results to an FTP for your clients to view. This was strictly against the ToS of the search engines so the software would throttle and a report might take all night to avoid your personal/company IP being blocked by search engines. WebPosition was singled out and limited by Google by the replacements like Moz and SEMRush largely used the same techniques, only they could do so with more sophistication, being cloud based. However, it's worth noting that at its core, ranking reporting started and technically is against Google's terms of service - even the software the industry relied upon was sketchy.
+
+GEO is in a similar place, arguably earlier in the curve. There's no consensus on what should be tracked, how often, or what constitutes a meaningful change. The connection between optimization effort and appearing in an LLM response is time-delayed and speculative, and the attribution chain between being cited in an AI response and an actual business outcome is tenuous. New tools are building their own frameworks, which means every vendor is grading their own homework backed by extrapolation from data sciences teams that have a VC growth thumb on the scale. We're in the WebPosition Gold era of GEO: practitioners are improvising measurement approaches because the infrastructure hasn't caught up to the market demand or openness from the LLMs (which is unlikely to be forthcoming). The people buying reports have no baseline for knowing whether what they're looking at is meaningful.
+
+### Effort-Value Lag
+
+SEO results take time, and in the mid-2000s that lag was the best friend a bad consultant ever had. Hundreds of variables changed simultaneously in any given quarter: algorithm updates, competitor activity, seasonal trends, site changes, broader market conditions. An agency could sign a retainer in January, deliver questionable work for six months, and by July when the client started asking hard questions, point to any one of a dozen external factors. If rankings improved (for any reason) the agency took credit. If they didn't, it was Google's fault. The promise was precision; the reality was fog. This, combined with the vast potential market of "every business with a website," churn-and-burn was a viable business strategy. Sign the client, deliver activity that looks like work, ride the retainer for six to twelve months, repeat.
+
+GEO has the same dynamic. With SEO, you could eventually check whether rankings moved and whether organic traffic changed. The lag was real, but the outcome was at least partially observable. With GEO, the outcome (how your brand is represented in LLM responses) is harder to measure consistently and clearly and varies across platforms that should be weighted differently due to their variable usage by the target audience. The feedback loop between effort and observable result is longer, noisier, and more ambiguous than SEO's ever was, which means the window for questionable vendors to operate without accountability is wide.
+
+### Unprepared Existing Vendor Ecosystem
+
+The traditional agency world was caught flat-footed by SEO. Most agencies in the mid-2000s were organized around media buying, creative, and public relations, with digital as an afterthought or a project they outsourced. This created the gap that specialist SEO agencies (including mine) filled. Companies with long-term agency relationships found themselves bringing in outside specialists because their existing partners simply didn't have the capabilities, and in many cases didn't understand the discipline well enough to build them.
+
+The GEO version of this is more nuanced. Established SEO software companies are working to add AI visibility capabilities - though I expect given the rush to market and investor pressure established players will struggle to match the bombastic language of challenges who don't have a core SEO analytics segment to protect.
+
+Good practitioners have been quick to point out that much of what's being sold as GEO involves long-standing best practices in content, technical SEO, and structured data. The gap isn't that the existing ecosystem is ignoring it. The gap is twofold. First, opportunistic new entrants are exploiting the urgency and unfamiliar terminology to position themselves as specialists in a discipline that barely exists yet. Second, there's a real capability gap (even among the SEO and GEO-focused companies) around the difficult, unsexy work that actually influences how LLMs represent a brand: reputation management, digital PR, review management, and citation management. These are important, often neglected, difficult to execute well, and very difficult to outsource effectively. The GEO vendor response so far, from what I've seen, has been to try to automate outreach to highly cited sources, which at best won't produce results and at worst will cause the kind of reputational harm it was supposed to prevent.
+
+## Why Search Changed
+
+### Google Had Incentive to Help
+
+Google, as the dominant search engine with a relatively unsophisticated index (by today's standards) and a small, captive audience of web professionals, was incentivized to communicate. They needed the web to be built in ways their algorithms could parse, and the most efficient way to get there was to tell practitioners how to do it. Google's Webmaster Guidelines, their growing presence at industry conferences, Matt Cutts' blog and later the Search Central documentation: all of this was Google essentially saying "here's how to make it easier for us, and in the process, your clients will rank better." The alignment wasn't perfect, but it was real. Google wanted a better web because a better web made their product work better.
+
+### The Algorithm Caught Up to the Rhetoric
+
+For a long time, the guidelines were aspirational and the algorithm was exploitable. Keyword stuffing worked. Link farms worked. Article spinning worked. Google talked about semantic understanding and relevance, but the ranking algorithm could still be gamed by brute-force tactics that had nothing to do with content quality. That started to change with Panda (2011, targeting thin and duplicate content) and Penguin (2012, targeting manipulative link building), which were the first major updates where Google's enforcement meaningfully caught up to its rhetoric. Over the following decade, through continued algorithm improvements and ongoing communication with the industry, Google gradually reshaped SEO practice from directory submissions and keyword density to content marketing and authority building. The industry followed because it had to: the tactics that used to work stopped working, and Google was clear (if sometimes slow) about what it wanted instead.
+
+### Good SEO Matured, But With Blind Spots
+
+Good SEO, in its mature form, grew into something relatively straightforward in concept if not in execution: build quality content aligned with what your users and customers actually need, and remove the technical roadblocks that prevent search engines from understanding and surfacing it. That's a real discipline with real value.
+
+However, it was limited to offsite work that generated backlinks. Referring sites that passed no links or carried nofollow attributes weren't a priority. Local SEO existed as its own smaller specialty. Review management, depending on the business, was often not a priority. The holistic work of managing how a brand is perceived across the web (reputation management, digital PR, customer experience, Reddit presence) involves a company's internals and legal team, a lot of low-skill but high-effort repetitive work, and a degree of organizational messiness that top strategic SEO firms were neither structured nor staffed for. That work was either left undone or lived somewhere else in the organization, disconnected from the SEO team. It's this work and gaps in processes and expertise, which should have been part of a modern marketing department the entire time, that all of sudden has relevance and urgency as companies consider their visibility in the GEO/AEO space.
+
+## Why GEO Might Not Follow the Same Path (At Least Not Anytime Soon)
+
+The SEO industry's gradual professionalization wasn't inevitable. It happened because specific structural conditions pushed practitioners toward better work and made the worst tactics unsustainable. Those conditions don't exist in the GEO market, and most of them show no clear path to emerging.
+
+### No Dominant Platform
+
+Google's near-monopoly meant the entire SEO industry was reverse-engineering one system. Practitioners converged on shared knowledge because they were all working against the same algorithm, and when Google changed the rules, the whole industry felt it at once. GEO has no equivalent. ChatGPT, Gemini, Perplexity, Claude, and Copilot each have different architectures, different retrieval methods, and different update cycles. Expertise fragments across platforms rather than consolidating, and what works on one may be irrelevant on another.
+
+### No Incentive to Communicate
+
+Google needed a better web to make Search work, so it told practitioners how to build for it. LLM providers have no comparable incentive to help brands optimize for AI responses, and in some cases have active disincentives. Telling brands how the sausage is made invites the same kind of gaming that plagued early search, and LLM companies have watched that movie already.
+
+### The Work Is Messier
+
+The core of SEO (site architecture, content, metadata, link building) could be scoped, contracted, and delivered by an outside agency with relatively clean boundaries. The work that actually influences how LLMs represent a brand (reputation, reviews, brand perception, presence on authoritative sources) is more organizational, harder to outsource, and harder to show clean results for. It requires internal coordination across marketing, legal, customer experience, and communications in ways that traditional SEO rarely did. This is not the kind of work that scales neatly into a retainer with monthly deliverables.
+
+### No Attribution Path
+
+SEO had the click. Imperfect, sure, but a click from a search result to your site is a measurable event you can connect to downstream behavior. You can track it in Search Console, connect it to session behavior in analytics, and tie it to downstream conversions. When an LLM mentions your brand in a response, there may be no click, no referral, no traceable event at all. The user might visit your site later, but the causal link between the AI mention and the visit is, at best, correlational. The GEO vendor community is largely hand-waving past this with proprietary dashboards that create the appearance of measurability without the substance.
+
+### No Clear Mechanism for Self-Correction
+
+This is the cumulative problem. SEO's bad actors were eventually constrained because Google could penalize them, because measurable results eventually revealed who was delivering value and who wasn't, and because a shared knowledge base made it harder to sell nonsense to an increasingly informed buyer market. GEO has none of these corrective forces in place. There's no single platform to enforce standards, no reliable measurement to separate good work from bad, and a buyer market that's starting from a deeper knowledge deficit than early SEO buyers ever faced. The conditions that would push the industry toward professionalization simply aren't present, which means the window for questionable vendors to operate without accountability is wider and likely to stay open longer.
+
+## So What Now
+
+The GEO space is going to be noisy for a while. It will be difficult to sort truth from misinformation, and even when you land on something true, it's likely to change. That said, you don't need to wait for clarity to make good decisions. Most of the right moves are already available to you.
+
+### 1. Don't Overcommit or Overspend
+
+The companies that will regret their GEO investments are the ones that treated it like a land grab. Keep GEO-specific spending modest and reversible until the measurement infrastructure matures enough to connect effort to business outcomes. If a vendor can't explain how they'll demonstrate value in terms you'd accept from any other marketing investment, that's your answer.
+
+### 2. Keep It Unified
+
+Search and LLM discovery are not likely to end up as separate disciplines, and your tooling and teams shouldn't treat them that way. Find platforms and partners that work across high-intent discovery channels (search and LLM together), not GEO-specific point solutions that create another silo and another dashboard nobody looks at after the first quarter.
+
+### 3. Do the Fundamentals You've Been Skipping
+
+If GEO has you motivated to invest, good. You probably weren't doing things you should have been doing anyway. Focus on the core: getting the best, most accurate information about your company in as many relevant places, in front of as many potential customers as possible. Structured data, consistent business information, quality content that answers real questions, active review management, real digital PR. This work has value across search, LLM discovery, and brand simultaneously, and it doesn't become worthless if any single platform changes its approach.
+
+### 4. Use GEO Tools for Prioritization, Not Strategy
+
+Part of the challenge with online PR, citation management, and referral building is that it's an ocean. You can't be everywhere and you can't manage everything. Where GEO tools can provide genuine value is in helping you prioritize: which sources are being cited, which sites matter for your category, where the gaps are. Use them as a lens for focusing effort, not as a strategy unto themselves.
+
+### 5. Focus on Users and Value, Not Optimization Trends
+
+Don't chase theories about chunking, formatting, or stylistic tricks that might influence how an LLM parses your content. The vast majority of businesses wouldn't be able to take advantage of short-term trends even if they were real, and they'll change before the ink dries on your implementation plan. This advice isn't new and it isn't specific to GEO: make something of genuine value to the people you want to work with. That has been the most durable strategy through every cycle of SEO evolution of at least the last decade, and there's no reason to believe it won't hold here too.

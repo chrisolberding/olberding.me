@@ -104,6 +104,30 @@ p {
   color: var(--color-accent-text);
 }
 
+.prose .key-points {
+  border-top: 10px solid var(--color-accent);
+  border-bottom: 10px solid var(--color-accent);
+  padding: var(--spacing-sm) 0;
+  margin: var(--spacing-lg) 0;
+}
+
+.prose .key-points h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.prose .key-points ul {
+  margin-bottom: 0;
+}
+
+.prose .key-points li {
+  margin-bottom: 0.6em;
+}
+
+.prose .key-points li p {
+  margin-bottom: 0;
+}
+
 .prose blockquote {
   border-left: 5px solid var(--color-accent);
   padding-left: var(--spacing-sm);

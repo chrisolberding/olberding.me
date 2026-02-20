@@ -17,7 +17,7 @@ Chris Olberding has spent nearly two decades at the intersection of brand, techn
 - [Building an AI-Empowered Marketing Organization](https://olberding.me/blog/ai-empowered-marketing-organization): A practical framework for integrating AI into marketing organizations without losing the human judgment that makes marketing work.
 - [Building a Marketing Organization: Models and Structures of Agency Utilization](https://olberding.me/blog/marketing-organization-agency-models): A framework for how in-house marketing departments should think about structuring their agency relationships.
 - [Triangulating Truth: A Model for Marketing Measurement](https://olberding.me/blog/triangulating-truth-marketing-measurement): Attribution models lie. So do surveys and incrementality tests. But by triangulating across all three, marketers can get closer to the truth about what's actually working.
-- [Neither Friends nor Servants: Lessons About Building Teams from a Young Agency Owner](https://olberding.me/blog/neither-friends-nor-servants): What I learned about building and leading teams from the mistakes I made running my first agency in my twenties.
+- [Empathetic Transactionalism](https://olberding.me/blog/empathetic-transaction): What running a digital agency in my twenties taught me about the relationship between employer and employee — and why empathetic transactionalism is more honest than the alternatives.
 
 ## Contact
 
