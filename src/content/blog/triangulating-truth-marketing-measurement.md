@@ -3,6 +3,7 @@ title: "Triangulating Truth: A Model for Marketing Measurement"
 subtitle: "No single measurement methodology tells the truth. But three of them together get close."
 date: 2025-11-20
 description: "Attribution models lie. So do surveys and incrementality tests. But by triangulating across all three, marketers can get closer to the truth about what's actually working."
+draft: true
 ---
 
 <!--

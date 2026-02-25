@@ -371,6 +371,8 @@ const publishedDate = date
           tocModal?.setAttribute('aria-hidden', 'true');
           tocModal?.setAttribute('inert', '');
           tocBtn?.setAttribute('aria-expanded', 'false');
+          tocBtn?.classList.remove('is-modal-open');
+          document.body.style.overflow = '';
         }
 
         function openToc() {
@@ -378,6 +380,8 @@ const publishedDate = date
           tocModal?.setAttribute('aria-hidden', 'false');
           tocModal?.removeAttribute('inert');
           tocBtn?.setAttribute('aria-expanded', 'true');
+          tocBtn?.classList.add('is-modal-open');
+          document.body.style.overflow = 'hidden';
         }
 
         tocBtn?.addEventListener('click', () => {
@@ -849,6 +853,12 @@ const publishedDate = date
 
   .toc__btn:hover {
     color: var(--color-accent-text);
+  }
+
+  .toc__btn.is-modal-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   /* Sync with header scroll-hide at narrow widths */

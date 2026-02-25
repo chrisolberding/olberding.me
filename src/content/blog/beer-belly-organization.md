@@ -3,6 +3,7 @@ title: "The Beer-Belly Organization"
 subtitle: "Why companies accumulate strategic weight in the middle — and what to do about it."
 date: 2026-01-28
 description: "Organizations, like bodies, accumulate weight in the middle. Here's how to recognize the pattern and what leaders can do to restore organizational fitness."
+draft: true
 ---
 
 <!--

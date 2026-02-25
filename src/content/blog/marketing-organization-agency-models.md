@@ -3,6 +3,7 @@ title: "Building a Marketing Organization: Models and Structures of Agency Utili
 subtitle: "The in-house vs. agency debate is a false choice. The real question is how to architect the relationship."
 date: 2025-12-15
 description: "A framework for how in-house marketing departments should think about structuring their agency relationships — from fully outsourced to fully insourced and everything in between."
+draft: true
 ---
 
 <!--

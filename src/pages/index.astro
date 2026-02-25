@@ -7,11 +7,12 @@ import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 import heroImg from '../assets/hero.jpg';
 
-const posts = (await getCollection('blog')).sort(
+const allPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 
-const latestPost = posts[0];
+const published = allPosts.filter(p => !p.data.draft);
+const drafts = allPosts.filter(p => p.data.draft);
 ---
 
 <BaseLayout title="Christopher Olberding" description="Writing about brand, technology, marketing, and what it means to lead where those things intersect.">
@@ -27,7 +28,7 @@ const latestPost = posts[0];
       </div> -->
 
       <section class="home__articles">
-        {posts.map((post) => (
+        {published.map((post) => (
           <ArticleCard
             title={post.data.title}
             description={post.data.description}
@@ -36,6 +37,18 @@ const latestPost = posts[0];
           />
         ))}
       </section>
+
+      {drafts.length > 0 && (
+        <section class="home__drafts">
+          <h2 class="home__section-label">In Development</h2>
+          {drafts.map((post) => (
+            <article class="draft-card">
+              <h3 class="draft-card__title">{post.data.title}</h3>
+              {post.data.description && <p class="draft-card__description">{post.data.description}</p>}
+            </article>
+          ))}
+        </section>
+      )}
     </main>
 
     <div class="home__sidebar">
@@ -107,12 +120,9 @@ const latestPost = posts[0];
     position: relative;
     z-index: 1;
     background-color: var(--color-bg);
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-md) 1.5rem;
     padding-left: 8rem;
     padding-right: 6rem;
-    min-height: 100vh;
-    min-height: 100dvh;
-
   }
 
   .scroll-progress-right {
@@ -174,6 +184,67 @@ const latestPost = posts[0];
 
   @media (max-width: 685px) {
     .home__articles {
+      padding-left: var(--spacing-lg);
+      padding-right: var(--spacing-lg);
+    }
+  }
+
+  /* In Development section */
+  .home__drafts {
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-bg);
+    padding: 0 var(--spacing-md) var(--spacing-lg);
+    padding-left: 8rem;
+    padding-right: 6rem;
+  }
+
+  .home__section-label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent-text);
+    padding-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 10px solid var(--color-accent);
+    margin-top: 0;
+  }
+
+  .draft-card {
+    margin-bottom: var(--spacing-md);
+    opacity: 0.6;
+  }
+
+  .draft-card__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+  }
+
+  .draft-card__description {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin-top: 0.3em;
+  }
+
+  @media (max-width: 900px) {
+    .home__drafts {
+      padding: 0 var(--spacing-md) var(--spacing-lg);
+      padding-left: 6rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 685px) {
+    .home__drafts {
       padding-left: var(--spacing-lg);
       padding-right: var(--spacing-lg);
     }
