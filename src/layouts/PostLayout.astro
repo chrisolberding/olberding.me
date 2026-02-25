@@ -128,6 +128,30 @@ const publishedDate = date
     </footer>
   </main>
 
+  <!-- Table of Contents -->
+  <nav class="toc" id="toc" aria-label="Table of contents">
+    <button class="toc__btn" id="toc-btn" aria-expanded="false" aria-label="Table of contents">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="12" y1="14" x2="32" y2="14"/>
+        <line x1="12" y1="22" x2="26" y2="22"/>
+        <line x1="12" y1="30" x2="32" y2="30"/>
+      </svg>
+    </button>
+
+    <div class="toc__modal" id="toc-modal" aria-hidden="true" inert>
+      <div class="toc__modal-inner">
+        <ol class="toc__list" id="toc-list">
+          <!-- Populated by JS -->
+        </ol>
+        <div class="toc__meta" id="toc-meta">
+          {publishedDate && <span class="toc__meta-item">Published {publishedDate}</span>}
+          <span class="toc__meta-item" id="toc-meta-words"></span>
+          <span class="toc__meta-item" id="toc-meta-time"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <!-- Floating citation preview -->
   <div class="cite-preview" id="cite-preview" aria-live="polite">
     <button class="cite-preview__close" aria-label="Dismiss">&times;</button>
@@ -155,64 +179,222 @@ const publishedDate = date
     // Citation preview
     const citeRefs = document.querySelectorAll('.cite-ref');
     const preview = document.getElementById('cite-preview');
-    if (!citeRefs.length || !preview) return;
+    if (citeRefs.length && preview) {
+      const previewNum = preview.querySelector('.cite-preview__num') as HTMLElement;
+      const previewText = preview.querySelector('.cite-preview__text') as HTMLElement;
+      const closeBtn = preview.querySelector('.cite-preview__close') as HTMLElement;
 
-    const previewNum = preview.querySelector('.cite-preview__num') as HTMLElement;
-    const previewText = preview.querySelector('.cite-preview__text') as HTMLElement;
-    const closeBtn = preview.querySelector('.cite-preview__close') as HTMLElement;
-
-    // Build reference map from the references list
-    const refMap = new Map<string, string>();
-    document.querySelectorAll('.references li').forEach(li => {
-      const id = li.id; // e.g. "ref-1"
-      const num = id.replace('ref-', '');
-      // Get text content but exclude the back-link arrow
-      const clone = li.cloneNode(true) as HTMLElement;
-      clone.querySelectorAll('.cite-back').forEach(el => el.remove());
-      refMap.set(num, clone.textContent?.trim() || '');
-    });
-
-    let activeRef: string | null = null;
-    let hideTimeout: ReturnType<typeof setTimeout> | null = null;
-    let dismissed = false;
-
-    function showPreview(refNum: string) {
-      if (dismissed) return;
-      if (hideTimeout) { clearTimeout(hideTimeout); hideTimeout = null; }
-      const text = refMap.get(refNum);
-      if (!text) return;
-      previewNum.textContent = refNum;
-      previewText.textContent = text;
-      preview.classList.add('is-visible');
-      activeRef = refNum;
-    }
-
-    function hidePreview() {
-      hideTimeout = setTimeout(() => {
-        preview.classList.remove('is-visible');
-        activeRef = null;
-      }, 300);
-    }
-
-    closeBtn.addEventListener('click', () => {
-      preview.classList.remove('is-visible');
-      dismissed = true;
-      activeRef = null;
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const refNum = (entry.target as HTMLElement).dataset.ref;
-        if (!refNum) return;
-        if (entry.isIntersecting) {
-          showPreview(refNum);
-        } else if (activeRef === refNum) {
-          hidePreview();
-        }
+      // Build reference map from the references list
+      const refMap = new Map<string, string>();
+      document.querySelectorAll('.references li').forEach(li => {
+        const id = li.id; // e.g. "ref-1"
+        const num = id.replace('ref-', '');
+        const clone = li.cloneNode(true) as HTMLElement;
+        clone.querySelectorAll('.cite-back').forEach(el => el.remove());
+        refMap.set(num, clone.textContent?.trim() || '');
       });
-    }, { threshold: 1.0 });
 
-    citeRefs.forEach(ref => observer.observe(ref));
+      let activeRef: string | null = null;
+      let hideTimeout: ReturnType<typeof setTimeout> | null = null;
+      let dismissed = false;
+
+      function showPreview(refNum: string) {
+        if (dismissed) return;
+        if (hideTimeout) { clearTimeout(hideTimeout); hideTimeout = null; }
+        const text = refMap.get(refNum);
+        if (!text) return;
+        previewNum.textContent = refNum;
+        previewText.textContent = text;
+        preview.classList.add('is-visible');
+        activeRef = refNum;
+      }
+
+      function hidePreview() {
+        hideTimeout = setTimeout(() => {
+          preview.classList.remove('is-visible');
+          activeRef = null;
+        }, 300);
+      }
+
+      closeBtn.addEventListener('click', () => {
+        preview.classList.remove('is-visible');
+        dismissed = true;
+        activeRef = null;
+      });
+
+      const citeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const refNum = (entry.target as HTMLElement).dataset.ref;
+          if (!refNum) return;
+          if (entry.isIntersecting) {
+            showPreview(refNum);
+          } else if (activeRef === refNum) {
+            hidePreview();
+          }
+        });
+      }, { threshold: 1.0 });
+
+      citeRefs.forEach(ref => citeObserver.observe(ref));
+    }
+
+    // ── Table of Contents ──
+    const tocNav = document.getElementById('toc') as HTMLElement | null;
+    const postBody = document.querySelector('.post__body') as HTMLElement | null;
+    const postHeader = document.querySelector('.post__header') as HTMLElement | null;
+
+    if (tocNav && postBody) {
+      const allHeadings = postBody.querySelectorAll('h2, h3') as NodeListOf<HTMLHeadingElement>;
+
+      // Only h2 headings, exclude "References"
+      const headings = Array.from(allHeadings).filter(h => {
+        if (h.tagName !== 'H2') return false;
+        if (h.textContent?.trim().toLowerCase() === 'references') return false;
+        return true;
+      });
+
+      const h2Count = headings.filter(h => h.tagName === 'H2').length;
+
+      if (h2Count >= 3) {
+        tocNav.classList.add('toc--active');
+
+        const tocList = document.getElementById('toc-list') as HTMLElement;
+        const tocBtn = document.getElementById('toc-btn') as HTMLElement;
+        const tocModal = document.getElementById('toc-modal') as HTMLElement;
+        const headerEl = document.querySelector('.header') as HTMLElement | null;
+
+        // Build TOC list — start with the article title
+        const postTitle = postHeader?.querySelector('.post__title') as HTMLElement | null;
+        if (postTitle) {
+          if (!postTitle.id) postTitle.id = 'post-title';
+          const titleLi = document.createElement('li');
+          titleLi.className = 'toc__item toc__item--title';
+          titleLi.innerHTML = `<a href="#${postTitle.id}" class="toc__link" data-toc-target="${postTitle.id}">${postTitle.textContent?.trim() || ''}</a>`;
+          tocList.appendChild(titleLi);
+        }
+
+        headings.forEach((heading, i) => {
+          if (!heading.id) heading.id = 'heading-' + i;
+          const text = heading.textContent?.trim() || '';
+
+          const li = document.createElement('li');
+          li.className = 'toc__item';
+          li.innerHTML = `<a href="#${heading.id}" class="toc__link" data-toc-target="${heading.id}">${text}</a>`;
+          tocList.appendChild(li);
+        });
+
+        // Click handlers — smooth scroll
+        tocList.querySelectorAll('.toc__link').forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = (link as HTMLElement).dataset.tocTarget;
+            if (!targetId) return;
+            const target = document.getElementById(targetId);
+            if (!target) return;
+            closeToc();
+            const offset = 30;
+            const y = target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          });
+        });
+
+        // Active section tracking
+        let currentActiveId: string | null = null;
+
+        function setActive(id: string) {
+          if (id === currentActiveId) return;
+          currentActiveId = id;
+          tocList.querySelectorAll('.toc__link').forEach(link => {
+            const isActive = (link as HTMLElement).dataset.tocTarget === id;
+            link.classList.toggle('is-active', isActive);
+            link.parentElement?.classList.toggle('is-active', isActive);
+          });
+        }
+
+        const tocObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              setActive(entry.target.id);
+            }
+          });
+        }, { rootMargin: '-10px 0px -70% 0px', threshold: 0 });
+
+        headings.forEach(h => tocObserver.observe(h));
+
+        // Reset active state when above first heading
+        const firstHeading = headings[0];
+        if (firstHeading) {
+          window.addEventListener('scroll', () => {
+            if (window.scrollY < firstHeading.offsetTop - 100) {
+              if (currentActiveId !== null) {
+                currentActiveId = null;
+                tocList.querySelectorAll('.toc__link').forEach(link => {
+                  link.classList.remove('is-active');
+                  link.parentElement?.classList.remove('is-active');
+                });
+              }
+            }
+          }, { passive: true });
+        }
+
+        // Show button immediately, hide when past article body
+        tocBtn?.classList.add('is-visible');
+
+        // Compute word count and reading time
+        const bodyText = postBody.textContent || '';
+        const wordCount = bodyText.split(/\s+/).filter(w => w.length > 0).length;
+        const readingMin = Math.max(1, Math.round(wordCount / 250));
+        const wordsEl = document.getElementById('toc-meta-words');
+        const timeEl = document.getElementById('toc-meta-time');
+        if (wordsEl) wordsEl.textContent = wordCount.toLocaleString() + ' words';
+        if (timeEl) timeEl.textContent = readingMin + ' min read';
+
+        if (tocBtn) {
+          const btnBodyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              tocBtn.classList.toggle('is-past', !entry.isIntersecting);
+            });
+          }, { threshold: 0 });
+          btnBodyObserver.observe(postBody);
+        }
+
+        // Sync with header scroll-hide (at narrow widths the header hides on scroll-down)
+        if (headerEl && tocBtn) {
+          const syncObserver = new MutationObserver(() => {
+            tocBtn.classList.toggle('is-header-hidden', headerEl.classList.contains('is-hidden'));
+          });
+          syncObserver.observe(headerEl, { attributes: true, attributeFilter: ['class'] });
+        }
+
+        // Modal open/close
+        function closeToc() {
+          tocModal?.classList.remove('is-open');
+          tocModal?.setAttribute('aria-hidden', 'true');
+          tocModal?.setAttribute('inert', '');
+          tocBtn?.setAttribute('aria-expanded', 'false');
+        }
+
+        function openToc() {
+          tocModal?.classList.add('is-open');
+          tocModal?.setAttribute('aria-hidden', 'false');
+          tocModal?.removeAttribute('inert');
+          tocBtn?.setAttribute('aria-expanded', 'true');
+        }
+
+        tocBtn?.addEventListener('click', () => {
+          if (tocModal?.classList.contains('is-open')) {
+            closeToc();
+          } else {
+            openToc();
+          }
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && tocModal?.classList.contains('is-open')) {
+            closeToc();
+          }
+        });
+      }
+    }
   });
 </script>
 
@@ -623,5 +805,178 @@ const publishedDate = date
 
   .cite-preview__close:hover {
     color: var(--color-accent-text);
+  }
+
+  /* ── Table of Contents ── */
+  .toc {
+    display: none;
+  }
+
+  .toc.toc--active {
+    display: block;
+  }
+
+  /* TOC button — top-right, mirrors logo button top-left */
+  .toc__btn {
+    position: fixed;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+    padding: 0;
+    line-height: 0;
+    z-index: 520;
+    pointer-events: auto;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s;
+  }
+
+  .toc__btn.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .toc__btn.is-past {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+
+  .toc__btn:hover {
+    color: var(--color-accent-text);
+  }
+
+  /* Sync with header scroll-hide at narrow widths */
+  @media (max-width: 900px) {
+    .toc__btn.is-header-hidden {
+      opacity: 0;
+      transform: translateY(-100%);
+      pointer-events: none;
+    }
+  }
+
+  /* Full-screen TOC modal */
+  .toc__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+    z-index: 510;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow: inset 10px 0 0 0 var(--color-accent),
+                inset -10px 0 0 0 var(--color-accent),
+                inset 0 10px 0 0 var(--color-accent),
+                inset 0 -10px 0 0 var(--color-accent);
+  }
+
+  .toc__modal.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .toc__modal-inner {
+    width: 100%;
+    max-width: 520px;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    padding: 0 var(--spacing-md);
+  }
+
+  .toc__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: toc-section;
+  }
+
+  .toc__list :global(.toc__item) {
+    counter-increment: toc-section;
+    transition: border-color 0.2s ease;
+  }
+
+  .toc__list :global(.toc__link) {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    padding: 0.6rem 0;
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .toc__list :global(.toc__item:not(.toc__item--title) .toc__link::before) {
+    content: counter(toc-section, decimal-leading-zero);
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-accent-text);
+    flex-shrink: 0;
+    min-width: 1.4em;
+  }
+
+  .toc__list :global(.toc__item--title) {
+    counter-increment: none;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 10px solid var(--color-accent);
+  }
+
+  .toc__list :global(.toc__item--title .toc__link) {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+  }
+
+  .toc__list :global(.toc__link:hover) {
+    color: var(--color-text);
+  }
+
+  .toc__list :global(.toc__link.is-active) {
+    color: var(--color-accent-text);
+    font-weight: 700;
+  }
+
+  .toc__list :global(.toc__item.is-active .toc__link::before) {
+    color: var(--color-accent-text);
+  }
+
+  /* Metadata footer */
+  .toc__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    border-top: 10px solid var(--color-accent);
+  }
+
+  .toc__meta-item {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--color-text-light);
+  }
+
+  .toc__meta-item:empty {
+    display: none;
   }
 </style>
