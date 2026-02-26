@@ -9,9 +9,9 @@ Someone pulls up the dashboard. The numbers are unambiguously bad, and have been
 
 What happens next is usually wrong.
 
-The instinct, at every level of the organization, is to do something. Immediately. Visibly. The impulse to act is understandable: you're paid to drive results, the results are going the wrong direction, action feels like the appropriate response. The problem is that the wrong action, taken quickly, doesn't just fail to fix the problem. It makes the problem harder to diagnose, and sometimes makes it worse.
+The instinct, at every level of the organization, is to do something. Immediately. Visibly. The impulse to act is understandable: you're paid to drive results, the results are going the wrong direction, action feels like the appropriate response. The problem is that the wrong action, taken quickly, doesn't just fail to fix the problem, it makes the problem harder to diagnose, and sometimes makes it worse.
 
-I've watched this play out more times than I'd like to count, across paid media, organic search, email, and direct channels. The organizations that handled decline well weren't necessarily the ones with better channels or better luck. They were the ones who built the discipline to diagnose before they acted. This guide is about how to do that, at every level of the org.
+I've watched this play out more times than I'd like to count, across a number of channels over the years. The organizations that handled decline well were the ones who built the discipline to diagnose before they acted. This guide is about how to do that, at every level of the org.
 
 <div class="key-points">
 
