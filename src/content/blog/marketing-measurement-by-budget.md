@@ -1,6 +1,6 @@
 ---
 title: "Right-Sizing Marketing Measurement"
-subtitle: "Measurement should match your capacity to act on what it tells you. Data you can't act on isn't an asset — it's noise."
+subtitle: "Measurement should match your capacity to act on what it tells you. Data you can't act on isn't an asset. It's noise."
 date: 2026-02-25
 description: "A framework for thinking about marketing measurement expectations by organizational size and resource availability, from small businesses getting the basics right to enterprises that need will, not direction."
 ---
@@ -10,6 +10,24 @@ There is no shortage of frameworks for marketing measurement. Multi-touch attrib
 The problem I've seen more often than the opposite is companies either measuring nothing meaningful or investing in measurement infrastructure they lack the capacity to act on. Both are waste. A sophisticated attribution model that nobody in the organization has time to interrogate isn't an asset. Neither is a Google Analytics instance that gets opened twice a year to confirm that traffic went up.
 
 What follows is a rough framework for thinking about measurement expectations by organizational size and resource availability. The categories aren't precise, and revenue isn't the only variable that matters (a $30M company with a five-person marketing team is a fundamentally different situation than a $30M company where marketing is one person wearing three hats). But the tiers are a useful approximation.
+
+<div class="key-points">
+
+## Key Points
+
+- **Measurement should match your capacity to act on what it tells you.** Data you can't act on isn't an asset, it's noise. Building measurement infrastructure before you've built the analytical capacity to interpret it produces the worst of both worlds.
+
+- **Small businesses: get the basics right and don't try to do more.** GA4 configured properly, conversion tracking in your ad platforms, and a CRM you're actually keeping clean. If you have those three things, you can answer the questions that matter at this stage.
+
+- **Mid-size companies have the widest gap between what's possible and what they actually do.** The priority is clean, consistent channel-level data tied to actual revenue outcomes. The most common failure mode is performative reporting: decks full of impressions and engagement with no clear line to revenue.
+
+- **Mid-large companies can and should pursue incrementality measurement.** The core question shifts from "which channel gets credit?" to "which channels are driving business that wouldn't have happened otherwise?" Geo-holdout tests and platform lift studies are accessible at this scale without enterprise infrastructure.
+
+- **Enterprise organizations need will, not direction.** They have the resources to address their measurement challenges. The bottleneck is organizational incentives that reward optics over accuracy.
+
+- **Directional accuracy and consistency over time is worth more than sophisticated precision.** A company that tracks the same five metrics cleanly for three years can answer questions about what's working that no amount of expensive tooling will answer if the underlying data is unreliable or the framework keeps changing.
+
+</div>
 
 ## Small Businesses and Early-Stage Companies
 

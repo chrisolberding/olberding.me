@@ -11,6 +11,24 @@ I've spent a fair amount of time thinking about how to conceptualize that relati
 
 Neither of these feels adequate as an operating principle, and the existing frameworks each leave a gap. What follows is an attempt to articulate a more coherent frame: what is this relationship, what does each party actually owe the other, and what does that mean in practice?
 
+<div class="key-points">
+
+## Key Points
+
+- **The employment relationship is transactional. Naming that honestly is productive, not cynical.** It clarifies what both parties are actually committed to, which is the precondition for a functional implicit contract. The manager who obscures this under more comfortable language is in a worse position to honor what the relationship requires.
+
+- **Existing management frameworks each capture something real, but none addresses what the manager owes the individual.** Psychological contract theory is descriptive without being normative. Transformational leadership requires authentic belief most managers don't have. Servant leadership dissolves structural asymmetries. The sports team model says little about what happens after a player leaves the roster.
+
+- **The "family" framing is particularly damaging.** It implies unconditional regard and permanence that employment cannot honestly support, generating confusion about authority and creating emotional weight around departures that shouldn't carry it.
+
+- **Empathetic transactionalism adds a forward-looking obligation.** If a report leaves the organization less marketable than they arrived (skills atrophied, kept in a contracting lane, shielded from developmental work), that is a failure of the exchange on the manager's side. The report gave their time; the manager is obligated to ensure that time was an asset to their professional life going forward.
+
+- **ET is a mental model, not a management system.** It doesn't prescribe techniques. It answers a prior question: what is this relationship, and what does that mean about who I am in it? A clear sense of what you owe someone, and why, tends to outlast any framework.
+
+- **The principle does not depend on inspiration or shared mission.** A manager can operate from empathetic transactionalism in a role they took for practical reasons, in an organizational context they're uncertain about. It depends on honesty and on taking the other person's trajectory seriously as a real obligation.
+
+</div>
+
 ## What the Literature Gets Right, and Where It Falls Short
 
 The academic and practitioner literature on management relationships addresses adjacent questions. Each framework captures something real. None fully addresses the prior question of what the manager owes the individual on the other side of the relationship.
@@ -51,13 +69,13 @@ Across all of these frameworks, what's missing is a clear articulation of what t
 
 Empathetic transactionalism starts from a premise that most management frameworks treat as either obvious or uncomfortable: the employment relationship is transactional. The manager engages the report's time and skill to accomplish organizational objectives, in exchange for compensation and opportunity. Naming this is not cynical. It is honest, and the honesty is productive because it clarifies what both parties are actually committed to, which is the precondition for a functional implicit contract in Rousseau's sense.
 
-The failure to name this honestly is a frequent source of the dysfunction described at the outset. The manager who frames the relationship as familial is not being warm -- they are being inaccurate, and the inaccuracy creates expectations that will eventually be violated by business reality. The manager who acknowledges the transaction while engaging seriously with what it requires of them is in a better position to honor the implicit contract than one who obscures it under more comfortable language.
+The failure to name this honestly is a frequent source of the dysfunction described at the outset. The manager who frames the relationship as familial is not being warm; they are being inaccurate, and the inaccuracy creates expectations that will eventually be violated by business reality. The manager who acknowledges the transaction while engaging seriously with what it requires of them is in a better position to honor the implicit contract than one who obscures it under more comfortable language.
 
 ### The Empathetic Obligation
 
 The empathetic component is not about warmth or friendship, though neither is prohibited. It is about genuinely accounting for the person on the other side of the transaction as someone with a career that extends well beyond the current role, financial pressures, and ambitions that are real and relevant, and a professional trajectory that the manager's decisions will meaningfully affect.
 
-This is not sentimentality. It is an acknowledgment that the thing being exchanged -- someone's professional time during a formative or consequential period of their working life -- has a value that exceeds its market compensation, and that this creates obligations. Specifically: if a report leaves the organization less marketable than they arrived -- if their skills have atrophied, if they have been kept in a contracting lane, if they have been shielded from work that would have developed them -- that is a failure of the exchange on the manager's side, assuming explicit and extraordinary monetary compensation. The report gave their time; the manager is obligated to ensure that time was not simply extracted but was, to whatever degree the organizational context allows, an asset to their professional life going forward.
+This is not sentimentality. It is an acknowledgment that the thing being exchanged, someone's professional time during a formative or consequential period of their working life, has a value that exceeds its market compensation, and that this creates obligations. Specifically: if a report leaves the organization less marketable than they arrived, if their skills have atrophied, if they have been kept in a contracting lane, if they have been shielded from work that would have developed them, that is a failure of the exchange on the manager's side, assuming explicit and extraordinary monetary compensation. The report gave their time; the manager is obligated to ensure that time was not simply extracted but was, to whatever degree the organizational context allows, an asset to their professional life going forward.
 
 ### How ET Differs From Existing Frameworks
 
@@ -71,13 +89,13 @@ I arrived at this through roughly fifteen years of running a digital marketing a
 
 ## ET as a Mental Model, Not a Management System
 
-It is worth being precise about what empathetic transactionalism is and isn't. It is not a framework in the sense that most management frameworks are -- a system of practices to be implemented, a set of behaviors to be adopted, a methodology with steps. Frameworks answer the question of what to do in a given situation. ET answers a prior question: what is this relationship, and what does that mean about who I am in it?
+It is worth being precise about what empathetic transactionalism is and isn't. It is not a framework in the sense that most management frameworks are: a system of practices to be implemented, a set of behaviors to be adopted, a methodology with steps. Frameworks answer the question of what to do in a given situation. ET answers a prior question: what is this relationship, and what does that mean about who I am in it?
 
 That distinction matters because most management dysfunction doesn't originate in a lack of techniques. Managers generally know how to have a difficult conversation or structure a performance review. What they often lack is a coherent conception of the relationship inside which those techniques are being applied, which means the techniques get applied inconsistently, or in service of the wrong ends, or abandoned under pressure when the emotional stakes get high enough.
 
-A mental model for the relationship provides something more durable than a technique. It gives a manager a place to start when a situation doesn't map cleanly onto any framework they've been given -- when a report asks for honesty about their prospects, when a friendship has developed to the point where it's creating obligations the professional relationship can't support, when someone is underperforming and the manager isn't sure whether the failure belongs to them or to the report. Techniques run out. A clear sense of what you owe someone, and why, tends not to.
+A mental model for the relationship provides something more durable than a technique. It gives a manager a place to start when a situation doesn't map cleanly onto any framework they've been given: when a report asks for honesty about their prospects, when a friendship has developed to the point where it's creating obligations the professional relationship can't support, when someone is underperforming and the manager isn't sure whether the failure belongs to them or to the report. Techniques run out. A clear sense of what you owe someone, and why, tends not to.
 
-Empathetic transactionalism, held as a mental model, says something specific about each of those situations without scripting the response to any of them. It says: this person is giving you their time during a consequential period of their professional life, the exchange creates real obligations, and your job is to honor those obligations while being honest about what the relationship is and what it isn't. The specific decisions that follow from that orientation -- how transparent to be, how much latitude to extend, when the exchange has broken down on one side or the other -- require judgment. The mental model is what makes that judgment coherent rather than reactive.
+Empathetic transactionalism, held as a mental model, says something specific about each of those situations without scripting the response to any of them. It says: this person is giving you their time during a consequential period of their professional life, the exchange creates real obligations, and your job is to honor those obligations while being honest about what the relationship is and what it isn't. The specific decisions that follow from that orientation (how transparent to be, how much latitude to extend, when the exchange has broken down on one side or the other) require judgment. The mental model is what makes that judgment coherent rather than reactive.
 
 ## References
 

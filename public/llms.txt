@@ -11,6 +11,7 @@ Chris Olberding has spent nearly two decades at the intersection of brand, techn
 
 ## Blog Posts
 
+- [When It All Goes to Shit](https://olberding.me/blog/when-it-all-goes-to-shit): A practical guide to handling channel decline at every level of the marketing organization, from the IC closest to the data to the CEO who should mostly stay out of the way.
 - [Making the Invisible Visible: A Practical Guide to Media Mix Modeling for Mid-Sized Companies](https://olberding.me/blog/media-mix-modeling): A practical orientation to media mix modeling for mid-sized companies: what it does, when it makes sense, how it interacts with attribution and incrementality testing, and what your options look like for getting started.
 - [Right-Sizing Marketing Measurement](https://olberding.me/blog/marketing-measurement-by-budget): A framework for thinking about marketing measurement expectations by organizational size and resource availability — from small businesses getting the basics right to enterprises that need will, not direction.
 - [Putting GEO Into Context: Lessons for Executives from Early Days of SEO](https://olberding.me/blog/geo-lessons-from-early-seo): Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, opportunistic consulting, and rapid shifts that marked the emerging SEO industry.

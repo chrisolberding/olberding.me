@@ -13,6 +13,26 @@ Media mix modeling is the measurement approach that can break this pattern. It's
 
 This is a practical orientation to what MMM is, when it makes sense to pursue it, the key concepts you need to understand, and what your options look like for getting started.
 
+<div class="key-points">
+
+## Key Points
+
+- **Attribution measures correlation. MMM estimates causation.** A channel that appears in every converting customer's journey can still have low incremental value if those customers would have converted anyway. MMM is the measurement approach designed to make that distinction.
+
+- **Open-source tools have made MMM accessible to mid-sized companies.** Meta's Robyn, Google's Meridian, and PyMC-Marketing have brought media mix modeling within reach of organizations spending $5M–$50M on media, though the software is free and the expertise to use it well is not.
+
+- **No single measurement methodology is sufficient.** Platform attribution is your operational layer, MMM is your strategic layer, and incrementality testing is the calibration that makes both credible. The strongest frameworks use all three and are explicit about where each one's uncertainty lives.
+
+- **Not every company needs MMM.** Below roughly $10 million in media spend, a combination of industry benchmarks on healthy media mix ratios and platform-native lift studies may be sufficient. The practical test is whether the cost of being wrong on budget allocation exceeds the cost of building the measurement capability.
+
+- **Retargeting and bottom-funnel channels routinely overstate their contribution.** Retargeting commonly shows 10:1 ROAS in platform dashboards while incrementality tests put it at 1.5:1 to 2:1. The most valuable analytical asset a marketing organization can build is a set of channel-level translation factors that discount platform ROAS to approximate incremental ROAS.
+
+- **The first model run is a diagnostic, not a deliverable.** Expect 12 to 24 months before MMM produces reliable budget guidance. Overpromising on timeline poisons the well for the entire measurement program.
+
+- **The bottom-funnel pressure problem is rational, not wrong.** Leadership pushing budget toward channels with visible, attributable returns is a reasonable response to an information problem. MMM helps by making the invisible visible, estimating effects from the outcome backward rather than from the click forward.
+
+</div>
+
 ## What MMM Actually Does
 
 At its core, a media mix model is a statistical regression that decomposes your business outcome (revenue, leads, account opens, whatever you're optimizing for) into contributions from marketing activity and everything else. The "everything else" matters: the model has to account for seasonality, macroeconomic conditions, competitor behavior, pricing changes, distribution expansions, and the baseline demand your brand would generate even if you ran no advertising at all. That baseline is often 50-70% of total outcomes,<sup class="cite-ref" data-ref="2" id="ref-2-back"><a href="#ref-2">2</a></sup> which is one of the more humbling things a first model run will tell you.
