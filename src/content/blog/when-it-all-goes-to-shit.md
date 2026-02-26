@@ -1,7 +1,7 @@
 ---
 title: "When It All Goes to Shit"
 subtitle: "Channel decline is not a crisis. It's a diagnostic problem. The organizations that handle it badly are the ones that treat it as an action problem."
-date: 2026-03-25
+date: 2026-02-22
 description: "A practical guide to handling channel decline at every level of the marketing organization, from the IC closest to the data to the CEO who should mostly stay out of the way."
 ---
 

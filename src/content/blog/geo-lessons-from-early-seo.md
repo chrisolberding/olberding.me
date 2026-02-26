@@ -1,7 +1,7 @@
 ---
 title: "Putting GEO Into Context: Lessons for Executives from Early Days of SEO"
 subtitle: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
-date: 2026-02-10
+date: 2026-02-25
 description: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
 ---
 

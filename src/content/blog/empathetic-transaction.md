@@ -1,7 +1,7 @@
 ---
-title: "Empathetic Transactionalism: The Space Between Family and Transaction"
+title: "Empathetic Transactionalism: A Mental Model for the Manager-Report Relationship"
 subtitle: "Employment is a transaction. Acknowledging that honestly is kinder than pretending it's something else."
-date: 2026-02-02
+date: 2026-02-11
 description: "An introduction to empathetic transactionalism: a mental model for the manager/report relationship that is honest about the exchange without treating it as the whole of what the relationship requires."
 ---
 

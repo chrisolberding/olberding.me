@@ -1,7 +1,7 @@
 ---
 title: "Right-Sizing Marketing Measurement"
 subtitle: "Measurement should match your capacity to act on what it tells you. Data you can't act on isn't an asset. It's noise."
-date: 2026-02-25
+date: 2026-02-14
 description: "A framework for thinking about marketing measurement expectations by organizational size and resource availability, from small businesses getting the basics right to enterprises that need will, not direction."
 ---
 
