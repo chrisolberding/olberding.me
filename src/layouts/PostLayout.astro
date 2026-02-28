@@ -130,25 +130,25 @@ const publishedDate = date
 
   <!-- Table of Contents -->
   <nav class="toc" id="toc" aria-label="Table of contents">
-    <button class="toc__pill" id="toc-pill" aria-expanded="false" aria-label="Table of contents">
-      <span class="toc__pill-text" id="toc-pill-text">Contents</span>
-      <svg class="toc__pill-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-        <line x1="2" y1="4" x2="14" y2="4"/>
-        <line x1="2" y1="8" x2="10" y2="8"/>
-        <line x1="2" y1="12" x2="14" y2="12"/>
+    <button class="toc__btn" id="toc-btn" aria-expanded="false" aria-label="Table of contents">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="12" y1="14" x2="32" y2="14"/>
+        <line x1="12" y1="22" x2="26" y2="22"/>
+        <line x1="12" y1="30" x2="32" y2="30"/>
       </svg>
     </button>
 
-    <div class="toc__backdrop" id="toc-backdrop"></div>
-
-    <div class="toc__drawer" id="toc-drawer" aria-hidden="true">
-      <div class="toc__drawer-header">
-        <span class="toc__drawer-title">Contents</span>
-        <button class="toc__drawer-close" id="toc-close" aria-label="Close table of contents">&times;</button>
+    <div class="toc__modal" id="toc-modal" aria-hidden="true" inert>
+      <div class="toc__modal-inner">
+        <ol class="toc__list" id="toc-list">
+          <!-- Populated by JS -->
+        </ol>
+        <div class="toc__meta" id="toc-meta">
+          {publishedDate && <span class="toc__meta-item">Published {publishedDate}</span>}
+          <span class="toc__meta-item" id="toc-meta-words"></span>
+          <span class="toc__meta-item" id="toc-meta-time"></span>
+        </div>
       </div>
-      <ol class="toc__drawer-list" id="toc-list">
-        <!-- Populated by JS -->
-      </ol>
     </div>
   </nav>
 
@@ -245,8 +245,9 @@ const publishedDate = date
     if (tocNav && postBody) {
       const allHeadings = postBody.querySelectorAll('h2, h3') as NodeListOf<HTMLHeadingElement>;
 
-      // Only h2 headings, exclude "References"
+      // Filter out headings inside .key-points and "References" h2
       const headings = Array.from(allHeadings).filter(h => {
+        if (h.closest('.key-points')) return false;
         if (h.tagName !== 'H2') return false;
         if (h.textContent?.trim().toLowerCase() === 'references') return false;
         return true;
