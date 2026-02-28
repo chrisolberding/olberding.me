@@ -33,33 +33,86 @@ I've watched this play out more times than I'd like to count, across a number of
 
 </div>
 
+<figure class="escalation-framework">
+<svg viewBox="0 0 720 665" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A framework showing who does what when a channel declines, from IC/Analyst through CEO, with escalating severity.">
+<text x="30" y="22" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600" letter-spacing="-0.01em">Who Does What When a Channel Declines</text>
+<text x="30" y="40" font-family="Outfit, sans-serif" font-size="8" fill="#999" letter-spacing="0.06em">MATCHING RESPONSE TO ROLE &#8212; AND KNOWING WHEN TO STAY OUT OF THE WAY</text>
+<text x="42" y="87" font-family="Outfit, sans-serif" font-size="9" fill="#bbb" letter-spacing="0.08em" text-anchor="middle" style="text-transform:uppercase">Severity</text>
+<defs><linearGradient id="severityGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8e5e0"/><stop offset="100%" stop-color="#1a1a1a"/></linearGradient></defs>
+<rect x="32" y="101" width="20" height="520" rx="10" fill="url(#severityGrad)" opacity="0.2"/>
+<line x1="42" y1="107" x2="42" y2="615" stroke="#ccc" stroke-width="0.8"/>
+<polygon points="39,615 45,615 42,625" fill="#ccc"/>
+<text x="42" y="643" font-family="Outfit, sans-serif" font-size="8" fill="#bbb" text-anchor="middle" font-style="italic">Escalates down</text>
+<rect x="76" y="101" width="600" height="88" rx="3" fill="#1a1a1a" opacity="0.02"/>
+<line x1="76" y1="189" x2="676" y2="189" stroke="#e8e5e0" stroke-width="1"/>
+<text x="96" y="127" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600">IC / Analyst</text>
+<text x="96" y="144" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Closest to the data</text>
+<text x="310" y="127" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Diagnose first. Is it platform, creative, seasonal,</text>
+<text x="310" y="142" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">or structural? Quantify the impact. Bring context,</text>
+<text x="310" y="157" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">not just the number.</text>
+<rect x="76" y="197" width="600" height="88" rx="3" fill="#1a1a1a" opacity="0.02"/>
+<line x1="76" y1="285" x2="676" y2="285" stroke="#e8e5e0" stroke-width="1"/>
+<text x="96" y="223" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600">Channel Manager</text>
+<text x="96" y="240" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Owns the lever</text>
+<text x="310" y="223" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Validate the diagnosis. Test fixes within your</text>
+<text x="310" y="238" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">authority. Set a timeline for what &#8220;recovery&#8221;</text>
+<text x="310" y="253" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">looks like &#8212; or flag that it won&#8217;t.</text>
+<rect x="76" y="293" width="600" height="88" rx="3" fill="#1a1a1a" opacity="0.02"/>
+<line x1="76" y1="381" x2="676" y2="381" stroke="#e8e5e0" stroke-width="1"/>
+<text x="96" y="319" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600">Director</text>
+<text x="96" y="336" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Cross-channel view</text>
+<text x="310" y="319" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Rebalance budget across channels. Decide</text>
+<text x="310" y="334" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">whether this is a channel problem or a portfolio</text>
+<text x="310" y="349" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">problem. Protect the team from panic above.</text>
+<rect x="76" y="389" width="600" height="88" rx="3" fill="#1a1a1a" opacity="0.02"/>
+<line x1="76" y1="477" x2="676" y2="477" stroke="#e8e5e0" stroke-width="1"/>
+<text x="96" y="415" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600">VP / SVP</text>
+<text x="96" y="432" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Strategy &amp; narrative</text>
+<text x="310" y="415" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Reframe the narrative for the business. Connect</text>
+<text x="310" y="430" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">channel performance to business outcomes. Buy</text>
+<text x="310" y="445" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">your team time and air cover.</text>
+<rect x="76" y="485" width="600" height="88" rx="3" fill="#1a1a1a" opacity="0.02"/>
+<line x1="76" y1="573" x2="676" y2="573" stroke="#e8e5e0" stroke-width="1"/>
+<text x="96" y="511" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600">CMO</text>
+<text x="96" y="528" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Organizational posture</text>
+<text x="310" y="511" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Set the tone. Decide if this changes the plan</text>
+<text x="310" y="526" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">or if the plan absorbs it. Don&#8217;t chase</text>
+<text x="310" y="541" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">tactical fixes &#8212; that&#8217;s what your team is for.</text>
+<rect x="76" y="581" width="600" height="70" rx="3" fill="#1a1a1a" opacity="0.035"/>
+<text x="96" y="607" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600">CEO</text>
+<text x="96" y="624" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Should mostly stay out of it</text>
+<text x="310" y="607" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Ask one good question. Listen to the answer.</text>
+<text x="310" y="622" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Resist the urge to solve it yourself.</text>
+</svg>
+</figure>
+
 ## Before Anyone Does Anything: Know What Type of Decline You're Dealing With
 
-Not all channel decline is the same, and the correct response depends entirely on what's causing it. There are four general categories, and they require different approaches.
+Not all channel decline is the same, and the correct response depends entirely on what's causing it. Difference core causes require different approaches.
 
 ### Platform or algorithm change
 
-The channel's operating environment shifted. Google updated its ranking algorithm. Meta changed its auction dynamics. Apple's privacy changes eroded your targeting precision. The external system moved, and your results moved with it. You didn't do anything wrong. The rules changed.
+The channel's operating environment shifted. Google updated its ranking algorithm. Meta changed its auction dynamics. Apple's privacy changes eroded your targeting precision. The external system moved, and your results moved with it. You didn't do anything wrong. The external environment of the channel changed.
 
 ### Competitive dynamics
 
-Someone else got better, or cheaper, or more aggressive. They're outbidding you on paid terms, producing better content, or simply offering a more compelling product. Competitive dynamics aren't always something that happens to you. Sometimes you created the competitive problem, through a pricing change, a product adjustment, or a repositioning that left your channel performance exposed. If you raised prices last quarter and your conversion rate dropped, that's a competitive dynamics problem, and the solution might be commercial rather than tactical.
+Someone else got better, or cheaper, or more aggressive. They're outbidding you on paid terms, producing better content, or offering a more compelling product. Competitive dynamics aren't always something that happens to you. Sometimes you created the competitive problem, through a pricing change, a product adjustment, or a repositioning that left your channel performance exposed. If you raised prices last quarter and your conversion rate dropped, that's a competitive dynamics problem, and the solution might be commercial and more broadly strategic rather than tactical.
 
 ### Internal execution failure
 
-Budget was cut, creative went stale, a technical issue degraded landing page performance, a team member left and nobody owned what they owned. The channel is fine. The execution is broken.
+Budget was cut, creative went stale, a technical issue degraded landing page performance. The channel is fine, it's the execution that's broken.
 
 ### Genuine demand shift
 
-Customers stopped wanting what you're selling at the rate they used to want it. This is the hardest one to accept and the one most organizations are slowest to name, because it implies the problem is upstream of the channel entirely.
+Customers stopped wanting what you're selling at the rate they used to want it. This is the hardest one to accept and the one most organizations are slowest to name, because it implies the problem is upstream of the channel and may require existential self-evalution.
 
 ### Why the distinction matters
 
-Treating a platform algorithm change like an execution failure wastes months on tactical fixes for a structural problem. Treating an execution failure like a demand shift leads to conversations about product strategy when the real answer is that someone broke a tracking pixel. Before anyone takes any significant action, the first job is to figure out which of these you're actually dealing with.
+Treating a platform algorithm change like an execution failure wastes months on tactical fixes for a structural problem. Treating an execution failure like a demand shift leads to conversations about product strategy when the real answer is that someone adjusted bidding parameters. Before anyone takes any significant action, the first job is to figure out which of these you're actually dealing with.
 
-That diagnosis requires two to four weeks of clean data analysis, depending on the channel and the volume of the decline. It requires someone asking the uncomfortable questions: what else changed around the time performance dropped? What do competitors look like right now? What does the data look like one level upstream of the metric that's falling?
+That diagnosis requires two to four weeks of clean data analysis, depending on the channel and the volume of the decline. It requires someone asking the uncomfortable questions: what else changed around the time performance dropped? What do competitors look like right now? What does the data look  upstream of the metric that's falling?
 
-The rest of this guide assumes you've started that process. Here's how each part of the organization should behave while it's underway, and after.
+Here's how each part of the organization should behave while it's underway, and after.
 
 ## If You're the Individual Contributor
 
@@ -81,7 +134,7 @@ Here's what to do instead:
 
 Your job during a channel decline is not to fix the channel. Your job is to protect the team's ability to diagnose and fix it, which mostly means managing the organizational pressure from above so it doesn't disrupt the work happening below.
 
-The characteristic failure at this level is performing responsiveness. When a senior leader asks "what are we doing about this," the pressure to announce action is real. Announcing changes before there's a diagnosis looks like leadership. It isn't. It's theatrical, and the team knows it.
+The characteristic failure at this level is performative responsiveness. When a senior leader asks "what are we doing about this," the pressure to announce action is real. Announcing changes before there's a diagnosis looks like leadership but It's  theatrical, and the team knows it.
 
 Here's what to do instead:
 

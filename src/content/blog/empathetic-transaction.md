@@ -63,6 +63,49 @@ The gap is that it says relatively little about what the organization owes the p
 
 Across all of these frameworks, what's missing is a clear articulation of what the manager owes the individual when the relational stakes get high enough.
 
+<figure class="et-matrix">
+<svg viewBox="0 0 680 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A two-by-two matrix showing four modes of the manager-report relationship: Neglect, Cold Management, Naive Friendship, and Empathetic Transactionalism.">
+<text x="380" y="24" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600" text-anchor="middle" letter-spacing="-0.01em">Four Modes of the Manager–Report Relationship</text>
+<line x1="100" y1="460" x2="660" y2="460" stroke="#ccc" stroke-width="1"/>
+<line x1="100" y1="460" x2="100" y2="50" stroke="#ccc" stroke-width="1"/>
+<polygon points="660,457 660,463 672,460" fill="#ccc"/>
+<polygon points="97,50 103,50 100,38" fill="#ccc"/>
+<text x="380" y="498" font-family="Outfit, sans-serif" font-size="9.5" fill="#999" text-anchor="middle" letter-spacing="0.1em" style="text-transform:uppercase">TRANSACTIONAL CLARITY</text>
+<text x="135" y="478" font-family="Outfit, sans-serif" font-size="8.5" fill="#bbb">Low</text>
+<text x="630" y="478" font-family="Outfit, sans-serif" font-size="8.5" fill="#bbb">High</text>
+<text x="55" y="255" font-family="Outfit, sans-serif" font-size="9.5" fill="#999" text-anchor="middle" letter-spacing="0.1em" transform="rotate(-90, 55, 255)" style="text-transform:uppercase">RELATIONAL INVESTMENT</text>
+<text x="82" y="442" font-family="Outfit, sans-serif" font-size="8.5" fill="#bbb" text-anchor="end">Low</text>
+<text x="82" y="82" font-family="Outfit, sans-serif" font-size="8.5" fill="#bbb" text-anchor="end">High</text>
+<line x1="380" y1="460" x2="380" y2="55" stroke="#ddd" stroke-width="0.8" stroke-dasharray="4 4"/>
+<line x1="100" y1="255" x2="660" y2="255" stroke="#ddd" stroke-width="0.8" stroke-dasharray="4 4"/>
+<rect x="108" y="263" width="264" height="189" rx="3" fill="#1a1a1a" opacity="0.025"/>
+<text x="240" y="317" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600" text-anchor="middle">Neglect</text>
+<text x="240" y="340" font-family="Outfit, sans-serif" font-size="9.5" fill="#888" text-anchor="middle">No honesty about the exchange.</text>
+<text x="240" y="355" font-family="Outfit, sans-serif" font-size="9.5" fill="#888" text-anchor="middle">No investment in the person.</text>
+<text x="240" y="385" font-family="Outfit, sans-serif" font-size="8.5" fill="#aaa" text-anchor="middle" font-style="italic">"I don&#8217;t really think about</text>
+<text x="240" y="399" font-family="Outfit, sans-serif" font-size="8.5" fill="#aaa" text-anchor="middle" font-style="italic">what they need from me."</text>
+<rect x="388" y="263" width="264" height="189" rx="3" fill="#1a1a1a" opacity="0.025"/>
+<text x="520" y="317" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600" text-anchor="middle">Cold Management</text>
+<text x="520" y="340" font-family="Outfit, sans-serif" font-size="9.5" fill="#888" text-anchor="middle">Clear about expectations.</text>
+<text x="520" y="355" font-family="Outfit, sans-serif" font-size="9.5" fill="#888" text-anchor="middle">Indifferent to the human.</text>
+<text x="520" y="385" font-family="Outfit, sans-serif" font-size="8.5" fill="#aaa" text-anchor="middle" font-style="italic">"You know what the deal is.</text>
+<text x="520" y="399" font-family="Outfit, sans-serif" font-size="8.5" fill="#aaa" text-anchor="middle" font-style="italic">Deliver or don&#8217;t."</text>
+<rect x="108" y="58" width="264" height="189" rx="3" fill="#1a1a1a" opacity="0.025"/>
+<text x="240" y="122" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600" text-anchor="middle">Naive Friendship</text>
+<text x="240" y="145" font-family="Outfit, sans-serif" font-size="9.5" fill="#888" text-anchor="middle">Deeply invested in the person.</text>
+<text x="240" y="160" font-family="Outfit, sans-serif" font-size="9.5" fill="#888" text-anchor="middle">Dishonest about the structure.</text>
+<text x="240" y="190" font-family="Outfit, sans-serif" font-size="8.5" fill="#aaa" text-anchor="middle" font-style="italic">"We&#8217;re a family here."</text>
+<rect x="388" y="58" width="264" height="189" rx="3" style="fill: var(--color-accent)" opacity="0.18"/>
+<rect x="388" y="58" width="264" height="189" rx="3" fill="none" style="stroke: var(--color-accent)" stroke-width="1.5" opacity="0.7"/>
+<text x="520" y="112" font-family="Literata, Georgia, serif" font-size="16" style="fill: var(--color-accent-text)" font-weight="700" text-anchor="middle">Empathetic</text>
+<text x="520" y="132" font-family="Literata, Georgia, serif" font-size="16" style="fill: var(--color-accent-text)" font-weight="700" text-anchor="middle">Transactionalism</text>
+<text x="520" y="158" font-family="Outfit, sans-serif" font-size="9.5" style="fill: var(--color-accent-text)" text-anchor="middle">Honest about the exchange.</text>
+<text x="520" y="173" font-family="Outfit, sans-serif" font-size="9.5" style="fill: var(--color-accent-text)" text-anchor="middle">Genuinely invested in the person.</text>
+<text x="520" y="203" font-family="Outfit, sans-serif" font-size="8.5" style="fill: var(--color-accent-text)" text-anchor="middle" font-style="italic" opacity="0.7">"This is a job. You matter</text>
+<text x="520" y="217" font-family="Outfit, sans-serif" font-size="8.5" style="fill: var(--color-accent-text)" text-anchor="middle" font-style="italic" opacity="0.7">to me anyway."</text>
+</svg>
+</figure>
+
 ## Empathetic Transactionalism: The Operating Principle
 
 ### The Transactional Foundation
@@ -86,6 +129,81 @@ It resembles psychological contract theory in its focus on implicit expectations
 It differs from transformational leadership in that it does not require authentic belief in a shared mission; a manager can operate from empathetic transactionalism in an organizational context they are uncertain about, in a role they took for practical rather than visionary reasons. The principle does not depend on inspiration. It depends on honesty and on taking the other person's trajectory seriously as a real obligation.
 
 I arrived at this through roughly fifteen years of running a digital marketing agency, making most of the predictable mistakes in sequence. Early on, like most managers without a clear mental model of what I was doing, I imported startup culture's conception of the employment relationship: we are building something together, this is a shared project, you are getting in at the ground floor. I believed this when I said it. What I had not examined was whether it was honest, whether the implicit contract I was creating could actually be honored, and what I owed the people who took me at my word. The answer to that last question took longer to arrive at than it should have.
+
+<figure class="et-framework-comparison">
+<svg viewBox="0 0 900 490" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A comparison table showing where four common management frameworks land on the transactional clarity and relational investment axes.">
+<text x="30" y="20" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600" letter-spacing="-0.01em">Where Common Frameworks Land</text>
+<text x="50" y="48" font-family="Outfit, sans-serif" font-size="9" fill="#bbb" letter-spacing="0.08em" style="text-transform:uppercase">Framework</text>
+<text x="338" y="48" font-family="Outfit, sans-serif" font-size="9" fill="#bbb" letter-spacing="0.08em" style="text-transform:uppercase">Typical Landing Zone</text>
+<text x="540" y="48" font-family="Outfit, sans-serif" font-size="9" fill="#bbb" letter-spacing="0.08em" style="text-transform:uppercase">What It Gets Right / Misses</text>
+<line x1="30" y1="58" x2="870" y2="58" stroke="#ddd" stroke-width="1"/>
+<rect x="30" y="66" width="840" height="100" rx="2" fill="#1a1a1a" opacity="0.015"/>
+<text x="50" y="96" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600">Transactional</text>
+<text x="50" y="114" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600">Leadership</text>
+<text x="50" y="134" font-family="Outfit, sans-serif" font-size="9" fill="#aaa" font-style="italic">Burns, 1978</text>
+<rect x="247" y="82" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="283" y="82" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="247" y="110" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="283" y="110" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.12"/>
+<circle cx="301" cy="124" r="3" fill="#1a1a1a" opacity="0.55"/>
+<text x="338" y="100" font-family="Outfit, sans-serif" font-size="10" fill="#888" font-weight="500">Cold Management</text>
+<text x="338" y="118" font-family="Outfit, sans-serif" font-size="9.5" fill="#aaa">High clarity. Low investment.</text>
+<text x="540" y="92" font-family="Outfit, sans-serif" font-size="10" fill="#555">Honest about the deal. People know</text>
+<text x="540" y="107" font-family="Outfit, sans-serif" font-size="10" fill="#555">where they stand.</text>
+<text x="540" y="130" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" font-style="italic">Treats people as interchangeable.</text>
+<text x="540" y="145" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" font-style="italic">No loyalty survives the first dip.</text>
+<line x1="30" y1="166" x2="870" y2="166" stroke="#e8e5e0" stroke-width="1"/>
+<rect x="30" y="174" width="840" height="100" rx="2" fill="#1a1a1a" opacity="0.015"/>
+<text x="50" y="204" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600">Transformational</text>
+<text x="50" y="222" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600">Leadership</text>
+<text x="50" y="242" font-family="Outfit, sans-serif" font-size="9" fill="#aaa" font-style="italic">Bass, 1985</text>
+<rect x="247" y="190" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.12"/>
+<rect x="283" y="190" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="247" y="218" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="283" y="218" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<circle cx="265" cy="204" r="3" fill="#1a1a1a" opacity="0.55"/>
+<text x="338" y="208" font-family="Outfit, sans-serif" font-size="10" fill="#888" font-weight="500">Naive Friendship</text>
+<text x="338" y="226" font-family="Outfit, sans-serif" font-size="9.5" fill="#aaa">High investment. Low clarity.</text>
+<text x="540" y="200" font-family="Outfit, sans-serif" font-size="10" fill="#555">Genuinely develops people. Builds</text>
+<text x="540" y="215" font-family="Outfit, sans-serif" font-size="10" fill="#555">meaning and shared purpose.</text>
+<text x="540" y="238" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" font-style="italic">Vision can obscure the exchange.</text>
+<text x="540" y="253" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" font-style="italic">&#8220;Shared mission&#8221; makes cuts feel like betrayal.</text>
+<line x1="30" y1="274" x2="870" y2="274" stroke="#e8e5e0" stroke-width="1"/>
+<rect x="30" y="282" width="840" height="100" rx="2" fill="#1a1a1a" opacity="0.015"/>
+<text x="50" y="312" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600">Sports Team</text>
+<text x="50" y="336" font-family="Outfit, sans-serif" font-size="9" fill="#aaa" font-style="italic">Hastings / Netflix, 2009</text>
+<rect x="247" y="298" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="283" y="298" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.12"/>
+<rect x="247" y="326" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="283" y="326" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<circle cx="301" cy="312" r="3" fill="#1a1a1a" opacity="0.55"/>
+<text x="338" y="310" font-family="Outfit, sans-serif" font-size="10" fill="#888" font-weight="500">Near ET, but colder</text>
+<text x="338" y="328" font-family="Outfit, sans-serif" font-size="9.5" fill="#aaa">High clarity. Instrumental investment.</text>
+<text x="540" y="304" font-family="Outfit, sans-serif" font-size="10" fill="#555">Closest existing metaphor to ET.</text>
+<text x="540" y="319" font-family="Outfit, sans-serif" font-size="10" fill="#555">Everyone knows the terms.</text>
+<text x="540" y="342" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" font-style="italic">Investment is purely instrumental.</text>
+<text x="540" y="357" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" font-style="italic">The moment you&#8217;re not useful, you&#8217;re cut.</text>
+<line x1="30" y1="382" x2="870" y2="382" stroke="#e8e5e0" stroke-width="1"/>
+<rect x="30" y="390" width="840" height="100" rx="2" fill="#1a1a1a" opacity="0.015"/>
+<text x="50" y="420" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600">Servant</text>
+<text x="50" y="438" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600">Leadership</text>
+<text x="50" y="458" font-family="Outfit, sans-serif" font-size="9" fill="#aaa" font-style="italic">Greenleaf, 1970</text>
+<rect x="247" y="406" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.12"/>
+<rect x="283" y="406" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="247" y="434" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<rect x="283" y="434" width="36" height="28" rx="1.5" fill="#1a1a1a" opacity="0.04"/>
+<circle cx="278" cy="420" r="3" fill="#1a1a1a" opacity="0.55"/>
+<line x1="271" y1="420" x2="256" y2="420" stroke="#1a1a1a" stroke-width="0.8" opacity="0.25"/>
+<polygon points="256,418 256,422 252,420" fill="#1a1a1a" opacity="0.25"/>
+<text x="338" y="414" font-family="Outfit, sans-serif" font-size="10" fill="#888" font-weight="500">Straddles the line</text>
+<text x="338" y="432" font-family="Outfit, sans-serif" font-size="9.5" fill="#aaa">Highest relational investment.</text>
+<text x="338" y="448" font-family="Outfit, sans-serif" font-size="9.5" fill="#aaa">Drifts left under pressure.</text>
+<text x="540" y="410" font-family="Outfit, sans-serif" font-size="10" fill="#555">At its best, lands at ET. The leader</text>
+<text x="540" y="425" font-family="Outfit, sans-serif" font-size="10" fill="#555">genuinely serves and stays honest.</text>
+<text x="540" y="448" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" font-style="italic">&#8220;I&#8217;m here to serve you&#8221; becomes a way</text>
+<text x="540" y="463" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" font-style="italic">to avoid &#8220;here&#8217;s what I need from you.&#8221;</text>
+</svg>
+</figure>
 
 ## ET as a Mental Model, Not a Management System
 
