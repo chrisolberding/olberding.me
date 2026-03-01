@@ -36,7 +36,7 @@ I've watched this play out more times than I'd like to count, across a number of
 <figure class="escalation-framework">
 <svg viewBox="0 0 720 665" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A framework showing who does what when a channel declines, from IC/Analyst through CEO, with escalating severity.">
 <text x="30" y="22" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600" letter-spacing="-0.01em">Who Does What When a Channel Declines</text>
-<text x="30" y="40" font-family="Outfit, sans-serif" font-size="8" fill="#999" letter-spacing="0.06em">MATCHING RESPONSE TO ROLE &#8212; AND KNOWING WHEN TO STAY OUT OF THE WAY</text>
+<text x="30" y="40" font-family="Outfit, sans-serif" font-size="8" fill="#999" letter-spacing="0.06em">MATCHING RESPONSE TO ROLE, AND KNOWING WHEN TO STAY OUT OF THE WAY</text>
 <text x="42" y="87" font-family="Outfit, sans-serif" font-size="9" fill="#bbb" letter-spacing="0.08em" text-anchor="middle" style="text-transform:uppercase">Severity</text>
 <defs><linearGradient id="severityGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8e5e0"/><stop offset="100%" stop-color="#1a1a1a"/></linearGradient></defs>
 <rect x="32" y="101" width="20" height="520" rx="10" fill="url(#severityGrad)" opacity="0.2"/>
@@ -56,7 +56,7 @@ I've watched this play out more times than I'd like to count, across a number of
 <text x="96" y="240" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Owns the lever</text>
 <text x="310" y="223" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Validate the diagnosis. Test fixes within your</text>
 <text x="310" y="238" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">authority. Set a timeline for what &#8220;recovery&#8221;</text>
-<text x="310" y="253" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">looks like &#8212; or flag that it won&#8217;t.</text>
+<text x="310" y="253" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">looks like, or flag that it won&#8217;t.</text>
 <rect x="76" y="293" width="600" height="88" rx="3" fill="#1a1a1a" opacity="0.02"/>
 <line x1="76" y1="381" x2="676" y2="381" stroke="#e8e5e0" stroke-width="1"/>
 <text x="96" y="319" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600">Director</text>
@@ -77,7 +77,7 @@ I've watched this play out more times than I'd like to count, across a number of
 <text x="96" y="528" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Organizational posture</text>
 <text x="310" y="511" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Set the tone. Decide if this changes the plan</text>
 <text x="310" y="526" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">or if the plan absorbs it. Don&#8217;t chase</text>
-<text x="310" y="541" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">tactical fixes &#8212; that&#8217;s what your team is for.</text>
+<text x="310" y="541" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">tactical fixes. That&#8217;s what your team is for.</text>
 <rect x="76" y="581" width="600" height="70" rx="3" fill="#1a1a1a" opacity="0.035"/>
 <text x="96" y="607" font-family="Literata, Georgia, serif" font-size="16" fill="#1a1a1a" font-weight="600">CEO</text>
 <text x="96" y="624" font-family="Outfit, sans-serif" font-size="9.5" fill="#999">Should mostly stay out of it</text>

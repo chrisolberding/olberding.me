@@ -227,6 +227,7 @@ const { variant = 'page' } = Astro.props;
   .contact-modal.is-open {
     opacity: 1;
     pointer-events: auto;
+    z-index: 270;
   }
 
   .contact-modal__close {
@@ -467,15 +468,21 @@ const { variant = 'page' } = Astro.props;
     const contactStatus = document.getElementById('contact-status');
 
     function openContact() {
-      // Close nav if open
-      if (nav?.classList.contains('is-open')) {
-        nav.classList.remove('is-open');
-        nav.setAttribute('aria-hidden', 'true');
-        nav.setAttribute('inert', '');
-      }
+      const navWasOpen = nav?.classList.contains('is-open');
       contactModal?.classList.add('is-open');
       contactModal?.setAttribute('aria-hidden', 'false');
       contactModal?.removeAttribute('inert');
+      // Close nav after contact modal has faded in (no flash)
+      if (navWasOpen && nav) {
+        contactModal?.addEventListener('transitionend', () => {
+          nav.style.transition = 'none';
+          nav.classList.remove('is-open');
+          nav.setAttribute('aria-hidden', 'true');
+          nav.setAttribute('inert', '');
+          nav.offsetHeight;
+          nav.style.transition = '';
+        }, { once: true });
+      }
     }
 
     function closeContact() {

@@ -34,6 +34,7 @@ const drafts = allPosts.filter(p => p.data.draft);
             description={post.data.description}
             href={`/blog/${post.id}`}
             date={post.data.date}
+            cardImage={post.data.cardImage}
           />
         ))}
       </section>

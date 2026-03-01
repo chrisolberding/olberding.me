@@ -42,7 +42,6 @@ const ogImageURL = new URL(ogImage, Astro.site || 'https://olberding.me').href;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
 
-    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ClientRouter />
     <script is:inline>

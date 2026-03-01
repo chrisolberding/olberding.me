@@ -3,6 +3,7 @@ title: "Putting GEO Into Context: Lessons for Executives from Early Days of SEO"
 subtitle: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
 date: 2026-02-25
 description: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
+cardImage: ../../assets/blog/geo-timeline.png
 ---
 
 I recently consulted with a company whose prior total annual expenditure on SEO, including software subscriptions, was under $10k - well under 1% of their marketing budget. I was asked to help evaluate GEO vendors that the executives spoke with at a conference and to determine what other partners they should look at. The budget was 25x of that previous SEO budget.
