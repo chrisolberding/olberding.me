@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 750" width="750" height="750">
+  <rect width="750" height="750" fill="#faf8f0"/>
+  <!-- Logo mark, large and centered -->
+  <g transform="translate(225, 225) scale(2.5)">
+    <path d="M75.7 103.2 A 46 46 0 0 0 75.7 16.8" stroke="#f3ec50" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M75.7 16.8 A 46 46 0 1 0 75.7 103.2" stroke="#1a1a1a" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <circle cx="60" cy="60" r="22" stroke="#1a1a1a" stroke-width="7" fill="none"/>
+  </g>
+</svg>

@@ -41,7 +41,7 @@ What follows is a rough framework for thinking about measurement expectations by
 <text x="56" y="123" font-family="Literata, Georgia, serif" font-size="15.5" fill="#1a1a1a" font-weight="600">Small</text>
 <text x="56" y="140" font-family="Outfit, sans-serif" font-size="10" fill="#999">&lt; $500K / yr</text>
 <text x="56" y="155" font-family="Outfit, sans-serif" font-size="9" fill="#bbb">1&#8211;3 people</text>
-<rect x="56" y="169" width="60" height="4" rx="2" style="fill: var(--color-accent)" opacity="0.3"/>
+<rect x="56" y="169" width="40" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
 <text x="200" y="123" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Clean UTM discipline across everything.</text>
 <text x="200" y="140" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">GA4 configured properly &#8212; goals, not vanity.</text>
 <text x="200" y="157" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Know your CPL and CAC by channel.</text>
@@ -55,7 +55,7 @@ What follows is a rough framework for thinking about measurement expectations by
 <text x="56" y="236" font-family="Literata, Georgia, serif" font-size="15.5" fill="#1a1a1a" font-weight="600">Mid-Market</text>
 <text x="56" y="253" font-family="Outfit, sans-serif" font-size="10" fill="#999">$500K&#8211;$5M / yr</text>
 <text x="56" y="268" font-family="Outfit, sans-serif" font-size="9" fill="#bbb">5&#8211;15 people</text>
-<rect x="56" y="282" width="100" height="4" rx="2" style="fill: var(--color-accent)" opacity="0.3"/>
+<rect x="56" y="282" width="65" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
 <text x="200" y="236" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Everything above, plus:</text>
 <text x="200" y="253" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Platform-native attribution (not gospel).</text>
 <text x="200" y="270" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Basic holdout or geo-lift tests on top channels.</text>
@@ -69,7 +69,7 @@ What follows is a rough framework for thinking about measurement expectations by
 <text x="56" y="349" font-family="Literata, Georgia, serif" font-size="15.5" fill="#1a1a1a" font-weight="600">Large</text>
 <text x="56" y="366" font-family="Outfit, sans-serif" font-size="10" fill="#999">$5M&#8211;$50M / yr</text>
 <text x="56" y="381" font-family="Outfit, sans-serif" font-size="9" fill="#bbb">15&#8211;50 people</text>
-<rect x="56" y="395" width="140" height="4" rx="2" style="fill: var(--color-accent)" opacity="0.3"/>
+<rect x="56" y="395" width="90" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
 <text x="200" y="349" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Everything above, plus:</text>
 <text x="200" y="366" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">MMM running quarterly or faster.</text>
 <text x="200" y="383" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Incrementality testing as ongoing program.</text>
@@ -83,7 +83,7 @@ What follows is a rough framework for thinking about measurement expectations by
 <text x="56" y="462" font-family="Literata, Georgia, serif" font-size="15.5" fill="#1a1a1a" font-weight="600">Enterprise</text>
 <text x="56" y="479" font-family="Outfit, sans-serif" font-size="10" fill="#999">$50M+ / yr</text>
 <text x="56" y="494" font-family="Outfit, sans-serif" font-size="9" fill="#bbb">50+ people</text>
-<rect x="56" y="508" width="170" height="4" rx="2" style="fill: var(--color-accent)" opacity="0.4"/>
+<rect x="56" y="508" width="115" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.45"/>
 <text x="200" y="462" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">You have the resources. The question</text>
 <text x="200" y="479" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">is organizational will, not direction.</text>
 <text x="200" y="496" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Full triangulation. Unified data layer.</text>

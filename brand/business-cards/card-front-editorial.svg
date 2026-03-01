@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 750" width="750" height="750">
+  <rect width="750" height="750" fill="#faf8f0"/>
+  <!-- Accent top border -->
+  <rect x="0" y="0" width="750" height="8" fill="#f3ec50"/>
+  <!-- Logo mark, top right -->
+  <g transform="translate(575, 55) scale(1.2)">
+    <path d="M75.7 103.2 A 46 46 0 0 0 75.7 16.8" stroke="#f3ec50" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M75.7 16.8 A 46 46 0 1 0 75.7 103.2" stroke="#1a1a1a" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <circle cx="60" cy="60" r="22" stroke="#1a1a1a" stroke-width="7" fill="none"/>
+  </g>
+  <!-- Name -->
+  <text x="80" y="340" font-family="Literata, Georgia, serif" font-size="42" font-weight="600" fill="#1a1a1a" letter-spacing="-0.02em">Christopher</text>
+  <text x="80" y="395" font-family="Literata, Georgia, serif" font-size="42" font-weight="600" fill="#1a1a1a" letter-spacing="-0.02em">Olberding</text>
+  <!-- Accent bar -->
+  <rect x="80" y="420" width="50" height="3" rx="1.5" fill="#f3ec50"/>
+  <!-- Role -->
+  <text x="80" y="460" font-family="Outfit, sans-serif" font-size="15" font-weight="400" fill="#999" letter-spacing="0.02em">Marketing &amp; Technology Leader</text>
+  <!-- URL -->
+  <text x="80" y="490" font-family="Outfit, sans-serif" font-size="13" font-weight="400" fill="#bbb" letter-spacing="0.04em">olberding.me</text>
+  <!-- Accent bottom border -->
+  <rect x="0" y="742" width="750" height="8" fill="#f3ec50"/>
+</svg>

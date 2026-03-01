@@ -31,7 +31,9 @@ So what can we apply from those early days of SEO to what we're seeing in the em
 
 - **None of this is an argument that AI-driven discovery doesn't matter.** It does today and will matter more over time. But many companies investing heavily in GEO-specific efforts will be disappointed by the results they're able to show for it.
 
-- **The best GEO strategy is the SEO, content, and brand strategy you should have already been executing.** Focus on the fundamentals that many organizations have been underinvesting in that have value across search, LLM discovery, and brand simultaneously. Keep GEO and SEO efforts unified in tooling and teams, avoid vendor lock-in, and keep GEO-specific investment and expectations modest until the landscape stabilizes.
+- **The best GEO strategy is the SEO, content, brand, reputation, and PR strategy you should have already been executing.** Reputation and PR are where the gap is largest for most companies — they've always mattered but were easy to deprioritize, and LLM discovery makes them harder to ignore. Focus on the fundamentals that have value across search, LLM discovery, and brand simultaneously. Keep GEO and SEO efforts unified in tooling and teams, avoid vendor lock-in, and keep GEO-specific investment and expectations modest until the landscape stabilizes.
+
+- **If executive excitement about AI is what finally unlocks budget for this work, take the win.** Many of these investments — content, PR, reputation management — should have been funded years ago. If GEO is the catalyst, use it. Just make sure expectations are anchored to the broad value of the work rather than to GEO-specific outcomes that can't yet be measured.
 
 </div>
 
@@ -42,6 +44,83 @@ Many, if not most, practitioners in web and digital marketing of this era were s
 By the early-to-mid 2000s, most companies had a website but many did little else in the way of digital marketing. Unlike paid media, where the majority of the spend went to the platform, SEO budgets could be captured almost entirely as revenue by a consultant or small agency. The target market was "every business with a website", capabilities among entrenched agencies was minimal, and the barrier to entry was low. While there was a movement full of high ideals pushing to professionalize web development and design, the digital marketing space was more pragmatic and cutthroat - if it worked it worked. It was a gold rush and many of the systemic factors that were in place then, we're seeing today with GEO.
 
 The early SEO market and the emerging GEO market share structural conditions that, historically, have led to vendor overselling and buyer regret. We'll look at the similarities here, then at where the two markets diverge and what that means for business leaders and practitioners.
+
+<figure class="geo-timeline">
+<svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A timeline showing twenty-five years of SEO milestones alongside the emergence of GEO.">
+<text x="30" y="22" font-family="Literata, Georgia, serif" font-size="17" fill="#1a1a1a" font-weight="600" letter-spacing="-0.01em">Twenty-Five Years of SEO&#8230; and Year Two of GEO</text>
+<text x="30" y="44" font-family="Outfit, sans-serif" font-size="10" fill="#999" letter-spacing="0.06em">THE ARC THAT TOOK SEO DECADES TO TRAVEL, GEO IS BEING ASKED TO RUN IN MONTHS</text>
+<rect x="30" y="68" width="190" height="299" fill="#1a1a1a" opacity="0.015" rx="2"/>
+<rect x="220" y="68" width="170" height="299" fill="#1a1a1a" opacity="0.028" rx="2"/>
+<rect x="390" y="68" width="200" height="299" fill="#1a1a1a" opacity="0.015" rx="2"/>
+<rect x="590" y="68" width="140" height="299" fill="#1a1a1a" opacity="0.028" rx="2"/>
+<rect x="730" y="68" width="120" height="299" style="fill: var(--color-accent)" opacity="0.06" rx="2"/>
+<text x="125" y="87" font-family="Outfit, sans-serif" font-size="10" fill="#999" text-anchor="middle" letter-spacing="0.08em" style="text-transform:uppercase">The Wild West</text>
+<text x="305" y="87" font-family="Outfit, sans-serif" font-size="10" fill="#999" text-anchor="middle" letter-spacing="0.08em" style="text-transform:uppercase">The Reckoning</text>
+<text x="490" y="87" font-family="Outfit, sans-serif" font-size="10" fill="#999" text-anchor="middle" letter-spacing="0.08em" style="text-transform:uppercase">Intent &amp; Quality</text>
+<text x="660" y="87" font-family="Outfit, sans-serif" font-size="10" fill="#999" text-anchor="middle" letter-spacing="0.08em" style="text-transform:uppercase">AI in Search</text>
+<text x="790" y="87" font-family="Outfit, sans-serif" font-size="10" text-anchor="middle" letter-spacing="0.08em" font-weight="600" style="fill: var(--color-accent-text); text-transform:uppercase">GEO Emerges</text>
+<text x="125" y="110" font-family="Literata, Georgia, serif" font-size="12.5" fill="#888" text-anchor="middle" font-style="italic">Keyword stuffing</text>
+<text x="125" y="125" font-family="Literata, Georgia, serif" font-size="12.5" fill="#888" text-anchor="middle" font-style="italic">&amp; link farms</text>
+<text x="305" y="110" font-family="Literata, Georgia, serif" font-size="12.5" fill="#888" text-anchor="middle" font-style="italic">Content quality</text>
+<text x="305" y="125" font-family="Literata, Georgia, serif" font-size="12.5" fill="#888" text-anchor="middle" font-style="italic">&amp; link integrity</text>
+<text x="490" y="110" font-family="Literata, Georgia, serif" font-size="12.5" fill="#888" text-anchor="middle" font-style="italic">Semantic search,</text>
+<text x="490" y="125" font-family="Literata, Georgia, serif" font-size="12.5" fill="#888" text-anchor="middle" font-style="italic">E-E-A-T, NLP</text>
+<text x="660" y="110" font-family="Literata, Georgia, serif" font-size="12.5" fill="#888" text-anchor="middle" font-style="italic">AI Overviews,</text>
+<text x="660" y="125" font-family="Literata, Georgia, serif" font-size="12.5" fill="#888" text-anchor="middle" font-style="italic">answer engines</text>
+<text x="790" y="110" font-family="Literata, Georgia, serif" font-size="12.5" style="fill: var(--color-accent-text)" text-anchor="middle" font-style="italic">Optimize for</text>
+<text x="790" y="125" font-family="Literata, Georgia, serif" font-size="12.5" style="fill: var(--color-accent-text)" text-anchor="middle" font-style="italic">LLM citation</text>
+<line x1="30" y1="330" x2="850" y2="330" stroke="#ddd" stroke-width="1"/>
+<text x="125" y="352" font-family="Outfit, sans-serif" font-size="10" fill="#bbb" text-anchor="middle">1997&#8211;2003</text>
+<text x="305" y="352" font-family="Outfit, sans-serif" font-size="10" fill="#bbb" text-anchor="middle">2003&#8211;2013</text>
+<text x="490" y="352" font-family="Outfit, sans-serif" font-size="10" fill="#bbb" text-anchor="middle">2013&#8211;2022</text>
+<text x="660" y="352" font-family="Outfit, sans-serif" font-size="10" fill="#bbb" text-anchor="middle">2022&#8211;2025</text>
+<text x="790" y="352" font-family="Outfit, sans-serif" font-size="10" text-anchor="middle" font-weight="500" style="fill: var(--color-accent-text)">2025&#8211;present</text>
+<circle cx="80" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="80" y1="326" x2="80" y2="289" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="80" y="282" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">&#8220;SEO&#8221; coined</text>
+<circle cx="140" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="140" y1="326" x2="140" y2="227" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="140" y="205" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">Google + PageRank</text>
+<text x="140" y="220" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">Yahoo adopts Google</text>
+<circle cx="220" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="220" y1="326" x2="220" y2="287" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="220" y="265" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">Florida Update</text>
+<text x="220" y="280" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">First major crackdown</text>
+<circle cx="280" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="280" y1="326" x2="280" y2="222" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="280" y="200" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">Panda</text>
+<text x="280" y="215" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">Penalizes thin content</text>
+<circle cx="340" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="340" y1="326" x2="340" y2="262" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="340" y="240" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">Penguin</text>
+<text x="340" y="255" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">Penalizes link spam</text>
+<circle cx="390" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="390" y1="326" x2="390" y2="197" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="390" y="175" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">Hummingbird</text>
+<text x="390" y="190" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">Semantic search / intent</text>
+<circle cx="455" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="455" y1="326" x2="455" y2="257" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="455" y="235" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">RankBrain</text>
+<text x="455" y="250" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">ML enters ranking</text>
+<circle cx="530" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="530" y1="326" x2="530" y2="222" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="530" y="200" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">BERT</text>
+<text x="530" y="215" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">NLP / context</text>
+<circle cx="590" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="590" y1="326" x2="590" y2="267" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="590" y="245" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">Helpful Content</text>
+<text x="590" y="260" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">E-E-A-T codified</text>
+<circle cx="660" cy="330" r="4" fill="#1a1a1a" opacity="0.5"/>
+<line x1="660" y1="326" x2="660" y2="197" stroke="#1a1a1a" stroke-width="0.6" opacity="0.2"/>
+<text x="660" y="175" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">AI Overviews</text>
+<text x="660" y="190" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">1.5B monthly users</text>
+<circle cx="730" cy="330" r="4" style="fill: var(--color-accent-text)" opacity="0.5"/>
+<line x1="730" y1="326" x2="730" y2="262" style="stroke: var(--color-accent-text)" stroke-width="0.6" opacity="0.25"/>
+<text x="730" y="227" font-family="Outfit, sans-serif" font-size="11" style="fill: var(--color-accent-text)" text-anchor="middle" font-weight="600">GEO takes hold</text>
+<text x="730" y="242" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">Agencies, conferences,</text>
+<text x="730" y="255" font-family="Outfit, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">certifications appear</text>
+</svg>
+</figure>
 
 ### Rapidly Changing Environment
 
@@ -101,13 +180,44 @@ However, it was limited to offsite work that generated backlinks. Referring site
 
 The SEO industry's gradual professionalization wasn't inevitable. It happened because specific structural conditions pushed practitioners toward better work and made the worst tactics unsustainable. Those conditions don't exist in the GEO market, and most of them show no clear path to emerging.
 
+<figure class="geo-ai-search">
+<svg viewBox="0 0 760 295" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of Google search volume versus all AI search platforms, showing AI search represents roughly 0.15 percent of global traffic.">
+<text x="30" y="24" font-family="Literata, Georgia, serif" font-size="19" fill="#1a1a1a" font-weight="600" letter-spacing="-0.01em">But how big is AI search, actually?</text>
+<text x="30" y="46" font-family="Outfit, sans-serif" font-size="11" fill="#999" letter-spacing="0.06em">THE DATA EXECUTIVES SHOULD SEE BEFORE WRITING THE CHECK</text>
+<rect x="30" y="68" width="700" height="38" rx="3" fill="#1a1a1a" opacity="0.06"/>
+<rect x="30" y="68" width="175" height="38" rx="3 0 0 3" fill="#1a1a1a" opacity="0.04"/>
+<text x="44" y="93" font-family="Outfit, sans-serif" font-size="15" fill="#1a1a1a" font-weight="500">Google</text>
+<text x="190" y="93" font-family="Outfit, sans-serif" font-size="14" fill="#888">~8.5B queries/day. ~25% now include AI Overviews.</text>
+<text x="718" y="93" font-family="Outfit, sans-serif" font-size="13" fill="#aaa" text-anchor="end">89.6% of search market</text>
+<rect x="30" y="112" width="29" height="38" rx="3" style="fill: var(--color-accent)" opacity="0.2"/>
+<text x="44" y="137" font-family="Outfit, sans-serif" font-size="15" style="fill: var(--color-accent-text)" font-weight="500">All AI</text>
+<text x="190" y="137" font-family="Outfit, sans-serif" font-size="14" style="fill: var(--color-accent-text)">~233M visits/day (ChatGPT, Perplexity, Gemini, etc.)</text>
+<text x="718" y="137" font-family="Outfit, sans-serif" font-size="13" fill="#aaa" text-anchor="end">~0.15% of global traffic</text>
+<line x1="30" y1="168" x2="730" y2="168" stroke="#e8e5e0" stroke-width="0.5"/>
+<rect x="30" y="185" width="222" height="100" rx="3" fill="#1a1a1a" opacity="0.02"/>
+<text x="141" y="222" font-family="Literata, Georgia, serif" font-size="38" style="fill: var(--color-accent-text)" text-anchor="middle" font-weight="600">7&#215;</text>
+<text x="141" y="246" font-family="Outfit, sans-serif" font-size="14" fill="#888" text-anchor="middle">AI traffic growth, YoY</text>
+<text x="141" y="265" font-family="Outfit, sans-serif" font-size="12" fill="#aaa" text-anchor="middle">0.02% &#8594; 0.15% of global traffic</text>
+<rect x="267" y="185" width="222" height="100" rx="3" fill="#1a1a1a" opacity="0.02"/>
+<text x="373" y="218" font-family="Literata, Georgia, serif" font-size="38" style="fill: var(--color-accent-text)" text-anchor="middle" font-weight="600">5&#215;</text><text x="397" y="204" font-family="Literata, Georgia, serif" font-size="20" style="fill: var(--color-accent-text)" font-weight="600">*</text>
+<text x="378" y="242" font-family="Outfit, sans-serif" font-size="14" fill="#888" text-anchor="middle">Higher conversion rate</text>
+<text x="378" y="261" font-family="Outfit, sans-serif" font-size="12" fill="#aaa" text-anchor="middle">AI traffic: 14.2% vs Google: 2.8%</text>
+<text x="378" y="278" font-family="Outfit, sans-serif" font-size="10" fill="#bbb" text-anchor="middle" font-style="italic">*Single source; treat as directional</text>
+<rect x="504" y="185" width="222" height="100" rx="3" fill="#1a1a1a" opacity="0.02"/>
+<text x="615" y="222" font-family="Literata, Georgia, serif" font-size="38" style="fill: var(--color-accent-text)" text-anchor="middle" font-weight="600">24&#215;</text>
+<text x="615" y="246" font-family="Outfit, sans-serif" font-size="14" fill="#888" text-anchor="middle">Gap still remaining</text>
+<text x="615" y="265" font-family="Outfit, sans-serif" font-size="12" fill="#aaa" text-anchor="middle">Daily search vs. daily AI visits</text>
+</svg>
+<p class="chart-sources" style="font-family: Outfit, sans-serif; font-size: 0.78rem; color: #aaa; text-align: center; margin: 0.75rem 0 0;">Sources: <a href="https://seranking.com/blog/ai-traffic-research-study/" style="color: #aaa;">SE Ranking</a> (2025), <a href="https://www.semrush.com/blog/semrush-ai-overviews-study/" style="color: #aaa;">Semrush</a> (2025), <a href="https://blog.bloola.com/digital-change/the-shifting-landscape-of-information-retrieval" style="color: #aaa;">Bloola</a> (2025), <a href="https://exposureninja.com/blog/ai-search-statistics/" style="color: #aaa;">Exposure Ninja</a> (2026), <a href="https://onelittleweb.com/data-studies/ai-chatbots-vs-search-engines/" style="color: #aaa;">OneLittleWeb</a> (2025)<sup class="cite-ref" data-ref="8" id="ref-8-back" style="vertical-align: baseline; font-size: 0.85em;"><a href="#ref-8">8</a></sup></p>
+</figure>
+
 ### No Dominant Platform
 
-Google's near-monopoly meant the entire SEO industry was reverse-engineering one system. Practitioners converged on shared knowledge because they were all working against the same algorithm, and when Google changed the rules, the whole industry felt it at once. GEO has no equivalent. ChatGPT, Gemini, Perplexity, Claude, and Copilot each have different architectures, different retrieval methods, and different update cycles. Expertise fragments across platforms rather than consolidating, and what works on one may be irrelevant on another.<sup class="cite-ref" data-ref="8" id="ref-8-back"><a href="#ref-8">8</a></sup>
+Google's near-monopoly meant the entire SEO industry was reverse-engineering one system. Practitioners converged on shared knowledge because they were all working against the same algorithm, and when Google changed the rules, the whole industry felt it at once. GEO has no equivalent. ChatGPT, Gemini, Perplexity, Claude, and Copilot each have different architectures, different retrieval methods, and different update cycles. Expertise fragments across platforms rather than consolidating, and what works on one may be irrelevant on another.<sup class="cite-ref" data-ref="9" id="ref-9-back"><a href="#ref-9">9</a></sup>
 
 ### No Incentive to Communicate
 
-Google needed a better web to make Search work, so it told practitioners how to build for it. LLM providers have no comparable incentive to help brands optimize for AI responses, and in some cases have active disincentives. Telling brands how the sausage is made invites the same kind of gaming that plagued early search, and LLM companies have watched that movie already. What they are doing is signing paid licensing deals with major publishers. OpenAI alone has struck deals with News Corp ($250+ million over five years), Condé Nast, the Financial Times, Axel Springer, Vox Media, the Atlantic, and dozens of others. But they've published zero webmaster-style guidance for the average brand.<sup class="cite-ref" data-ref="9" id="ref-9-back"><a href="#ref-9">9</a></sup> The result is a two-tier system: paid partners get preferential placement and attribution, everyone else is guessing.
+Google needed a better web to make Search work, so it told practitioners how to build for it. LLM providers have no comparable incentive to help brands optimize for AI responses, and in some cases have active disincentives. Telling brands how the sausage is made invites the same kind of gaming that plagued early search, and LLM companies have watched that movie already. What they are doing is signing paid licensing deals with major publishers. OpenAI alone has struck deals with News Corp ($250+ million over five years), Condé Nast, the Financial Times, Axel Springer, Vox Media, the Atlantic, and dozens of others. But they've published zero webmaster-style guidance for the average brand.<sup class="cite-ref" data-ref="10" id="ref-10-back"><a href="#ref-10">10</a></sup> The result is a two-tier system: paid partners get preferential placement and attribution, everyone else is guessing.
 
 ### The Work Is Messier
 
@@ -115,7 +225,7 @@ The core of SEO (site architecture, content, metadata, link building) could be s
 
 ### No Attribution Path
 
-SEO had the click. Imperfect, sure, but a click from a search result to your site is a measurable event you can connect to downstream behavior. You can track it in Search Console, connect it to session behavior in analytics, and tie it to downstream conversions. When an LLM mentions your brand in a response, there may be no click, no referral, no traceable event at all. This isn't just theoretical. ChatGPT's click-through rate is approximately 96% lower than Google's — Google sends 190 times more traffic to websites despite ChatGPT processing roughly 12% of Google's search-equivalent query volume.<sup class="cite-ref" data-ref="10" id="ref-10-back"><a href="#ref-10">10</a></sup> There is some evidence that the AI traffic that does arrive converts well — one study found LLM-referred visitors convert at 4.4x the rate of organic search visitors — but that finding only underscores the measurement problem: the high-value traffic you can track is a fraction of the AI-influenced decisions you can't.<sup class="cite-ref" data-ref="11" id="ref-11-back"><a href="#ref-11">11</a></sup> The user might visit your site later, but the causal link between the AI mention and the visit is, at best, correlational. The GEO vendor community is largely hand-waving past this with proprietary dashboards that create the appearance of measurability without the substance.
+SEO had the click. Imperfect, sure, but a click from a search result to your site is a measurable event you can connect to downstream behavior. You can track it in Search Console, connect it to session behavior in analytics, and tie it to downstream conversions. When an LLM mentions your brand in a response, there may be no click, no referral, no traceable event at all. This isn't just theoretical. ChatGPT's click-through rate is approximately 96% lower than Google's — Google sends 190 times more traffic to websites despite ChatGPT processing roughly 12% of Google's search-equivalent query volume.<sup class="cite-ref" data-ref="11" id="ref-11-back"><a href="#ref-11">11</a></sup> There is some evidence that the AI traffic that does arrive converts well — one study found LLM-referred visitors convert at 4.4x the rate of organic search visitors — but that finding only underscores the measurement problem: the high-value traffic you can track is a fraction of the AI-influenced decisions you can't.<sup class="cite-ref" data-ref="12" id="ref-12-back"><a href="#ref-12">12</a></sup> The user might visit your site later, but the causal link between the AI mention and the visit is, at best, correlational. The GEO vendor community is largely hand-waving past this with proprietary dashboards that create the appearance of measurability without the substance.
 
 ### No Clear Mechanism for Self-Correction
 
@@ -135,7 +245,7 @@ Search and LLM discovery are not likely to end up as separate disciplines, and y
 
 ### 3. Do the Fundamentals You've Been Skipping
 
-If GEO has you motivated to invest, good. You probably weren't doing things you should have been doing anyway. Focus on the core: getting the best, most accurate information about your company in as many relevant places, in front of as many potential customers as possible. Structured data, consistent business information, quality content that answers real questions, active review management, real digital PR. This work has value across search, LLM discovery, and brand simultaneously, and it doesn't become worthless if any single platform changes its approach.
+If GEO has you motivated to invest, good. You probably weren't doing things you should have been doing anyway. If executive excitement about AI is what finally unlocks budget for content, PR, and reputation management that should have been funded years ago, that's a genuine win — just make sure the expectations attached to that budget are anchored to the broad value of the work rather than to GEO-specific outcomes nobody can measure yet. Focus on the core: getting the best, most accurate information about your company in as many relevant places, in front of as many potential customers as possible. Structured data, consistent business information, quality content that answers real questions, active review management, real digital PR. This work has value across search, LLM discovery, and brand simultaneously, and it doesn't become worthless if any single platform changes its approach.
 
 ### 4. Use GEO Tools for Prioritization, Not Strategy
 
@@ -143,7 +253,7 @@ Part of the challenge with online PR, citation management, and referral building
 
 ### 5. Focus on Users and Value, Not Optimization Trends
 
-Don't chase theories about chunking, formatting, or stylistic tricks that might influence how an LLM parses your content. The vast majority of businesses wouldn't be able to take advantage of short-term trends even if they were real, and they'll change before the ink dries on your implementation plan. This advice isn't new and it isn't specific to GEO: make something of genuine value to the people you want to work with. That has been the most durable strategy through every cycle of SEO evolution of at least the last decade, and there's no reason to believe it won't hold here too.<sup class="cite-ref" data-ref="12" id="ref-12-back"><a href="#ref-12">12</a></sup>
+Don't chase theories about chunking, formatting, or stylistic tricks that might influence how an LLM parses your content. The vast majority of businesses wouldn't be able to take advantage of short-term trends even if they were real, and they'll change before the ink dries on your implementation plan. This advice isn't new and it isn't specific to GEO: make something of genuine value to the people you want to work with. That has been the most durable strategy through every cycle of SEO evolution of at least the last decade, and there's no reason to believe it won't hold here too.<sup class="cite-ref" data-ref="13" id="ref-13-back"><a href="#ref-13">13</a></sup>
 
 ## References
 
@@ -155,9 +265,10 @@ Don't chase theories about chunking, formatting, or stylistic tricks that might 
   <li id="ref-5">Similarweb, "2025 Gen AI Report," December 2025; <a href="https://www.conductor.com/academy/aeo-geo-benchmarks-report/">Conductor, "2026 AEO/GEO Benchmarks Report,"</a> November 2025. AI referral visits reached 1.1 billion in June 2025 (357% year-over-year growth), yet still represent approximately 1% of total website traffic across major industries. <a href="#ref-5-back" class="cite-back" aria-label="Back to reference 5">↩</a></li>
   <li id="ref-6"><a href="https://www.conductor.com/academy/aeo-geo-benchmarks-report/">Conductor,</a> November 2025; <a href="https://www.qwairy.co/blog/provider-citation-behavior-q3-2025">Qwairy, "Provider Citation Behavior Q3 2025,"</a> December 2025. ChatGPT drives 87.4% of all AI referral traffic, but citation patterns vary dramatically by platform — Perplexity averages 21.87 citations per response while ChatGPT averages 7.92, and the two platforms draw from almost entirely different source pools. <a href="#ref-6-back" class="cite-back" aria-label="Back to reference 6">↩</a></li>
   <li id="ref-7"><a href="https://news.adobe.com/news/2025/11/adobe-to-acquire-semrush">Adobe press release,</a> November 19, 2025; <a href="https://techcrunch.com/2025/11/19/adobe-to-buy-semrush-for-1-9-billion/">TechCrunch,</a> November 19, 2025. Adobe acquired SEMRush for $1.9 billion, explicitly framing GEO as a capability extension of existing SEO infrastructure rather than a separate category. <a href="#ref-7-back" class="cite-back" aria-label="Back to reference 7">↩</a></li>
-  <li id="ref-8">SE Ranking, August 2025 (via <a href="https://www.position.digital/blog/ai-seo-statistics/">Position.digital</a>). Google's own AI Mode has only 10.7% URL overlap with AI Overviews — meaning even products from the same company cite different sources. <a href="#ref-8-back" class="cite-back" aria-label="Back to reference 8">↩</a></li>
-  <li id="ref-9"><a href="https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/">Digiday, "2024 in Review: A Timeline of Major Deals Between Publishers and AI Companies";</a> Reuters (News Corp/OpenAI deal), May 2024. OpenAI has struck deals with News Corp ($250M+ over five years), Condé Nast, the Financial Times, Axel Springer, Vox Media, the Atlantic, and dozens of others — while publishing zero optimization guidance for brands. <a href="#ref-9-back" class="cite-back" aria-label="Back to reference 9">↩</a></li>
-  <li id="ref-10"><a href="https://ahrefs.com/blog/chatgpt-has-12-percent-of-googles-search-volume/">Ahrefs (Patrick Stox),</a> February 2026. ChatGPT's click-through rate is approximately 96% lower than Google's — Google sends 190 times more traffic to websites despite ChatGPT processing roughly 12% of Google's search-equivalent query volume. <a href="#ref-10-back" class="cite-back" aria-label="Back to reference 10">↩</a></li>
-  <li id="ref-11">SEMRush, July 2025; Seer Interactive, June 2025 (via <a href="https://www.position.digital/blog/ai-seo-statistics/">Position.digital</a>). LLM-referred visitors convert at 4.4x the rate of organic search visitors — ChatGPT referrals show 15.9% conversion rates, Perplexity 10.5%, vs. Google organic at 1.76%. <a href="#ref-11-back" class="cite-back" aria-label="Back to reference 11">↩</a></li>
-  <li id="ref-12"><a href="https://ibrandlabs.com/2025/12/17/why-seo-fundamentals-still-matter-in-2026-what-google-really-said-in-zurich/">iBrandLabs,</a> December 17, 2025. Google's John Mueller at Google Search Live in Zurich (December 2025): "AI systems rely on search. There is no such thing as GEO or AEO without doing SEO fundamentals." <a href="#ref-12-back" class="cite-back" aria-label="Back to reference 12">↩</a></li>
+  <li id="ref-8">Chart data compiled from multiple sources. <strong>Google&#8217;s ~8.5B queries/day</strong> is the lower end of the widely cited 8.5&#8211;13.7B range (<a href="https://blog.bloola.com/digital-change/the-shifting-landscape-of-information-retrieval">Bloola,</a> August 2025), extrapolated from Google&#8217;s own disclosures. <strong>89.6% market share</strong> from <a href="https://seranking.com/blog/top-search-engines/">SE Ranking &#8220;Top Search Engines&#8221; report</a> (July 2025) and <a href="https://www.contentgrip.com/google-search-market-share-decline/">ContentGrip</a> (December 2025); StatCounter data shows Google dipping below 90% in late 2024. <strong>~233M AI visits/day</strong> from <a href="https://onelittleweb.com/data-studies/ai-chatbots-vs-search-engines/">OneLittleWeb, &#8220;AI Chatbots vs Search Engines: 24-Month Study,&#8221;</a> September 2025, covering ChatGPT, Perplexity, Gemini, DeepSeek, Claude, and others combined. <strong>0.15% of global traffic</strong> and <strong>7&#215; YoY growth</strong> from <a href="https://seranking.com/blog/ai-traffic-research-study/">SE Ranking AI Traffic Research Study,</a> September 2025. <strong>5&#215; higher conversion rate</strong> (14.2% vs 2.8%) from <a href="https://exposureninja.com/blog/ai-search-statistics/">Exposure Ninja, &#8220;AI Search Statistics for 2026,&#8221;</a> January 2026 &#8212; this is the least confident figure; conversion rate claims vary by methodology, definition of &#8220;conversion,&#8221; and may be inflated by high-intent early adopters. <strong>24&#215; gap</strong> derived from OneLittleWeb: &#8220;search engines reached 5.5 billion [daily], while chatbots only saw 233.1 million&#8221; &#8212; note this compares all search engines (not just Google) to all chatbots. <strong>~25% of Google searches include AI Overviews</strong> &#8212; this number varies significantly by source and methodology. <a href="https://www.semrush.com/blog/semrush-ai-overviews-study/">Semrush</a> (10M+ keywords, January&#8211;November 2025) found AI Overviews peaked at ~25% of SERPs in July 2025, then pulled back to ~16% by November. <a href="https://www.conductor.com/academy/aeo-geo-benchmarks-report/">Conductor</a> (21.9M queries, early 2026) reported 25%. <a href="https://exposureninja.com/blog/ai-search-statistics/">Exposure Ninja</a> (January 2026) cited 18% of global Google searches. Google&#8217;s own claim (via <a href="https://marketech-apac.com/the-rules-of-search-have-changed-ai-visibility-takes-centre-stage/">Marketech APAC,</a> February 2026) is ~50% of all search results, and <a href="https://firstpagesage.com/reports/google-click-through-rates-ctrs-by-ranking-position/">First Page Sage</a> (November 2025) estimated 60% in the US. The wide variance reflects differences in keyword sets, geographies, and measurement windows. We use ~25% as a reasonable midpoint of independent studies. <a href="#ref-8-back" class="cite-back" aria-label="Back to reference 8">↩</a></li>
+  <li id="ref-9">SE Ranking, August 2025 (via <a href="https://www.position.digital/blog/ai-seo-statistics/">Position.digital</a>). Google's own AI Mode has only 10.7% URL overlap with AI Overviews — meaning even products from the same company cite different sources. <a href="#ref-9-back" class="cite-back" aria-label="Back to reference 9">↩</a></li>
+  <li id="ref-10"><a href="https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/">Digiday, "2024 in Review: A Timeline of Major Deals Between Publishers and AI Companies";</a> Reuters (News Corp/OpenAI deal), May 2024. OpenAI has struck deals with News Corp ($250M+ over five years), Condé Nast, the Financial Times, Axel Springer, Vox Media, the Atlantic, and dozens of others — while publishing zero optimization guidance for brands. <a href="#ref-10-back" class="cite-back" aria-label="Back to reference 10">↩</a></li>
+  <li id="ref-11"><a href="https://ahrefs.com/blog/chatgpt-has-12-percent-of-googles-search-volume/">Ahrefs (Patrick Stox),</a> February 2026. ChatGPT's click-through rate is approximately 96% lower than Google's — Google sends 190 times more traffic to websites despite ChatGPT processing roughly 12% of Google's search-equivalent query volume. <a href="#ref-11-back" class="cite-back" aria-label="Back to reference 11">↩</a></li>
+  <li id="ref-12">SEMRush, July 2025; Seer Interactive, June 2025 (via <a href="https://www.position.digital/blog/ai-seo-statistics/">Position.digital</a>). LLM-referred visitors convert at 4.4x the rate of organic search visitors — ChatGPT referrals show 15.9% conversion rates, Perplexity 10.5%, vs. Google organic at 1.76%. <a href="#ref-12-back" class="cite-back" aria-label="Back to reference 12">↩</a></li>
+  <li id="ref-13"><a href="https://ibrandlabs.com/2025/12/17/why-seo-fundamentals-still-matter-in-2026-what-google-really-said-in-zurich/">iBrandLabs,</a> December 17, 2025. Google's John Mueller at Google Search Live in Zurich (December 2025): "AI systems rely on search. There is no such thing as GEO or AEO without doing SEO fundamentals." <a href="#ref-13-back" class="cite-back" aria-label="Back to reference 13">↩</a></li>
 </ol>

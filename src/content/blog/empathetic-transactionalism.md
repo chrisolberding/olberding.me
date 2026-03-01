@@ -15,7 +15,7 @@ Neither of these feels adequate as an operating principle, and the existing fram
 
 ## Key Points
 
-- **The employment relationship is transactional. Naming that honestly is productive, not cynical.** It clarifies what both parties are actually committed to, which is the precondition for a functional implicit contract. The manager who obscures this under more comfortable language is in a worse position to honor what the relationship requires.
+- **The employment relationship is transactional, and naming that honestly is the starting point for a functional one.** It clarifies what both parties are actually committed to, which is the precondition for a functional implicit contract. The manager who obscures this under more comfortable language is in a worse position to honor what the relationship requires.
 
 - **Existing management frameworks each capture something real, but none addresses what the manager owes the individual.** Psychological contract theory is descriptive without being normative. Transformational leadership requires authentic belief most managers don't have. Servant leadership dissolves structural asymmetries. The sports team model says little about what happens after a player leaves the roster.
 
