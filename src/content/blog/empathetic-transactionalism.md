@@ -1,7 +1,7 @@
 ---
 title: "Empathetic Transactionalism: A Mental Model for the Manager-Report Relationship"
 subtitle: "Employment is a transaction. Acknowledging that honestly is kinder than pretending it's something else."
-date: 2026-02-11
+date: 2025-12-30
 description: "An introduction to empathetic transactionalism: a mental model for the manager/report relationship that is honest about the exchange without treating it as the whole of what the relationship requires."
 ---
 
@@ -9,7 +9,7 @@ The employment relationship is one of the more unusual arrangements in modern li
 
 I've spent a fair amount of time thinking about how to conceptualize that relationship. Treat it as purely transactional and you get a relationship that is honest about the exchange but tends to be narrow and cold. Treat it as something closer to a friendship or a shared project and you get warmth in the short term and confusion when the structural realities of employment eventually assert themselves, which they tend to do.
 
-Neither of these feels adequate as an operating principle, and the existing frameworks each leave a gap. What follows is an attempt to articulate a more coherent frame: what is this relationship, what does each party actually owe the other, and what does that mean in practice?
+Neither of these feels adequate as an operating principle, and the existing frameworks each leaves a gap. What follows is an attempt to articulate a more coherent frame: what is this relationship, what does each party actually owe the other, and what does that mean in practice?
 
 <div class="key-points">
 
@@ -118,7 +118,7 @@ The failure to name this honestly is a frequent source of the dysfunction descri
 
 The empathetic component is not about warmth or friendship, though neither is prohibited. It is about genuinely accounting for the person on the other side of the transaction as someone with a career that extends well beyond the current role, financial pressures, and ambitions that are real and relevant, and a professional trajectory that the manager's decisions will meaningfully affect.
 
-This is not sentimentality. It is an acknowledgment that the thing being exchanged, someone's professional time during a formative or consequential period of their working life, has a value that exceeds its market compensation, and that this creates obligations. Specifically: if a report leaves the organization less marketable than they arrived, if their skills have atrophied, if they have been kept in a contracting lane, if they have been shielded from work that would have developed them, that is a failure of the exchange on the manager's side, assuming explicit and extraordinary monetary compensation. The report gave their time; the manager is obligated to ensure that time was not simply extracted but was, to whatever degree the organizational context allows, an asset to their professional life going forward.
+The stakes are real: someone's professional time during a formative or consequential period of their working life, has a value that exceeds its market compensation, and that this creates obligations. Specifically: if a report leaves the organization less marketable than they arrived, if their skills have atrophied, if they have been kept in a contracting lane, if they have been shielded from work that would have developed them, that is a failure of the exchange on the manager's side, assuming explicit and extraordinary monetary compensation. The report gave their time; the manager is obligated to ensure that time was not simply extracted but was, to whatever degree the organizational context allows, an asset to their professional life going forward.
 
 ### How ET Differs From Existing Frameworks
 

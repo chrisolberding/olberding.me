@@ -1,7 +1,7 @@
 ---
 title: "Triangulating Truth: A Model for Marketing Measurement"
 subtitle: "No single measurement methodology tells the truth. But three of them together get close."
-date: 2026-01-22
+date: 2025-11-07
 description: "Click attribution is just one signal, and not a reliable one on its own. A practical model for combining attribution, incrementality testing, and qualitative inputs to get closer to the truth about what's actually working."
 draft: true
 ---

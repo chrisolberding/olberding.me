@@ -1,11 +1,11 @@
 ---
 title: "Right-Sizing Marketing Measurement"
 subtitle: "Measurement should match your capacity to act on what it tells you. Data you can't act on isn't an asset. It's noise."
-date: 2026-02-14
+date: 2026-01-08
 description: "A framework for thinking about marketing measurement expectations by organizational size and resource availability, from small businesses getting the basics right to enterprises that need will, not direction."
 ---
 
-There is no shortage of frameworks for marketing measurement. Multi-touch attribution models, media mix modeling, incrementality testing, unified data warehouses feeding real-time dashboards: the literature and the vendor pitches will have you believing that serious marketers are running all of it simultaneously. Some are. Most aren't, and the ones who aren't are often making a perfectly rational decision given their actual resources and business context.
+The full marketing measurement stack, as described in conference talks and vendor pitches, includes multi-touch attribution, media mix modeling, incrementality testing, and unified data warehouses feeding real-time dashboards. Some organizations run all of it simultaneously. Most don't, and the ones who don't are often making a perfectly rational decision given their actual resources and business context. The problem I've seen more often than under-measurement is the opposite: companies investing in measurement infrastructure they lack the capacity to act on.
 
 The problem I've seen more often than the opposite is companies either measuring nothing meaningful or investing in measurement infrastructure they lack the capacity to act on. Both are waste. A sophisticated attribution model that nobody in the organization has time to interrogate isn't an asset. Neither is a Google Analytics instance that gets opened twice a year to confirm that traffic went up.
 
@@ -131,7 +131,17 @@ The investment priority shift at this level is from "getting the data right" to 
 
 ## Enterprise
 
-Enterprise marketing organizations have their own measurement challenges (cross-functional alignment, legacy data infrastructure, organizational incentives that reward optics over accuracy), but they have the resources to address them if they choose to. They don't need a framework from a blog post. They need will, not direction.
+Enterprise marketing organizations have the resources to address their measurement challenges. The reason most don't isn't budget or tooling. It's that the organizational dynamics that emerge at scale work against measurement accuracy in specific, predictable ways:
+
+**Incentives diverge from accuracy.** At mid-size, the person running the channel is usually the person reporting on it, and leadership is close enough to see through bad numbers. At enterprise scale, the person presenting results to the SVP is three layers removed from the data, every channel team has a budget to defend, and the incentive to present favorable numbers compounds through each layer of removal. The Beer Belly Organization's epistemic defense (the performance of data-driven culture replacing actual data-driven culture) is a measurement problem before it's a management one.
+
+**Cross-channel cannibalization becomes invisible.** When five people run eight channels, everyone roughly knows what everyone else is doing. When forty people run fifteen channels across business units, paid search is claiming conversions that brand TV created, retargeting is taking credit for organic intent, and nobody has the cross-functional visibility to see it. The measurement infrastructure that was sufficient at mid-size actively misleads at scale because the interactions between channels are where the real story lives.
+
+**The data infrastructure problem inverts.** At mid-size, the challenge is not having enough data. At enterprise, the challenge is too much data in too many systems that don't reconcile. Three different sources of truth for the same conversion event is common, and reconciling them becomes a full-time job before anyone has asked a strategic question.
+
+**Testing becomes politically difficult.** A geo-holdout test that suppresses paid social in four markets is a straightforward experiment at $10M in spend. At $80M, that test has a VP whose bonus is tied to those markets, a regional sales team that will blame the experiment for any quarterly shortfall, and a CFO asking why you're deliberately leaving revenue on the table. The measurement capability exists. The organizational willingness to run clean experiments erodes as the financial and political stakes get larger.
+
+Enterprise organizations don't need a framework from a blog post. They need will, not direction.
 
 ## The Common Thread
 

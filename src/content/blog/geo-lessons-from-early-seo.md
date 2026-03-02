@@ -1,14 +1,14 @@
 ---
 title: "Putting GEO Into Context: Lessons for Executives from Early Days of SEO"
 subtitle: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
-date: 2026-02-25
+date: 2026-02-10
 description: Before investing heavily in Generative Engine Optimization, we should learn from the uncertainty, unproven methodologies, and rapid shifts that marked the emerging SEO industry.
 cardImage: ../../assets/blog/geo-timeline.png
 ---
 
 I recently consulted with a company whose prior total annual expenditure on SEO, including software subscriptions, was under $10k - well under 1% of their marketing budget. I was asked to help evaluate GEO vendors that the executives spoke with at a conference and to determine what other partners they should look at. The budget was 25x of that previous SEO budget.
 
-I asked for context - what were their goals and expectations, why now, and what conversations they had with those vendors. Then I met with the GEO-specific vendors - analytics platforms and consultants - and I got a familiar feeling that I'd experienced this before. Heavy on time pressure, proprietary metrics, and implicit promises. Light on specifics and thin answers to critical questions. I was reminded of the SEO industry from the 2000s. Maybe with a little more polish that comes with VCO money.
+I asked for context - what were their goals and expectations, why now, and what conversations they had with those vendors. Then I met with the GEO-specific vendors - analytics platforms and consultants - and I got a familiar feeling that I'd experienced this before. Heavy on time pressure, proprietary metrics, and implicit promises. Light on specifics and thin answers to critical questions. I was reminded of the SEO industry from the 2000s. Maybe with a little more polish that comes with VC money.
 
 The SEO space in those years, mid to late 2000s, was the wild west. Information asymmetry between sellers and buyers reigned, metrics were easily gamed, and the delay between contract signature and results means that companies were out a good bit of cash before they realized that they made a mistake. To some extent, the SEO space would clean itself up (again, somewhat), shifting from directory submissions and keyword stuffing to link building to content marketing to authority building. However, the grifters made money, companies wasted time (and said money), and there is still somewhat of a gray cloud over it today.
 
@@ -18,7 +18,7 @@ So what can we apply from those early days of SEO to what we're seeing in the em
 
 ## Key Points
 
-- **Companies that weren't investing significantly in SEO are opening their checkbooks for GEO.** The FOMO is real, executives are being bombarded from every angle with urgency about AI-driven discovery, often by the same wave of consultants and vendors has materialized overnight to meet that anxiety with expensive solutions.<sup class="cite-ref" data-ref="1" id="ref-1-back"><a href="#ref-1">1</a></sup>
+- **Companies that weren't investing significantly in SEO are opening their checkbooks for GEO.** The FOMO is real, executives are being bombarded from every angle with urgency about AI-driven discovery, often by the same wave of consultants and vendors that has materialized overnight to meet that anxiety with expensive solutions.<sup class="cite-ref" data-ref="1" id="ref-1-back"><a href="#ref-1">1</a></sup>
 
 - **There are parallels to the early days of SEO** - proprietary and opaque metrics that don't cleanly connect to business value, vendors selling urgency over evidence, and a buyer market that lacks the baseline knowledge to evaluate what's being sold.
 

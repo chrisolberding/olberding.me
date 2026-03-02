@@ -1,7 +1,7 @@
 ---
 title: "The Beer-Belly Organization"
 subtitle: "It starts at the top with a failure to give the organization a real direction. Everything else follows from there."
-date: 2026-02-07
+date: 2025-12-19
 description: "How organizations develop a shape that substitutes activity for direction, why the dysfunction is self-protecting, and what it actually takes to change."
 ---
 
@@ -43,7 +43,7 @@ In both cases, the signal that reaches middle management is the same: the direct
 
 ## The Substitution Cascade
 
-When an organization lacks a real north star, it does not simply drift. It develops substitution behaviors. Activity substitutes for direction. Motion substitutes for progress. Process substitutes for judgment. This is not stupidity. It is adaptation.
+When an organization lacks a real north star, it does not simply drift at random. It develops substitution behaviors. Activity substitutes for direction. Motion substitutes for progress. Process substitutes for judgment. It's an adaptation to external stimulus or, rather, a lack thereof. 
 
 Middle managers in a beer-belly organization are not, as a rule, lazy or malicious. They are rational actors responding to an incentive structure that has been quietly deformed by the absence of real strategic accountability. If you cannot be evaluated on outcomes you cannot connect to strategy, you will be evaluated on something else, and the something else that is most visible and most defensible is activity. Meetings, frameworks, initiatives, roadmaps, cross-functional working groups. All of it is theater, but it is theater that looks and feels, from inside the organization, like work.
 
@@ -67,7 +67,7 @@ This matters for more than the obvious reason. The obvious reason is that you ca
 
 I want to be direct about this, because there is a genre of management advice that suggests that sufficiently motivated middle managers can change organizational culture from within. My experience is that this is largely wishful thinking in a beer-belly organization. The defensive architecture is not a collection of individual bad decisions. It is a system that has equilibrated around the absence of real accountability, and individuals within it who attempt to introduce accountability tend to be treated as problems rather than solutions.
 
-This is not a counsel of despair. It is a practical observation about where the leverage actually is. The beer-belly organization can only change from the top, because that is where the original failure is located.
+Which leaves leverage. The beer-belly organization can only change from the top, because that is where the original failure is located.
 
 ## What Changing It Actually Requires
 

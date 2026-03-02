@@ -1,7 +1,7 @@
 ---
 title: "When It All Goes to Shit"
 subtitle: "Channel decline is not a crisis. It's a diagnostic problem. The organizations that handle it badly are the ones that treat it as an action problem."
-date: 2026-02-22
+date: 2026-01-29
 description: "A practical guide to handling channel decline at every level of the marketing organization, from the IC closest to the data to the CEO who should mostly stay out of the way."
 ---
 
@@ -88,7 +88,7 @@ I've watched this play out more times than I'd like to count, across a number of
 
 ## Before Anyone Does Anything: Know What Type of Decline You're Dealing With
 
-Not all channel decline is the same, and the correct response depends entirely on what's causing it. Difference core causes require different approaches.
+Not all channel decline is the same, and the correct response depends entirely on what's causing it. Different core causes require different approaches.
 
 ### Platform or algorithm change
 
@@ -96,7 +96,7 @@ The channel's operating environment shifted. Google updated its ranking algorith
 
 ### Competitive dynamics
 
-Someone else got better, or cheaper, or more aggressive. They're outbidding you on paid terms, producing better content, or offering a more compelling product. Competitive dynamics aren't always something that happens to you. Sometimes you created the competitive problem, through a pricing change, a product adjustment, or a repositioning that left your channel performance exposed. If you raised prices last quarter and your conversion rate dropped, that's a competitive dynamics problem, and the solution might be commercial and more broadly strategic rather than tactical.
+Someone else got better, or cheaper, or more aggressive. They're outbidding you on paid terms, producing better content, or offering a more compelling product. Competitive dynamics aren't always something that happens to you. Sometimes you created the competitive problem, through a pricing change, a product adjustment, or a repositioning that left your channel performance exposed. If you raised prices last quarter and your conversion rate dropped, that's a competitive dynamics problem, and the solution might be commercial and more broad and strategic rather than tactical.
 
 ### Internal execution failure
 
@@ -104,7 +104,7 @@ Budget was cut, creative went stale, a technical issue degraded landing page per
 
 ### Genuine demand shift
 
-Customers stopped wanting what you're selling at the rate they used to want it. This is the hardest one to accept and the one most organizations are slowest to name, because it implies the problem is upstream of the channel and may require existential self-evalution.
+Customers stopped wanting what you're selling at the rate they used to want it. This is the hardest one to accept and the one most organizations are slowest to name, because it implies the problem is upstream of the channel and may require existential self-evaluation.
 
 ### Why the distinction matters
 
@@ -171,7 +171,7 @@ The characteristic failure at this level is confirmation bias. A declining chann
 Here's what to do instead:
 
 - **Ask one question and wait for the answer:** "When will you have enough information to make a recommendation?" Then hold that date, and don't ask again before it arrives.
-- **Resist the urge to offer hypotheses.** If you share your theory of what caused the decline, the team will feel pressure to investigate your theory whether or not it's the most likely explanation. You're not helping. You're redirecting.
+- **Resist the urge to offer hypotheses.** If you share your theory of what caused the decline, the team will feel pressure to investigate your theory whether or not it's the most likely explanation. The problem is that an executive hypothesis doesn't land as a hypothesis. It lands as a directive, one that the team will investigate what you suggested first, even if they have stronger leads, because ignoring the CEO's theory carries more career risk than ignoring the data.
 - **Provide resources if asked, not preemptively.** If the marketing team says they need additional data access, analytical support, or budget flexibility to investigate, that's a legitimate ask. Proactively assigning people to the investigation or scheduling executive working sessions is usually a way of demonstrating attention that makes the actual work harder.
 - **Set a clear accountability window.** If the channel is still declining by a specific date with no credible diagnosis, that's a meaningful data point. Name that date in advance. It creates a reasonable deadline without manufacturing urgency during the investigation period.
 
@@ -189,8 +189,6 @@ When the diagnosis is complete, the update changes format: here's what we found,
 
 ## Closing Thought
 
-Channel decline is not a crisis. It is a normal part of operating marketing programs across channels that are subject to competition, platform changes, and market dynamics. The organizations that handle it badly aren't the ones with worse luck. They're the ones that treat a diagnostic problem as an action problem, and spend months working hard in the wrong direction as a result.
+Channel decline is a normal part of operating marketing programs across channels subject to competition, platform changes, and market dynamics. The organizations that handle it badly aren't the ones with worse luck, they're the ones that treat a diagnostic problem as an action problem, and spend months working hard in the wrong direction as a result.
 
-The question worth sitting with before you need it: if your highest-performing channel dropped 30% tomorrow, would your organization know what to do? Would the channel manager know how to document and investigate it? Would the director know how to manage the pressure from above? Would the CMO know when to escalate and when to let the process run?
-
-Building that muscle before you need it is a lot easier than building it in the middle of the emergency.
+The diagnostic muscle, knowing who owns what, how information should travel, when to act and when to wait, is far easier to build before you need it than in the middle of the emergency.
