@@ -28,13 +28,15 @@ const formattedDate = date
     {description && <p class="article-card__description">{description}</p>}
     {cardImage && (
       <div class="article-card__image-wrap">
-        <Image
-          src={cardImage}
-          alt=""
-          class="article-card__image"
-          widths={[400, 600, 800]}
-          sizes="(max-width: 685px) calc(100vw - 4rem), (max-width: 900px) 500px, calc(65vw - 14rem)"
-        />
+        <div class="article-card__image-inner">
+          <Image
+            src={cardImage}
+            alt=""
+            class="article-card__image"
+            widths={[400, 600, 800]}
+            sizes="(max-width: 685px) calc(100vw - 4rem), (max-width: 900px) 500px, calc(65vw - 14rem)"
+          />
+        </div>
       </div>
     )}
   </a>
@@ -85,12 +87,22 @@ const formattedDate = date
 
   .article-card__image-wrap {
     margin-top: 0.6em;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .article-card__image-inner {
     overflow: hidden;
   }
 
   .article-card__image {
     width: 100%;
     display: block;
+    max-height: 280px;
+    object-fit: cover;
+    object-position: top;
     transition: transform 0.2s, opacity 0.2s;
   }
 

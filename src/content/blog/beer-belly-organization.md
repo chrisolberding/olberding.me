@@ -1,7 +1,7 @@
 ---
 title: "The Beer-Belly Organization"
 subtitle: "It starts at the top with a failure to give the organization a real direction. Everything else follows from there."
-date: 2026-01-29
+date: 2026-02-20
 description: "How organizations develop a shape that substitutes activity for direction, why the dysfunction is self-protecting, and what it actually takes to change."
 ---
 

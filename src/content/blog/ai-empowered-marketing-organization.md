@@ -1,7 +1,7 @@
 ---
 title: "Building an AI-Empowered Marketing Organization"
 subtitle: "The goal isn't to replace marketers with AI. It's to make every marketer dramatically more capable."
-date: 2025-11-28
+date: 2025-12-20
 description: "A practical framework for integrating AI into marketing organizations without losing the human judgment that makes marketing work."
 draft: true
 ---
