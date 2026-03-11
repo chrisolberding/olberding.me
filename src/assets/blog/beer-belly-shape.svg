@@ -1,0 +1,56 @@
+<svg viewBox="0 0 820 530" xmlns="http://www.w3.org/2000/svg">
+<rect width="820" height="530" fill="#faf8f0"/>
+<text x="260" y="28" font-family="Literata, Georgia, serif" font-size="18" fill="#373060" font-weight="600" text-anchor="middle">The Beer-Belly Organization</text>
+<text x="570" y="28" font-family="Literata, Georgia, serif" font-size="18" fill="#6b6923" font-weight="600" text-anchor="middle">The Healthy Organization</text>
+<!-- Dividing line segments with gaps for center labels -->
+<line x1="410" y1="36" x2="410" y2="70" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="410" y1="88" x2="410" y2="272" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="410" y1="290" x2="410" y2="450" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="410" y1="468" x2="410" y2="500" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
+<!-- Center position labels -->
+<text x="410" y="82" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">TOP</text>
+<text x="410" y="284" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">MIDDLE</text>
+<text x="410" y="462" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">BOTTOM</text>
+<!-- Horizontal guide lines from labels to shapes -->
+<line x1="278" y1="78" x2="392" y2="78" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="428" y1="78" x2="534" y2="78" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="350" y1="280" x2="383" y2="280" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="437" y1="280" x2="518" y2="280" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="278" y1="458" x2="380" y2="458" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="440" y1="458" x2="522" y2="458" stroke="#e8e5e0" stroke-width="0.6"/>
+<!-- Beer-belly shape -->
+<path d="M 245,70 C 245,70 250,67 260,67 C 270,67 275,70 275,70 C 278,85 285,110 310,165 C 338,220 348,250 348,280 C 348,310 340,335 325,365 C 310,395 295,415 285,435 C 280,445 275,452 272,458 C 270,465 266,470 260,470 C 254,470 250,465 248,458 C 245,452 240,445 235,435 C 225,415 210,395 195,365 C 180,335 172,310 172,280 C 172,250 182,220 210,165 C 235,110 242,85 245,70 Z" fill="#373060" opacity="0.06"/>
+<ellipse cx="260" cy="280" rx="90" ry="78" fill="#373060" opacity="0.04"/>
+<!-- Beer-belly labels -->
+<line x1="168" y1="78" x2="242" y2="78" stroke="#373060" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="164" y="70" font-family="Outfit, sans-serif" font-size="13" fill="#373060" font-weight="600" text-anchor="end">LEADERSHIP</text>
+<text x="164" y="86" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Weak direction</text>
+<text x="164" y="100" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Vacuum or volatile</text>
+<line x1="168" y1="280" x2="170" y2="280" stroke="#373060" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="164" y="260" font-family="Outfit, sans-serif" font-size="13" fill="#373060" font-weight="600" text-anchor="end">MIDDLE MANAGEMENT</text>
+<text x="164" y="278" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Swollen with activity</text>
+<text x="164" y="292" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Motion over progress</text>
+<text x="164" y="306" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Bad news suppressed</text>
+<line x1="168" y1="458" x2="245" y2="458" stroke="#373060" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="164" y="448" font-family="Outfit, sans-serif" font-size="13" fill="#373060" font-weight="600" text-anchor="end">FRONT LINE</text>
+<text x="164" y="464" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Starved or silenced</text>
+<text x="164" y="478" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Talent has no channel</text>
+<!-- Healthy shape -->
+<path d="M 535,70 C 535,70 550,66 570,66 C 590,66 605,70 605,70 C 608,90 612,120 618,160 C 622,190 622,210 620,240 C 618,270 614,290 610,310 C 606,330 604,350 604,370 C 604,390 608,410 612,430 C 616,445 618,455 618,462 C 615,468 600,472 570,472 C 540,472 525,468 522,462 C 522,455 524,445 528,430 C 532,410 536,390 536,370 C 536,350 534,330 530,310 C 526,290 522,270 520,240 C 518,210 518,190 522,160 C 528,120 532,90 535,70 Z" fill="#6b6923" opacity="0.06"/>
+<!-- Healthy labels -->
+<line x1="608" y1="78" x2="636" y2="78" stroke="#6b6923" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="640" y="70" font-family="Outfit, sans-serif" font-size="13" fill="#6b6923" font-weight="600">LEADERSHIP</text>
+<text x="640" y="86" font-family="Outfit, sans-serif" font-size="11" fill="#999">Clear, stable direction</text>
+<text x="640" y="100" font-family="Outfit, sans-serif" font-size="11" fill="#999">Models intellectual honesty</text>
+<line x1="618" y1="280" x2="636" y2="280" stroke="#6b6923" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="640" y="260" font-family="Outfit, sans-serif" font-size="13" fill="#6b6923" font-weight="600">MIDDLE MANAGEMENT</text>
+<text x="640" y="278" font-family="Outfit, sans-serif" font-size="11" fill="#999">Lean coordination</text>
+<text x="640" y="292" font-family="Outfit, sans-serif" font-size="11" fill="#999">Judgment over process</text>
+<text x="640" y="306" font-family="Outfit, sans-serif" font-size="11" fill="#999">Outcomes over activity</text>
+<line x1="620" y1="458" x2="636" y2="458" stroke="#6b6923" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="640" y="448" font-family="Outfit, sans-serif" font-size="13" fill="#6b6923" font-weight="600">FRONT LINE</text>
+<text x="640" y="464" font-family="Outfit, sans-serif" font-size="11" fill="#999">Technical talent empowered</text>
+<text x="640" y="478" font-family="Outfit, sans-serif" font-size="11" fill="#999">Truth-tellers protected</text>
+<!-- Bottom caption -->
+<text x="410" y="518" font-family="Literata, Georgia, serif" font-size="14" fill="#555" text-anchor="middle" font-style="italic">The shape of the problem is not in the middle. It was formed at the top.</text>
+</svg>

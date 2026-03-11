@@ -3,7 +3,7 @@ title: "The Beer-Belly Organization"
 subtitle: "It starts at the top with a failure to give the organization a real direction. Everything else follows from there."
 date: 2026-02-20
 description: "How organizations develop a shape that substitutes activity for direction, why the dysfunction is self-protecting, and what it actually takes to change."
-cardImage: ../../assets/blog/beer-belly-shape.png
+cardImage: ../../assets/blog/beer-belly-shape.svg
 ---
 
 The beer belly. Weak at the top, weak at the bottom, swollen in the middle, and generating a lot of heat without much productive output. It is easy to mistake for a management problem, or a talent problem, or a culture problem. It is all of those, but it starts somewhere specific: at the top, with leadership that has failed to give the organization a real direction to move toward.
@@ -29,65 +29,63 @@ What follows is my attempt to describe how this happens, why it persists, and wh
 </div>
 
 <figure class="beer-belly-shape">
-<svg viewBox="0 0 820 590" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side-by-side comparison of the beer-belly organization shape versus a healthy organization shape.">
-<text x="30" y="28" font-family="Literata, Georgia, serif" font-size="20" fill="#1a1a1a" font-weight="600" letter-spacing="-0.01em">The Shape of the Problem</text>
-<text x="30" y="50" font-family="Outfit, sans-serif" font-size="12" fill="#999" letter-spacing="0.06em">HOW ORGANIZATIONAL DYSFUNCTION DISTRIBUTES ITSELF</text>
-<text x="260" y="88" font-family="Literata, Georgia, serif" font-size="18" fill="#1a1a1a" font-weight="600" text-anchor="middle">The Beer-Belly Organization</text>
-<text x="570" y="88" font-family="Literata, Georgia, serif" font-size="18" fill="#2a6e5a" font-weight="600" text-anchor="middle">The Healthy Organization</text>
+<svg viewBox="0 0 820 530" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side-by-side comparison of the beer-belly organization shape versus a healthy organization shape.">
+<text x="260" y="28" font-family="Literata, Georgia, serif" font-size="18" fill="var(--color-complement-text)" font-weight="600" text-anchor="middle">The Beer-Belly Organization</text>
+<text x="570" y="28" font-family="Literata, Georgia, serif" font-size="18" fill="var(--color-accent-text)" font-weight="600" text-anchor="middle">The Healthy Organization</text>
 <!-- Dividing line segments with gaps for center labels -->
-<line x1="410" y1="96" x2="410" y2="130" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
-<line x1="410" y1="148" x2="410" y2="332" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
-<line x1="410" y1="350" x2="410" y2="510" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
-<line x1="410" y1="528" x2="410" y2="560" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="410" y1="36" x2="410" y2="70" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="410" y1="88" x2="410" y2="272" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="410" y1="290" x2="410" y2="450" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="410" y1="468" x2="410" y2="500" stroke="#e8e5e0" stroke-width="1" stroke-dasharray="4,4"/>
 <!-- Center position labels -->
-<text x="410" y="142" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">TOP</text>
-<text x="410" y="344" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">MIDDLE</text>
-<text x="410" y="522" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">BOTTOM</text>
+<text x="410" y="82" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">TOP</text>
+<text x="410" y="284" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">MIDDLE</text>
+<text x="410" y="462" font-family="Outfit, sans-serif" font-size="10" fill="#ccc" text-anchor="middle" letter-spacing="0.08em">BOTTOM</text>
 <!-- Horizontal guide lines from labels to shapes -->
 <!-- TOP guides -->
-<line x1="278" y1="138" x2="392" y2="138" stroke="#e8e5e0" stroke-width="0.6"/>
-<line x1="428" y1="138" x2="534" y2="138" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="278" y1="78" x2="392" y2="78" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="428" y1="78" x2="534" y2="78" stroke="#e8e5e0" stroke-width="0.6"/>
 <!-- MIDDLE guides -->
-<line x1="350" y1="340" x2="383" y2="340" stroke="#e8e5e0" stroke-width="0.6"/>
-<line x1="437" y1="340" x2="518" y2="340" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="350" y1="280" x2="383" y2="280" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="437" y1="280" x2="518" y2="280" stroke="#e8e5e0" stroke-width="0.6"/>
 <!-- BOTTOM guides -->
-<line x1="278" y1="518" x2="380" y2="518" stroke="#e8e5e0" stroke-width="0.6"/>
-<line x1="440" y1="518" x2="522" y2="518" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="278" y1="458" x2="380" y2="458" stroke="#e8e5e0" stroke-width="0.6"/>
+<line x1="440" y1="458" x2="522" y2="458" stroke="#e8e5e0" stroke-width="0.6"/>
 <!-- Beer-belly shape -->
-<path d="M 245,130 C 245,130 250,127 260,127 C 270,127 275,130 275,130 C 278,145 285,170 310,225 C 338,280 348,310 348,340 C 348,370 340,395 325,425 C 310,455 295,475 285,495 C 280,505 275,512 272,518 C 270,525 266,530 260,530 C 254,530 250,525 248,518 C 245,512 240,505 235,495 C 225,475 210,455 195,425 C 180,395 172,370 172,340 C 172,310 182,280 210,225 C 235,170 242,145 245,130 Z" fill="#1a1a1a" opacity="0.06"/>
-<ellipse cx="260" cy="340" rx="90" ry="78" fill="#1a1a1a" opacity="0.04"/>
+<path d="M 245,70 C 245,70 250,67 260,67 C 270,67 275,70 275,70 C 278,85 285,110 310,165 C 338,220 348,250 348,280 C 348,310 340,335 325,365 C 310,395 295,415 285,435 C 280,445 275,452 272,458 C 270,465 266,470 260,470 C 254,470 250,465 248,458 C 245,452 240,445 235,435 C 225,415 210,395 195,365 C 180,335 172,310 172,280 C 172,250 182,220 210,165 C 235,110 242,85 245,70 Z" fill="var(--color-complement-text)" opacity="0.06"/>
+<ellipse cx="260" cy="280" rx="90" ry="78" fill="var(--color-complement-text)" opacity="0.04"/>
 <!-- Beer-belly labels -->
-<line x1="168" y1="138" x2="242" y2="138" stroke="#cc6644" stroke-width="0.8" stroke-dasharray="2,2"/>
-<text x="164" y="130" font-family="Outfit, sans-serif" font-size="13" fill="#cc6644" font-weight="600" text-anchor="end">LEADERSHIP</text>
-<text x="164" y="146" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Weak direction</text>
-<text x="164" y="160" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Vacuum or volatile</text>
-<line x1="168" y1="340" x2="170" y2="340" stroke="#cc6644" stroke-width="0.8" stroke-dasharray="2,2"/>
-<text x="164" y="320" font-family="Outfit, sans-serif" font-size="13" fill="#cc6644" font-weight="600" text-anchor="end">MIDDLE MANAGEMENT</text>
-<text x="164" y="338" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Swollen with activity</text>
-<text x="164" y="352" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Motion over progress</text>
-<text x="164" y="366" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Bad news suppressed</text>
-<line x1="168" y1="518" x2="245" y2="518" stroke="#cc6644" stroke-width="0.8" stroke-dasharray="2,2"/>
-<text x="164" y="508" font-family="Outfit, sans-serif" font-size="13" fill="#cc6644" font-weight="600" text-anchor="end">FRONT LINE</text>
-<text x="164" y="524" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Starved or silenced</text>
-<text x="164" y="538" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Talent has no channel</text>
+<line x1="168" y1="78" x2="242" y2="78" stroke="var(--color-complement-text)" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="164" y="70" font-family="Outfit, sans-serif" font-size="13" fill="var(--color-complement-text)" font-weight="600" text-anchor="end">LEADERSHIP</text>
+<text x="164" y="86" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Weak direction</text>
+<text x="164" y="100" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Vacuum or volatile</text>
+<line x1="168" y1="280" x2="170" y2="280" stroke="var(--color-complement-text)" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="164" y="260" font-family="Outfit, sans-serif" font-size="13" fill="var(--color-complement-text)" font-weight="600" text-anchor="end">MIDDLE MANAGEMENT</text>
+<text x="164" y="278" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Swollen with activity</text>
+<text x="164" y="292" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Motion over progress</text>
+<text x="164" y="306" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Bad news suppressed</text>
+<line x1="168" y1="458" x2="245" y2="458" stroke="var(--color-complement-text)" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="164" y="448" font-family="Outfit, sans-serif" font-size="13" fill="var(--color-complement-text)" font-weight="600" text-anchor="end">FRONT LINE</text>
+<text x="164" y="464" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Starved or silenced</text>
+<text x="164" y="478" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="end">Talent has no channel</text>
 <!-- Healthy shape -->
-<path d="M 535,130 C 535,130 550,126 570,126 C 590,126 605,130 605,130 C 608,150 612,180 618,220 C 622,250 622,270 620,300 C 618,330 614,350 610,370 C 606,390 604,410 604,430 C 604,450 608,470 612,490 C 616,505 618,515 618,522 C 615,528 600,532 570,532 C 540,532 525,528 522,522 C 522,515 524,505 528,490 C 532,470 536,450 536,430 C 536,410 534,390 530,370 C 526,350 522,330 520,300 C 518,270 518,250 522,220 C 528,180 532,150 535,130 Z" fill="#2a6e5a" opacity="0.06"/>
+<path d="M 535,70 C 535,70 550,66 570,66 C 590,66 605,70 605,70 C 608,90 612,120 618,160 C 622,190 622,210 620,240 C 618,270 614,290 610,310 C 606,330 604,350 604,370 C 604,390 608,410 612,430 C 616,445 618,455 618,462 C 615,468 600,472 570,472 C 540,472 525,468 522,462 C 522,455 524,445 528,430 C 532,410 536,390 536,370 C 536,350 534,330 530,310 C 526,290 522,270 520,240 C 518,210 518,190 522,160 C 528,120 532,90 535,70 Z" fill="var(--color-accent-text)" opacity="0.06"/>
 <!-- Healthy labels -->
-<line x1="608" y1="138" x2="636" y2="138" stroke="#2a6e5a" stroke-width="0.8" stroke-dasharray="2,2"/>
-<text x="640" y="130" font-family="Outfit, sans-serif" font-size="13" fill="#2a6e5a" font-weight="600">LEADERSHIP</text>
-<text x="640" y="146" font-family="Outfit, sans-serif" font-size="11" fill="#999">Clear, stable direction</text>
-<text x="640" y="160" font-family="Outfit, sans-serif" font-size="11" fill="#999">Models intellectual honesty</text>
-<line x1="618" y1="340" x2="636" y2="340" stroke="#2a6e5a" stroke-width="0.8" stroke-dasharray="2,2"/>
-<text x="640" y="320" font-family="Outfit, sans-serif" font-size="13" fill="#2a6e5a" font-weight="600">MIDDLE MANAGEMENT</text>
-<text x="640" y="338" font-family="Outfit, sans-serif" font-size="11" fill="#999">Lean coordination</text>
-<text x="640" y="352" font-family="Outfit, sans-serif" font-size="11" fill="#999">Judgment over process</text>
-<text x="640" y="366" font-family="Outfit, sans-serif" font-size="11" fill="#999">Outcomes over activity</text>
-<line x1="620" y1="518" x2="636" y2="518" stroke="#2a6e5a" stroke-width="0.8" stroke-dasharray="2,2"/>
-<text x="640" y="508" font-family="Outfit, sans-serif" font-size="13" fill="#2a6e5a" font-weight="600">FRONT LINE</text>
-<text x="640" y="524" font-family="Outfit, sans-serif" font-size="11" fill="#999">Technical talent empowered</text>
-<text x="640" y="538" font-family="Outfit, sans-serif" font-size="11" fill="#999">Truth-tellers protected</text>
+<line x1="608" y1="78" x2="636" y2="78" stroke="var(--color-accent-text)" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="640" y="70" font-family="Outfit, sans-serif" font-size="13" fill="var(--color-accent-text)" font-weight="600">LEADERSHIP</text>
+<text x="640" y="86" font-family="Outfit, sans-serif" font-size="11" fill="#999">Clear, stable direction</text>
+<text x="640" y="100" font-family="Outfit, sans-serif" font-size="11" fill="#999">Models intellectual honesty</text>
+<line x1="618" y1="280" x2="636" y2="280" stroke="var(--color-accent-text)" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="640" y="260" font-family="Outfit, sans-serif" font-size="13" fill="var(--color-accent-text)" font-weight="600">MIDDLE MANAGEMENT</text>
+<text x="640" y="278" font-family="Outfit, sans-serif" font-size="11" fill="#999">Lean coordination</text>
+<text x="640" y="292" font-family="Outfit, sans-serif" font-size="11" fill="#999">Judgment over process</text>
+<text x="640" y="306" font-family="Outfit, sans-serif" font-size="11" fill="#999">Outcomes over activity</text>
+<line x1="620" y1="458" x2="636" y2="458" stroke="var(--color-accent-text)" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="640" y="448" font-family="Outfit, sans-serif" font-size="13" fill="var(--color-accent-text)" font-weight="600">FRONT LINE</text>
+<text x="640" y="464" font-family="Outfit, sans-serif" font-size="11" fill="#999">Technical talent empowered</text>
+<text x="640" y="478" font-family="Outfit, sans-serif" font-size="11" fill="#999">Truth-tellers protected</text>
 <!-- Bottom caption -->
-<text x="410" y="578" font-family="Literata, Georgia, serif" font-size="14" fill="#555" text-anchor="middle" font-style="italic">The shape of the problem is not in the middle. It was formed at the top.</text>
+<text x="410" y="518" font-family="Literata, Georgia, serif" font-size="14" fill="#555" text-anchor="middle" font-style="italic">The shape of the problem is not in the middle. It was formed at the top.</text>
 </svg>
 </figure>
 
@@ -106,7 +104,7 @@ The volatile leader is actually harder to diagnose, because it can look like str
 In both cases, the signal that reaches middle management is the same: the direction from the top is not real, or at least not stable enough to build toward. And so middle management builds toward something else.
 
 <figure class="two-paths">
-<svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing two types of leadership failure — the vacuum leader and the volatile leader — converging on the same downstream signal and adaptation.">
+<svg viewBox="0 0 700 496" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing two types of leadership failure — the vacuum leader and the volatile leader — converging on the same downstream signal and adaptation.">
 <defs>
 <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
 <polygon points="0 0, 8 3, 0 6" fill="#999"/>
@@ -116,37 +114,35 @@ In both cases, the signal that reaches middle management is the same: the direct
 </marker>
 </defs>
 <!-- LEFT PATH: Vacuum Leader -->
-<rect x="30" y="24" width="270" height="155" rx="3" fill="#fff" stroke="#cc6644" stroke-width="1.2"/>
-<text x="48" y="52" font-family="Outfit, sans-serif" font-size="10" fill="#cc6644" letter-spacing="1.5px" font-weight="600">TYPE A</text>
-<text x="48" y="78" font-family="Literata, Georgia, serif" font-size="18" fill="#1a1a1a" font-weight="600">The Vacuum Leader</text>
+<rect x="30" y="24" width="270" height="155" rx="3" fill="#fff" stroke="var(--color-accent)" stroke-width="1.2"/>
+<text x="48" y="52" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" letter-spacing="1.5px" font-weight="600">TYPE A</text>
+<text x="48" y="78" font-family="Literata, Georgia, serif" font-size="18" fill="var(--color-accent-text)" font-weight="600">The Vacuum Leader</text>
 <text x="48" y="103" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" font-weight="600">No real strategy articulated.</text>
 <text x="48" y="120" font-family="Outfit, sans-serif" font-size="11" fill="#666">Mission is inspirational and says nothing. Priorities</text>
 <text x="48" y="137" font-family="Outfit, sans-serif" font-size="11" fill="#666">encompass whatever anyone was already doing.</text>
 <!-- RIGHT PATH: Volatile Leader -->
-<rect x="400" y="24" width="270" height="155" rx="3" fill="#fff" stroke="#cc6644" stroke-width="1.2"/>
-<text x="418" y="52" font-family="Outfit, sans-serif" font-size="10" fill="#cc6644" letter-spacing="1.5px" font-weight="600">TYPE B</text>
-<text x="418" y="78" font-family="Literata, Georgia, serif" font-size="18" fill="#1a1a1a" font-weight="600">The Volatile Leader</text>
+<rect x="400" y="24" width="270" height="155" rx="3" fill="#fff" stroke="var(--color-accent)" stroke-width="1.2"/>
+<text x="418" y="52" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" letter-spacing="1.5px" font-weight="600">TYPE B</text>
+<text x="418" y="78" font-family="Literata, Georgia, serif" font-size="18" fill="var(--color-accent-text)" font-weight="600">The Volatile Leader</text>
 <text x="418" y="103" font-family="Outfit, sans-serif" font-size="11" fill="#1a1a1a" font-weight="600">No shortage of opinions or energy.</text>
 <text x="418" y="120" font-family="Outfit, sans-serif" font-size="11" fill="#666">New initiatives arrive in waves, each superseding</text>
 <text x="418" y="137" font-family="Outfit, sans-serif" font-size="11" fill="#666">the last with the urgency of a genuine pivot.</text>
 <!-- Harder to diagnose note -->
-<text x="535" y="16" font-family="Literata, Georgia, serif" font-size="10" fill="#cc6644" font-style="italic" text-anchor="middle">Harder to diagnose — can look like strong leadership</text>
+<text x="535" y="16" font-family="Literata, Georgia, serif" font-size="10" fill="var(--color-accent-text)" font-style="italic" text-anchor="middle">Harder to diagnose, can look like strong leadership</text>
 <!-- Converging arrows -->
-<line x1="165" y1="185" x2="290" y2="262" stroke="#999" stroke-width="1.2" marker-end="url(#arrow)"/>
-<line x1="535" y1="185" x2="410" y2="262" stroke="#999" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="165" y1="183" x2="290" y2="262" stroke="#bbb" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="535" y1="183" x2="410" y2="262" stroke="#bbb" stroke-width="1" marker-end="url(#arrow)"/>
 <!-- CONVERGENCE POINT: The Signal -->
-<rect x="140" y="274" width="420" height="80" rx="3" fill="#1a1a1a" stroke="none"/>
+<rect x="120" y="268" width="460" height="92" rx="3" fill="#1a1a1a" stroke="none"/>
 <text x="350" y="300" font-family="Literata, Georgia, serif" font-size="14" fill="#fff" font-weight="600" text-anchor="middle">The Signal Received by Middle Management</text>
 <text x="350" y="326" font-family="Literata, Georgia, serif" font-size="14.5" fill="#e8e4dc" text-anchor="middle" font-style="italic">"The direction from the top is not stable enough to build toward."</text>
 <!-- Arrow down to response -->
 <line x1="350" y1="360" x2="350" y2="400" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arrowDark)"/>
 <!-- RESPONSE: The Adaptation -->
-<rect x="120" y="410" width="460" height="72" rx="3" fill="#2a6e5a" opacity="0.05" stroke="#2a6e5a" stroke-width="1"/>
-<text x="350" y="433" font-family="Literata, Georgia, serif" font-size="14" fill="#2a6e5a" font-weight="600" text-anchor="middle">The Rational Adaptation</text>
+<rect x="120" y="410" width="460" height="72" rx="3" fill="var(--color-accent)" opacity="0.08" stroke="var(--color-accent-text)" stroke-width="1"/>
+<text x="350" y="433" font-family="Literata, Georgia, serif" font-size="14" fill="var(--color-accent-text)" font-weight="600" text-anchor="middle">The Rational Adaptation</text>
 <text x="350" y="453" font-family="Outfit, sans-serif" font-size="11" fill="#555" text-anchor="middle">Performative alignment with the stated priority.</text>
 <text x="350" y="468" font-family="Outfit, sans-serif" font-size="11" fill="#555" text-anchor="middle">Existing efforts quietly maintained.</text>
-<!-- Bottom note -->
-<text x="350" y="506" font-family="Literata, Georgia, serif" font-size="12" fill="#888" text-anchor="middle" font-style="italic">They look different from the outside but produce similar downstream effects.</text>
 </svg>
 </figure>
 
@@ -208,14 +204,14 @@ The weakening at the bottom follows from the same logic, though it takes two pat
 <text x="122" y="228" font-family="Literata, Georgia, serif" font-size="14" fill="#1a1a1a" font-weight="600" text-anchor="middle">Bad Information Rises</text>
 <text x="122" y="246" font-family="Outfit, sans-serif" font-size="11" fill="#777" text-anchor="middle">Every initiative is a "success"</text>
 <!-- Center callout -->
-<circle cx="380" cy="320" r="58" fill="#faf9f7" stroke="#2a6e5a" stroke-width="1.2"/>
-<text x="380" y="307" font-family="Outfit, sans-serif" font-size="10" fill="#2a6e5a" font-weight="600" text-anchor="middle" letter-spacing="1px">REINFORCING</text>
+<circle cx="380" cy="320" r="58" fill="#faf9f7" stroke="var(--color-accent-text)" stroke-width="1.2"/>
+<text x="380" y="307" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" font-weight="600" text-anchor="middle" letter-spacing="1px">REINFORCING</text>
 <text x="380" y="327" font-family="Literata, Georgia, serif" font-size="13" fill="#1a1a1a" font-weight="600" text-anchor="middle">Can only break</text>
 <text x="380" y="345" font-family="Literata, Georgia, serif" font-size="13" fill="#1a1a1a" font-weight="600" text-anchor="middle">at the top.</text>
 <!-- "Break here" annotation -->
-<line x1="270" y1="100" x2="245" y2="62" stroke="#2a6e5a" stroke-width="0.8"/>
-<text x="243" y="54" font-family="Outfit, sans-serif" font-size="10" fill="#2a6e5a" font-weight="600" text-anchor="end">Break the cycle here ↓</text>
-<text x="243" y="68" font-family="Outfit, sans-serif" font-size="10" fill="#2a6e5a" text-anchor="end">Only leadership can</text>
+<line x1="270" y1="100" x2="245" y2="62" stroke="var(--color-accent-text)" stroke-width="0.8"/>
+<text x="243" y="54" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" font-weight="600" text-anchor="end">Break the cycle here ↓</text>
+<text x="243" y="68" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" text-anchor="end">Only leadership can</text>
 <!-- Bottom note -->
 <text x="380" y="600" font-family="Literata, Georgia, serif" font-size="12" fill="#555" text-anchor="middle" font-style="italic">The defensive architecture is a system, not a collection of individual bad decisions.</text>
 <text x="380" y="620" font-family="Literata, Georgia, serif" font-size="12" fill="#555" text-anchor="middle" font-style="italic">Individuals who attempt to introduce accountability tend to be treated as problems.</text>
@@ -235,49 +231,48 @@ The tell is in the success rate. If every initiative is a success, you are not r
 This matters for more than the obvious reason. The obvious reason is that you cannot improve what you refuse to examine. The less obvious reason is that universal success claims eventually become a strategic trap. If the paid social program has been producing excellent results for three years, on what basis would you reduce the budget? If the agency has been performing brilliantly, why would you put the account up for review? The fiction of success forecloses the options that would actually help.
 
 <figure class="epistemic-defense">
-<svg viewBox="0 0 620 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison table showing the difference between the performance of data-driven culture and actual data-driven culture across measurement, testing, failure, and consequence.">
+<svg viewBox="0 0 620 469" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison table showing the difference between the performance of data-driven culture and actual data-driven culture across measurement, testing, failure, and consequence.">
 <!-- Column headers -->
-<rect x="20" y="10" width="270" height="36" rx="2" fill="#1a1a1a" opacity="0.04"/>
-<text x="40" y="34" font-family="Literata, Georgia, serif" font-size="14" fill="#1a1a1a" font-weight="600">The Performance of Data-Driven</text>
-<rect x="300" y="10" width="300" height="36" rx="2" fill="#2a6e5a" opacity="0.06"/>
-<text x="320" y="34" font-family="Literata, Georgia, serif" font-size="14" fill="#2a6e5a" font-weight="600">Actual Data-Driven Culture</text>
+<rect x="20" y="10" width="270" height="36" rx="2" fill="var(--color-complement-text)" opacity="0.06"/>
+<text x="40" y="34" font-family="Literata, Georgia, serif" font-size="14" fill="var(--color-complement-text)" font-weight="600">The Performance of Data-Driven</text>
+<rect x="300" y="10" width="300" height="36" rx="2" fill="var(--color-accent-text)" opacity="0.06"/>
+<text x="320" y="34" font-family="Literata, Georgia, serif" font-size="14" fill="var(--color-accent-text)" font-weight="600">Actual Data-Driven Culture</text>
 <!-- ROW 1: Measurement -->
-<text x="40" y="64" font-family="Outfit, sans-serif" font-size="10" fill="#cc6644" font-weight="600" letter-spacing="1px">MEASUREMENT</text>
-<text x="40" y="84" font-family="Outfit, sans-serif" font-size="11" fill="#555">Metrics are selected after the fact. The framing</text>
-<text x="40" y="100" font-family="Outfit, sans-serif" font-size="11" fill="#555">does the heavy lifting that the data does not.</text>
-<text x="320" y="64" font-family="Outfit, sans-serif" font-size="10" fill="#2a6e5a" font-weight="600" letter-spacing="1px">MEASUREMENT</text>
-<text x="320" y="84" font-family="Outfit, sans-serif" font-size="11" fill="#555">Metrics are locked before execution. Results</text>
-<text x="320" y="100" font-family="Outfit, sans-serif" font-size="11" fill="#555">that challenge assumptions survive the</text>
-<text x="320" y="116" font-family="Outfit, sans-serif" font-size="11" fill="#555">reporting process.</text>
-<line x1="20" y1="132" x2="600" y2="132" stroke="#f0ece4" stroke-width="1"/>
+<text x="40" y="73" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-complement-text)" font-weight="600" letter-spacing="1px">MEASUREMENT</text>
+<text x="40" y="93" font-family="Outfit, sans-serif" font-size="11" fill="#555">Metrics are selected after the fact. The framing</text>
+<text x="40" y="109" font-family="Outfit, sans-serif" font-size="11" fill="#555">does the heavy lifting that the data does not.</text>
+<text x="320" y="73" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" font-weight="600" letter-spacing="1px">MEASUREMENT</text>
+<text x="320" y="93" font-family="Outfit, sans-serif" font-size="11" fill="#555">Metrics are locked before execution. Results that</text>
+<text x="320" y="109" font-family="Outfit, sans-serif" font-size="11" fill="#555">challenge assumptions survive the reporting process.</text>
+<line x1="20" y1="141" x2="600" y2="141" stroke="#f0ece4" stroke-width="1"/>
 <!-- ROW 2: Testing -->
-<text x="40" y="156" font-family="Outfit, sans-serif" font-size="10" fill="#cc6644" font-weight="600" letter-spacing="1px">TESTING</text>
-<text x="40" y="176" font-family="Outfit, sans-serif" font-size="11" fill="#555">Tests are structured to produce positive results.</text>
-<text x="40" y="192" font-family="Outfit, sans-serif" font-size="11" fill="#555">Null results are never reported upward.</text>
-<text x="320" y="156" font-family="Outfit, sans-serif" font-size="10" fill="#2a6e5a" font-weight="600" letter-spacing="1px">TESTING</text>
-<text x="320" y="176" font-family="Outfit, sans-serif" font-size="11" fill="#555">Null results kill initiatives and redirect</text>
-<text x="320" y="192" font-family="Outfit, sans-serif" font-size="11" fill="#555">resources. A test that cannot fail is not a test.</text>
-<line x1="20" y1="210" x2="600" y2="210" stroke="#f0ece4" stroke-width="1"/>
+<text x="40" y="165" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-complement-text)" font-weight="600" letter-spacing="1px">TESTING</text>
+<text x="40" y="185" font-family="Outfit, sans-serif" font-size="11" fill="#555">Tests are structured to produce positive results.</text>
+<text x="40" y="201" font-family="Outfit, sans-serif" font-size="11" fill="#555">Null results are never reported upward.</text>
+<text x="320" y="165" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" font-weight="600" letter-spacing="1px">TESTING</text>
+<text x="320" y="185" font-family="Outfit, sans-serif" font-size="11" fill="#555">Null results kill initiatives and redirect resources.</text>
+<text x="320" y="201" font-family="Outfit, sans-serif" font-size="11" fill="#555">A test that cannot fail is not a test.</text>
+<line x1="20" y1="219" x2="600" y2="219" stroke="#f0ece4" stroke-width="1"/>
 <!-- ROW 3: Failure -->
-<text x="40" y="234" font-family="Outfit, sans-serif" font-size="10" fill="#cc6644" font-weight="600" letter-spacing="1px">FAILURE</text>
-<text x="40" y="254" font-family="Outfit, sans-serif" font-size="11" fill="#555">Every initiative is a success. The organization</text>
-<text x="40" y="270" font-family="Outfit, sans-serif" font-size="11" fill="#555">has learned not to report failure.</text>
-<text x="320" y="234" font-family="Outfit, sans-serif" font-size="10" fill="#2a6e5a" font-weight="600" letter-spacing="1px">FAILURE</text>
-<text x="320" y="254" font-family="Outfit, sans-serif" font-size="11" fill="#555">Killing things is normal. The portfolio changes</text>
-<text x="320" y="270" font-family="Outfit, sans-serif" font-size="11" fill="#555">shape because someone was willing to say no.</text>
-<line x1="20" y1="288" x2="600" y2="288" stroke="#f0ece4" stroke-width="1"/>
+<text x="40" y="243" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-complement-text)" font-weight="600" letter-spacing="1px">FAILURE</text>
+<text x="40" y="263" font-family="Outfit, sans-serif" font-size="11" fill="#555">Every initiative is a success. The organization</text>
+<text x="40" y="279" font-family="Outfit, sans-serif" font-size="11" fill="#555">has learned not to report failure.</text>
+<text x="320" y="243" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" font-weight="600" letter-spacing="1px">FAILURE</text>
+<text x="320" y="263" font-family="Outfit, sans-serif" font-size="11" fill="#555">Killing things is normal. The portfolio changes</text>
+<text x="320" y="279" font-family="Outfit, sans-serif" font-size="11" fill="#555">shape because someone was willing to say no.</text>
+<line x1="20" y1="297" x2="600" y2="297" stroke="#f0ece4" stroke-width="1"/>
 <!-- ROW 4: Consequence -->
-<text x="40" y="312" font-family="Outfit, sans-serif" font-size="10" fill="#cc6644" font-weight="600" letter-spacing="1px">CONSEQUENCE</text>
-<text x="40" y="332" font-family="Outfit, sans-serif" font-size="11" fill="#555">Success claims become a strategic trap. On what</text>
-<text x="40" y="348" font-family="Outfit, sans-serif" font-size="11" fill="#555">basis do you cut a program that's been</text>
-<text x="40" y="364" font-family="Outfit, sans-serif" font-size="11" fill="#555">"working" for three years?</text>
-<text x="320" y="312" font-family="Outfit, sans-serif" font-size="10" fill="#2a6e5a" font-weight="600" letter-spacing="1px">CONSEQUENCE</text>
-<text x="320" y="332" font-family="Outfit, sans-serif" font-size="11" fill="#555">Options stay open. You can cut what isn't</text>
-<text x="320" y="348" font-family="Outfit, sans-serif" font-size="11" fill="#555">working because you never claimed it was.</text>
+<text x="40" y="321" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-complement-text)" font-weight="600" letter-spacing="1px">CONSEQUENCE</text>
+<text x="40" y="341" font-family="Outfit, sans-serif" font-size="11" fill="#555">Success claims become a strategic trap. On what</text>
+<text x="40" y="357" font-family="Outfit, sans-serif" font-size="11" fill="#555">basis do you cut a program that's been</text>
+<text x="40" y="373" font-family="Outfit, sans-serif" font-size="11" fill="#555">"working" for three years?</text>
+<text x="320" y="321" font-family="Outfit, sans-serif" font-size="10" fill="var(--color-accent-text)" font-weight="600" letter-spacing="1px">CONSEQUENCE</text>
+<text x="320" y="341" font-family="Outfit, sans-serif" font-size="11" fill="#555">Options stay open. You can cut what isn't working</text>
+<text x="320" y="357" font-family="Outfit, sans-serif" font-size="11" fill="#555">because you never claimed it was.</text>
 <!-- THE TELL -->
-<rect x="20" y="390" width="580" height="56" rx="3" fill="#1a1a1a"/>
-<text x="310" y="413" font-family="Literata, Georgia, serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="600">The Tell</text>
-<text x="310" y="430" font-family="Literata, Georgia, serif" font-size="12" fill="#e8e4dc" text-anchor="middle" font-style="italic">If every initiative is a success, you are not running a high-performing organization.</text>
+<rect x="20" y="399" width="580" height="56" rx="3" fill="#1a1a1a"/>
+<text x="310" y="422" font-family="Literata, Georgia, serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="600">The Tell</text>
+<text x="310" y="439" font-family="Literata, Georgia, serif" font-size="12" fill="#e8e4dc" text-anchor="middle" font-style="italic">If every initiative is a success, you are not running a high-performing organization.</text>
 </svg>
 </figure>
 

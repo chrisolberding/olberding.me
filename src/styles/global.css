@@ -5,6 +5,8 @@
   --color-bg: #faf8f0;
   --color-accent: #f3ec50;
   --color-accent-text: #6b6923;
+  --color-complement: #7B6BDB;
+  --color-complement-text: #373060;
   --color-text: #1a1a1a;
   --color-text-light: #666;
   --color-sidebar: var(--color-accent);
