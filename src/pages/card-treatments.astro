@@ -1,0 +1,223 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import geoImg from '../assets/blog/geo-timeline.png';
+import escImg from '../assets/blog/escalation-framework.png';
+---
+
+<BaseLayout title="Card Image Treatments" description="Comparing card image treatments">
+  <div class="treatments">
+    <h1>Card Image Treatments</h1>
+    <p class="intro">Each treatment shown with both images. The container simulates the homepage card width with a 300px max-height.</p>
+
+    <section>
+      <h2>A. Current — thin border + 3px radius</h2>
+      <div class="card-sim treatment-a">
+        <Image src={geoImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+      <div class="card-sim treatment-a">
+        <Image src={escImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+    </section>
+
+    <section>
+      <h2>B. No border, soft shadow</h2>
+      <div class="card-sim treatment-b">
+        <Image src={geoImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+      <div class="card-sim treatment-b">
+        <Image src={escImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+    </section>
+
+    <section>
+      <h2>C. White 10px inner border + thin outer border</h2>
+      <div class="card-sim treatment-c">
+        <Image src={geoImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+      <div class="card-sim treatment-c">
+        <Image src={escImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+    </section>
+
+    <section>
+      <h2>D. White 10px inner border + shadow (no outer border)</h2>
+      <div class="card-sim treatment-d">
+        <Image src={geoImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+      <div class="card-sim treatment-d">
+        <Image src={escImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+    </section>
+
+    <section>
+      <h2>E. Inset shadow (vignette effect, no border)</h2>
+      <div class="card-sim treatment-e">
+        <Image src={geoImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+      <div class="card-sim treatment-e">
+        <Image src={escImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+    </section>
+
+    <section>
+      <h2>F. Accent left-border (5px) + subtle shadow</h2>
+      <div class="card-sim treatment-f">
+        <Image src={geoImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+      <div class="card-sim treatment-f">
+        <Image src={escImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+    </section>
+
+    <section>
+      <h2>G. Bottom fade — image fades to page background</h2>
+      <div class="card-sim treatment-g">
+        <Image src={geoImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+      <div class="card-sim treatment-g">
+        <Image src={escImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+    </section>
+
+    <section>
+      <h2>H. White inner border + bottom fade + thin outer border</h2>
+      <div class="card-sim treatment-h">
+        <Image src={geoImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+      <div class="card-sim treatment-h">
+        <Image src={escImg} alt="" widths={[600, 900]} sizes="700px" />
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
+
+<style>
+  .treatments {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem 6rem;
+  }
+
+  h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .intro {
+    font-family: 'Literata', Georgia, serif;
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+  }
+
+  section {
+    margin-bottom: 3.5rem;
+  }
+
+  h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-accent-text);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .card-sim {
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-sim img {
+    width: 100%;
+    display: block;
+  }
+
+  /* A — Current */
+  .treatment-a {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+  }
+
+  /* B — Shadow only */
+  .treatment-b {
+    border-radius: 3px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  }
+
+  /* C — White inner border + thin outer border */
+  .treatment-c {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+
+  /* D — White inner border + shadow */
+  .treatment-d {
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  /* E — Inset shadow / vignette */
+  .treatment-e {
+    position: relative;
+    border-radius: 3px;
+  }
+  .treatment-e::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 3px;
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.06);
+    pointer-events: none;
+  }
+
+  /* F — Accent left border + shadow */
+  .treatment-f {
+    border-left: 5px solid var(--color-accent);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  /* G — Bottom fade */
+  .treatment-g {
+    position: relative;
+  }
+  .treatment-g::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(transparent, var(--color-bg));
+    pointer-events: none;
+  }
+
+  /* H — White inner border + bottom fade + outer border */
+  .treatment-h {
+    position: relative;
+    padding: 10px;
+    padding-bottom: 0;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+  .treatment-h::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(transparent, #fff);
+    pointer-events: none;
+    border-radius: 0 0 3px 3px;
+  }
+</style>
