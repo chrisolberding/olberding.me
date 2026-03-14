@@ -11,6 +11,7 @@ const blog = defineCollection({
     description: z.string().optional(),
     draft: z.boolean().optional(),
     cardImage: image().optional(),
+    cardImageHeight: z.number().optional(),
   }),
 });
 
