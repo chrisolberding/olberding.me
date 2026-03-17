@@ -1,0 +1,177 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = (await getCollection('personal')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const published = allPosts.filter(p => !p.data.draft);
+const drafts = allPosts.filter(p => p.data.draft);
+---
+
+<BaseLayout title="Essays & Miscellany | Christopher Olberding" description="Personal writing, essays, and miscellany.">
+  <Header variant="page" />
+  <div class="page-top-border" aria-hidden="true"></div>
+  <div class="scroll-progress scroll-progress--left" aria-hidden="true"></div>
+  <div class="scroll-progress scroll-progress--right" aria-hidden="true"></div>
+
+  <main class="personal">
+    <header class="personal__header">
+      <h1 class="personal__title">Essays & Miscellany</h1>
+      <p class="personal__intro">Writing that isn't about business & marketing.</p>
+    </header>
+
+    <section class="personal__articles">
+      {published.map((post) => (
+        <ArticleCard
+          title={post.data.title}
+          description={post.data.description}
+          href={`/personal/${post.id}`}
+          date={post.data.date}
+          cardImage={post.data.cardImage}
+          cardImageHeight={post.data.cardImageHeight}
+          cardImagePosition={post.data.cardImagePosition}
+        />
+      ))}
+    </section>
+
+    {published.length === 0 && !drafts.length && (
+      <p class="personal__empty">Nothing here yet. Check back soon.</p>
+    )}
+
+    {drafts.length > 0 && (
+      <section class="personal__drafts">
+        <h2 class="personal__section-label">In Development</h2>
+        {drafts.map((post) => (
+          <article class="draft-card">
+            <h3 class="draft-card__title">{post.data.title}</h3>
+            {post.data.description && <p class="draft-card__description">{post.data.description}</p>}
+          </article>
+        ))}
+      </section>
+    )}
+  </main>
+
+  <div class="page-bottom-border" aria-hidden="true"></div>
+</BaseLayout>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const bars = document.querySelectorAll('.scroll-progress') as NodeListOf<HTMLElement>;
+    if (bars.length) {
+      function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+        bars.forEach(bar => { bar.style.transform = `scaleY(${pct})`; });
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+  });
+</script>
+
+<style>
+  .page-top-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-accent);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .page-bottom-border {
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-accent);
+  }
+
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: var(--color-accent);
+    transform-origin: top;
+    transform: scaleY(0);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .scroll-progress--left { left: 0; }
+  .scroll-progress--right { right: 0; }
+
+  .personal {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-xl);
+  }
+
+  .personal__header {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .personal__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--color-text);
+  }
+
+  .personal__intro {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 1rem;
+    color: var(--color-text-light);
+    margin-top: 0.4rem;
+  }
+
+  .personal__empty {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 1rem;
+    color: var(--color-text-light);
+    font-style: italic;
+  }
+
+  .personal__section-label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent-text);
+    padding-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 10px solid var(--color-accent);
+    margin-top: 0;
+  }
+
+  .draft-card {
+    margin-bottom: var(--spacing-md);
+    opacity: 0.6;
+  }
+
+  .draft-card__title {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+  }
+
+  .draft-card__description {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin-top: 0.3em;
+  }
+</style>

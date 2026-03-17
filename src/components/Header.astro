@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { variant = 'page' } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <header class:list={['header', `header--${variant}`]}>
@@ -21,8 +22,9 @@ const { variant = 'page' } = Astro.props;
 
 <nav class="mobile-nav" id="mobile-nav" aria-hidden="true" inert>
   <ul class="mobile-nav__links">
-    <li><a href="/">Writing</a></li>
-    <li><a href="/about">Me</a></li>
+    <li><a href="/" class:list={[{ 'is-active': currentPath === '/' || currentPath.startsWith('/blog') }]}>On Marketing</a></li>
+    <li><a href="/personal" class:list={[{ 'is-active': currentPath.startsWith('/personal') }]}>Essays & Miscellany</a></li>
+    <li><a href="/about" class:list={[{ 'is-active': currentPath.startsWith('/about') }]}>Me</a></li>
   </ul>
   <div class="mobile-nav__icons">
     <a href="#" aria-label="Email" data-contact-open>
@@ -182,6 +184,20 @@ const { variant = 'page' } = Astro.props;
     letter-spacing: -0.02em;
     color: var(--color-text);
     transition: color 0.2s;
+  }
+
+  .mobile-nav__links a.is-active {
+    position: relative;
+  }
+
+  .mobile-nav__links a.is-active::before {
+    content: '';
+    position: absolute;
+    left: -1.2rem;
+    top: 0.1em;
+    width: 10px;
+    height: 1.05em;
+    background: var(--color-accent);
   }
 
   .mobile-nav__links a:hover {

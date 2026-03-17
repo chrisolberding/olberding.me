@@ -9,9 +9,10 @@ interface Props {
   date?: Date;
   cardImage?: ImageMetadata;
   cardImageHeight?: number;
+  cardImagePosition?: string;
 }
 
-const { title, description, href, date, cardImage, cardImageHeight } = Astro.props;
+const { title, description, href, date, cardImage, cardImageHeight, cardImagePosition } = Astro.props;
 
 const formattedDate = date
   ? date.toLocaleDateString('en-US', {
@@ -34,7 +35,7 @@ const formattedDate = date
             src={cardImage}
             alt=""
             class="article-card__image"
-            style={cardImageHeight ? `max-height: ${cardImageHeight}px` : undefined}
+            style={[cardImageHeight && `max-height: ${cardImageHeight}px`, cardImagePosition && `object-position: ${cardImagePosition}`].filter(Boolean).join('; ') || undefined}
             widths={[400, 600, 800]}
             sizes="(max-width: 685px) calc(100vw - 4rem), (max-width: 900px) 500px, calc(65vw - 14rem)"
           />
