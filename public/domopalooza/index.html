@@ -220,7 +220,7 @@ ${c.d.hook?'<div class="dl">Conversation Hook</div><div class="dt hk">'+c.d.hook
 dosContent=`
 <div class="dl">Role</div><div class="dt">${c.t}${c.c?', '+c.c:''}</div>
 <div class="dl">Level</div><div class="dt">${c.sen||'N/A'} &bull; Marketing fit: ${c.mkt||'N/A'}</div>
-<div class="dl">Company</div><div class="dt">${(c.sz||'?')} ${(c.ind||'?')}</div>
+<div class="dl">Company Type</div><div class="dt">${(c.sz||'?')} ${(c.ind||'?')}</div>
 `}
 return `<div class="cd ${tc}${metClass}" data-name="${c.n}" onclick="this.classList.toggle('ex')">
 <span class="met-dot"></span>
