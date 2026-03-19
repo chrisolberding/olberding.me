@@ -1,0 +1,12 @@
+{
+  "name": "Domopalooza 2026",
+  "short_name": "Domo 2026",
+  "start_url": "/domopalooza/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#7c3aed",
+  "icons": [
+    { "src": "/domopalooza/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/domopalooza/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
