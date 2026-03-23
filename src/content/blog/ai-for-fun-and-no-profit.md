@@ -16,7 +16,7 @@ Obvious, but when your only user is yourself, a large category of complexity dis
 
 ## Quick note on my stack
 
-Right now I'm using Claude heavily (at the $100/month tier). Below I'll reference Claude Cowork and Claude Code. Claude Cowork is part of Claude's desktop app and can access your computer's file system (renaming files in a messy directory, creating and saving out spreadsheets, that kind of thing). Claude Code is a CLI tool that runs in your terminal with the same file system access. If I need to make changes myself my IDE is Visual Studio Code, though in the use cases below that's pretty rare.
+Right now I'm using Claude (at the $100/month tier). Below I'll reference Claude Cowork and Claude Code. Claude Cowork is part of Claude's desktop app and can access your computer's file system (renaming files in a messy directory, creating and saving out spreadsheets, that kind of thing). Claude Code is a CLI tool that runs in your terminal also with file system access. If I need to make changes myself my IDE is Visual Studio Code, though in the use cases below that's been pretty rare.
 
 Nothing here is particularly unique to Claude. Most coding LLM tools would handle this kind of small personal project fine.
 
