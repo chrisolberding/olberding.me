@@ -29,6 +29,8 @@ I'm pretty bad at networking at conferences. Often I'll go with lofty intentions
 <img src="/conference-tool-detail.png" alt="Conference tool showing an expanded contact card with photo, tags, conversation hook, and mark-as-met button" style="max-width:280px;width:45%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.3)">
 </div>
 
+<p style="text-align:center;margin-top:-0.5em;margin-bottom:1.5em;font-size:0.9em">Demo version at <a href="/conference-tool-example">olberding.me/conference-tool-example</a></p>
+
 Starting in Claude Cowork (a mistake I'll explain in a moment), I had Claude pull the attendee and speaker list from the conference website (authenticated), enrich each person with company data, LinkedIn profile, job title, and a photo pulled via Playwright automation, then rank and tier every contact against my stated goals for the event. The output is a single HTML file I can load on my phone: tap a card to see a conversation starter, mark someone as met for followups later, jot a note after talking to them.
 
 Key features:
