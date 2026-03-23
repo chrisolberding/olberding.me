@@ -24,6 +24,11 @@ Nothing here is particularly unique to Claude. Most coding LLM tools would handl
 
 I'm pretty bad at networking at conferences. Often I'll go with lofty intentions but once on the ground and without clear or actionable goals I'll slink off and end up working on my laptop or end up at the bar chatting with someone from the unrelated "realtor" conference at the same venue.
 
+<div style="display:flex;gap:12px;justify-content:center;margin:1.5em 0;flex-wrap:wrap">
+<img src="/conference-tool-list.png" alt="Conference tool list view showing tiered contacts with photos, tags, and scores" style="max-width:280px;width:45%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.3)">
+<img src="/conference-tool-detail.png" alt="Conference tool showing an expanded contact card with photo, tags, conversation hook, and mark-as-met button" style="max-width:280px;width:45%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.3)">
+</div>
+
 Starting in Claude Cowork (a mistake I'll explain in a moment), I had Claude pull the attendee and speaker list from the conference website (authenticated), enrich each person with company data, LinkedIn profile, job title, and a photo pulled via Playwright automation, then rank and tier every contact against my stated goals for the event. The output is a single HTML file I can load on my phone: tap a card to see a conversation starter, mark someone as met for followups later, jot a note after talking to them.
 
 Key features:
@@ -31,14 +36,9 @@ Key features:
 - **Tiered and tagged contacts** scored against my stated goals, so the highest-value conversations surface first
 - **Tap-to-expand cards** with role context, company background, and a suggested conversation opener for each person
 - **Profile photos** for recognition
-- **One-tap "mark as met"** with a progress bar tracking your target contacts across the event
+- **Mark as met** so I know who to circle back with after the event
 - **Quick notes** per contact after a conversation, what you talked about, any follow-up items
 - **Search and filter** by name, company, tier, or met status
-
-<div style="display:flex;gap:12px;justify-content:center;margin:1.5em 0;flex-wrap:wrap">
-<img src="/conference-tool-list.png" alt="Conference tool list view showing tiered contacts with photos, tags, and scores" style="max-width:280px;width:45%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.3)">
-<img src="/conference-tool-detail.png" alt="Conference tool showing an expanded contact card with photo, tags, conversation hook, and mark-as-met button" style="max-width:280px;width:45%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.3)">
-</div>
 
 The whole thing is 250KB. No backend, no database. Using localStorage for the small amount of data collection, which obviously wouldn't work in most cases but I just need it on a single device for a week. I pushed it to a subdirectory on my personal site on GitHub Pages because it's basically just an HTML page.
 
