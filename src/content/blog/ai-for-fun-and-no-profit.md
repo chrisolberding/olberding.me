@@ -189,4 +189,6 @@ The analysis step has a useful wrinkle: rather than calling the Claude API direc
 
 This isn't a how-to guide. There are almost certainly better ways to approach both of these. But "better" in software usually means more maintainable, more scalable, more generalizable, and none of that applies when you're building for yourself. The hard decisions don't need to be made.
 
-What AI coding tools have given me is the ability to build personal software that actually fits how I work, without the overhead of solving problems I don't have.
+The conference tool is a one and done, the personal digest I'll continue to tweak and refine but the quality of what hits my inbox is pretty good today - though I should move it over to my Mac Studio instead of running from my MacBook. I haven't come to terms with paying actual infrastructure and API costs for little projects like this just yet. 
+
+Building these personal projects has been fun without the stress. I have a few more that are in use as well and while there are well known issues with the idea that you can just vibe code your way with slop to a production ready and profitable app/business, it's certainly useful when the stakes are low.
