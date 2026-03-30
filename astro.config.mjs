@@ -8,4 +8,7 @@ export default defineConfig({
   site: 'https://olberding.me',
   devToolbar: { enabled: false },
   integrations: [sitemap()],
+  redirects: {
+    '/blog/when-it-all-goes-to-shit': '/blog/when-it-all-goes-to-hell',
+  },
 });
