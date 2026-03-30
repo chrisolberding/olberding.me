@@ -1,7 +1,7 @@
 ---
 title: "A Distinction Without a Difference"
-subtitle: "Segments and target audiences made sense when humans selected every impression. That era is over."
+subtitle: "The problem isn't building segments — it's the assumption that translating them into platform targeting, third-party data buys, or manual audience selection still adds value."
 date: 2025-11-02
-description: "Segments and target audiences made sense when humans selected every impression. In an era of auto-optimizing AI, the distinction is dissolving, and marketers who cling to it are optimizing for a process that no longer exists."
+description: "Building segments to understand your market is still fundamental. But translating those segments into in-platform targeting, third-party data purchases, and manual audience selection is increasingly counter-productive in an era of auto-optimizing AI."
 draft: true
 ---
