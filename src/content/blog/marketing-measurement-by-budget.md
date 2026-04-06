@@ -1,6 +1,6 @@
 ---
 title: "Right-Sizing Marketing Measurement"
-subtitle: "Measurement should match your capacity to act on what it tells you. Data you can't act on isn't an asset. It's noise."
+subtitle: "Measurement should match your capacity to act on what it tells you. Everything beyond that is overhead and noise."
 date: 2026-02-20
 description: "A framework for thinking about marketing measurement expectations by organizational size and resource availability, from small businesses getting the basics right to enterprises that need will, not direction."
 cardImage: ../../assets/blog/measurement-scale.svg
@@ -8,7 +8,7 @@ cardImage: ../../assets/blog/measurement-scale.svg
 
 The full marketing measurement stack, as described in conference talks and vendor pitches, includes multi-touch attribution, media mix modeling, incrementality testing, and unified data warehouses feeding real-time dashboards. Some organizations run all of it simultaneously. Most don't, and the ones who don't are often making a perfectly rational decision given their actual resources and business context.
 
-The problem I've seen more often than under-measurement is companies either investing in measurement infrastructure they lack the capacity to act on, or measuring nothing meaningful at all. Both are waste. A sophisticated attribution model that nobody in the organization has time to interrogate is not an asset. Neither is a Google Analytics instance that gets opened twice a year to confirm that traffic went up.
+The problem I've seen more often than under-measurement is companies either investing in measurement infrastructure they lack the capacity to act on, or measuring nothing meaningful at all. Both are waste. An MTA or ML-based attribution model that nobody in the organization has time to interrogate is not an asset.
 
 What follows is a rough framework for thinking about measurement expectations by budget and resource availability. These tiers reflect total marketing budget — including headcount, agency fees, and media spend combined — not media spend alone. The categories aren't precise, and budget isn't the only variable that matters (a $3M marketing budget spread across a five-person team is a fundamentally different situation than the same budget where one person runs everything). But the tiers are a useful approximation, and the headcount ranges refer to marketing team size, not company headcount. One scope note: this framework assumes a relatively direct path from marketing activity to a measurable conversion event. B2B organizations with long sales cycles, where the journey from first touch to closed revenue runs through a sales team over months, face additional attribution complexity that warrants separate treatment.
 
