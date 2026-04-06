@@ -3,6 +3,7 @@ title: "Right-Sizing Marketing Measurement"
 subtitle: "Measurement should match your capacity to act on what it tells you. Data you can't act on isn't an asset. It's noise."
 date: 2026-01-26
 description: "A framework for thinking about marketing measurement expectations by organizational size and resource availability, from small businesses getting the basics right to enterprises that need will, not direction."
+cardImage: ../../assets/blog/measurement-scale.svg
 ---
 
 The full marketing measurement stack, as described in conference talks and vendor pitches, includes multi-touch attribution, media mix modeling, incrementality testing, and unified data warehouses feeding real-time dashboards. Some organizations run all of it simultaneously. Most don't, and the ones who don't are often making a perfectly rational decision given their actual resources and business context.
