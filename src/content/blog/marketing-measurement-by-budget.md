@@ -116,7 +116,7 @@ The most common failure mode I've seen here is performative reporting: weekly de
 
 The specific investments worth making at this tier, in rough priority order: close the loop between marketing activity and CRM-sourced revenue (even imperfectly), establish a consistent set of metrics that won't change quarter to quarter, build a simple but honest cost-per-acquisition view by channel, and do at least basic cohort analysis on customer lifetime value if your business has any meaningful retention component. If you have an email list, open and click rates are not the metrics that matter. Revenue from email is.
 
-What you're not trying to do: precise multi-touch attribution, statistically rigorous incrementality testing, or media mix modeling. At the upper end of this tier (and only with sufficient data history and media volume), lightweight MMM options may become worth investigating. But the conditions for MMM to produce reliable output are more demanding than they appear: two or more years of consistent data, meaningful variation in spending across channels and time periods, and enough weekly conversion volume for the model to detect channel-level effects against the noise. Doing it incorrectly produces confident-sounding wrong answers. A simple last-touch model that everyone understands and trusts is more valuable than a sophisticated multi-touch model that nobody believes.<sup><a href="#fn1" id="ref1">1</a></sup>
+What you're not trying to do: precise multi-touch attribution, statistically rigorous incrementality testing, or media mix modeling. At the upper end of this tier (and only with sufficient data history and media volume), lightweight MMM options may become worth investigating. But the conditions for MMM to produce reliable output are more demanding than they appear: two or more years of consistent data, meaningful variation in spending across channels and time periods, and enough weekly conversion volume for the model to detect channel-level effects against the noise. Doing it incorrectly produces confident-sounding wrong answers. A simple last-touch model that everyone understands and trusts is more valuable than a sophisticated multi-touch model that nobody believes.<sup class="cite-ref" data-ref="1" id="ref-1-back"><a href="#ref-1">1</a></sup>
 
 ## Large Companies
 
@@ -152,6 +152,8 @@ Regardless of where you fall in this spectrum, directional accuracy and consiste
 
 The corollary: better measurement at the wrong scale wastes more money than imprecise measurement at the right one. Before adding infrastructure, the right question is whether you have the analytical capacity to act on what it would tell you.
 
----
+## References
 
-<small id="fn1">1. For a detailed look at data and organizational requirements for Media Mix Modeling, see <a href="/blog/media-mix-modeling">Making the Invisible Visible</a>. <a href="#ref1">↩</a></small>
+<ol class="references">
+  <li id="ref-1">For a detailed look at data and organizational requirements for Media Mix Modeling, see <a href="/blog/media-mix-modeling">Making the Invisible Visible: A Practical Guide to Media Mix Modeling for Mid-Sized Companies</a>. <a href="#ref-1-back" class="cite-back" aria-label="Back to reference 1">↩</a></li>
+</ol>
