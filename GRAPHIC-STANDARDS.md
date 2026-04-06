@@ -159,6 +159,57 @@ Card images are displayed with `object-fit: cover`, `object-position: top`, and 
 
 ---
 
+## Citations and Footnotes
+
+All blog posts use a consistent citation pattern for references and footnotes.
+
+### Inline reference
+
+```html
+<sup class="cite-ref" data-ref="1" id="ref-1-back"><a href="#ref-1">1</a></sup>
+```
+
+- Place immediately after the relevant text (no space before `<sup>`)
+- `data-ref` matches the footnote number
+- `id` uses pattern `ref-N-back` for the return link
+- If the same reference appears twice, use `ref-N-back-2` etc.
+
+### Reference list
+
+```html
+## References
+
+<ol class="references">
+  <li id="ref-1">Citation text here. <a href="#ref-1-back" class="cite-back" aria-label="Back to reference 1">↩</a></li>
+  <li id="ref-2">Citation text here. <a href="#ref-2-back" class="cite-back" aria-label="Back to reference 2">↩</a></li>
+</ol>
+```
+
+- Always use `## References` heading
+- Always use `<ol class="references">` (not markdown lists)
+- Each `<li>` has `id="ref-N"` matching the inline `href`
+- Return link uses `class="cite-back"` with `aria-label`
+- For cross-references to other posts on the site, use relative URLs: `/blog/slug-name`
+
+### Key Points / Summary Box
+
+```html
+<div class="key-points">
+
+## Key Points
+
+- **Bold lead sentence.** Supporting text.
+- **Another point.** More detail.
+
+</div>
+```
+
+- Wrap in `<div class="key-points">`
+- Use `## Key Points` heading inside the div
+- Each bullet starts with a bold lead phrase followed by a period, then supporting text
+
+---
+
 ## Checklist
 
 Before finalizing a graphic:
@@ -172,3 +223,5 @@ Before finalizing a graphic:
 - [ ] Wrapped in `<figure>` with descriptive class name
 - [ ] Renders readably at ~680px container width
 - [ ] Card image (if applicable) rendered at 2x with title cropped
+- [ ] Citations use `cite-ref` / `references` / `cite-back` pattern
+- [ ] Key points wrapped in `<div class="key-points">`

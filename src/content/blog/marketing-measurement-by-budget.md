@@ -31,68 +31,68 @@ What follows is a rough framework for thinking about measurement expectations by
 </div>
 
 <figure class="measurement-scale">
-<svg viewBox="0 0 760 565" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A table showing measurement expectations by organizational scale, from small businesses to enterprise, with what to get right and what to defer at each level.">
-<text x="30" y="22" font-family="Literata, Georgia, serif" font-size="15" fill="#1a1a1a" font-weight="600" letter-spacing="-0.01em">Measurement Expectations by Organizational Scale</text>
-<text x="30" y="40" font-family="Outfit, sans-serif" font-size="8" fill="#999" letter-spacing="0.06em">WHAT&#8217;S REALISTIC &#8212; AND WHAT&#8217;S ASPIRATIONAL &#8212; AT EACH LEVEL OF RESOURCE</text>
-<text x="56" y="75" font-family="Outfit, sans-serif" font-size="9" fill="#bbb" letter-spacing="0.08em" style="text-transform:uppercase">Budget Tier</text>
-<text x="200" y="75" font-family="Outfit, sans-serif" font-size="9" fill="#bbb" letter-spacing="0.08em" style="text-transform:uppercase">What to Get Right</text>
-<text x="490" y="75" font-family="Outfit, sans-serif" font-size="9" fill="#bbb" letter-spacing="0.08em" style="text-transform:uppercase">What to Defer</text>
-<line x1="30" y1="87" x2="730" y2="87" stroke="#e8e5e0" stroke-width="1"/>
-<rect x="30" y="95" width="700" height="105" rx="2" fill="#1a1a1a" opacity="0.015"/>
-<text x="56" y="123" font-family="Literata, Georgia, serif" font-size="15.5" fill="#1a1a1a" font-weight="600">Small</text>
-<text x="56" y="140" font-family="Outfit, sans-serif" font-size="10" fill="#999">&lt; $500K / yr</text>
-<text x="56" y="155" font-family="Outfit, sans-serif" font-size="9" fill="#bbb">1&#8211;3 people (marketing team)</text>
-<rect x="56" y="169" width="40" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
-<text x="200" y="123" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Clean UTM discipline across everything.</text>
-<text x="200" y="140" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">GA4 configured properly &#8212; goals, not vanity.</text>
-<text x="200" y="157" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Know your CPL and CAC by channel.</text>
-<text x="200" y="174" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Ask &#8220;how did you hear about us?&#8221;</text>
-<text x="490" y="123" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa">MMM. Multi-touch attribution.</text>
-<text x="490" y="140" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa">Brand lift studies.</text>
-<text x="490" y="157" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa" font-style="italic">Anything requiring a data</text>
-<text x="490" y="174" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa" font-style="italic">team you don&#8217;t have.</text>
-<line x1="30" y1="200" x2="730" y2="200" stroke="#e8e5e0" stroke-width="1"/>
-<rect x="30" y="208" width="700" height="105" rx="2" fill="#1a1a1a" opacity="0.015"/>
-<text x="56" y="236" font-family="Literata, Georgia, serif" font-size="15.5" fill="#1a1a1a" font-weight="600">Mid-Market</text>
-<text x="56" y="253" font-family="Outfit, sans-serif" font-size="10" fill="#999">$500K&#8211;$5M / yr</text>
-<text x="56" y="268" font-family="Outfit, sans-serif" font-size="9" fill="#bbb">5&#8211;15 people (marketing team)</text>
-<rect x="56" y="282" width="65" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
-<text x="200" y="236" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Everything above, plus:</text>
-<text x="200" y="253" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Platform-native attribution (not gospel).</text>
-<text x="200" y="270" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Basic holdout or geo-lift tests on top channels.</text>
-<text x="200" y="287" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Investigate lightweight MMM options.</text>
-<text x="490" y="236" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa">Enterprise MTA platforms.</text>
-<text x="490" y="253" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa">Always-on incrementality.</text>
-<text x="490" y="270" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa" font-style="italic">Perfection. Aim for</text>
-<text x="490" y="287" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa" font-style="italic">directional confidence.</text>
-<line x1="30" y1="313" x2="730" y2="313" stroke="#e8e5e0" stroke-width="1"/>
-<rect x="30" y="321" width="700" height="105" rx="2" fill="#1a1a1a" opacity="0.015"/>
-<text x="56" y="349" font-family="Literata, Georgia, serif" font-size="15.5" fill="#1a1a1a" font-weight="600">Large</text>
-<text x="56" y="366" font-family="Outfit, sans-serif" font-size="10" fill="#999">$5M&#8211;$50M / yr</text>
-<text x="56" y="381" font-family="Outfit, sans-serif" font-size="9" fill="#bbb">15&#8211;50 people (marketing team)</text>
-<rect x="56" y="395" width="90" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
-<text x="200" y="349" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Everything above, plus:</text>
-<text x="200" y="366" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">MMM running quarterly or faster.</text>
-<text x="200" y="383" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Incrementality testing as ongoing program.</text>
-<text x="200" y="400" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Triangulate: attribution + MMM + lift.</text>
-<text x="490" y="349" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa">Fully unified measurement.</text>
-<text x="490" y="366" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa" font-style="italic">It doesn&#8217;t exist. Get</text>
-<text x="490" y="383" font-family="Outfit, sans-serif" font-size="10.5" fill="#aaa" font-style="italic">comfortable with triangulation.</text>
-<line x1="30" y1="426" x2="730" y2="426" stroke="#e8e5e0" stroke-width="1"/>
-<rect x="30" y="434" width="700" height="105" rx="2" style="fill: var(--color-accent)" opacity="0.04"/>
-<rect x="30" y="434" width="700" height="105" rx="2" fill="none" style="stroke: var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
-<text x="56" y="462" font-family="Literata, Georgia, serif" font-size="15.5" fill="#1a1a1a" font-weight="600">Enterprise</text>
-<text x="56" y="479" font-family="Outfit, sans-serif" font-size="10" fill="#999">$50M+ / yr</text>
-<text x="56" y="494" font-family="Outfit, sans-serif" font-size="9" fill="#bbb">50+ people (marketing team)</text>
-<rect x="56" y="508" width="115" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.45"/>
-<text x="200" y="462" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">You have the resources. The question</text>
-<text x="200" y="479" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">is organizational will, not direction.</text>
-<text x="200" y="496" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Full triangulation. Unified data layer.</text>
-<text x="200" y="513" font-family="Outfit, sans-serif" font-size="10.5" fill="#555">Testing culture embedded in ops.</text>
-<text x="490" y="462" font-family="Outfit, sans-serif" font-size="10.5" style="fill: var(--color-accent-text)" font-style="italic">Nothing. You should be</text>
-<text x="490" y="479" font-family="Outfit, sans-serif" font-size="10.5" style="fill: var(--color-accent-text)" font-style="italic">doing all of it. If you&#8217;re not,</text>
-<text x="490" y="496" font-family="Outfit, sans-serif" font-size="10.5" style="fill: var(--color-accent-text)" font-style="italic">the problem isn&#8217;t budget.</text>
-<text x="380" y="560" font-family="Outfit, sans-serif" font-size="8.5" fill="#bbb" text-anchor="middle" font-style="italic">Better measurement at the wrong scale wastes more money than imprecise measurement at the right one.</text>
+<svg viewBox="0 0 760 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A table showing measurement expectations by organizational scale, from small businesses to enterprise, with what to get right and what to defer at each level.">
+<text x="30" y="28" font-family="Literata, Georgia, serif" font-size="19" fill="#1a1a1a" font-weight="600" letter-spacing="-0.01em">Measurement Expectations by Organizational Scale</text>
+<text x="30" y="48" font-family="Outfit, sans-serif" font-size="11" fill="#999" letter-spacing="0.06em">WHAT&#8217;S REALISTIC &#8212; AND WHAT&#8217;S ASPIRATIONAL &#8212; AT EACH LEVEL OF RESOURCE</text>
+<text x="56" y="82" font-family="Outfit, sans-serif" font-size="11" fill="#999" letter-spacing="0.08em" style="text-transform:uppercase">Budget Tier</text>
+<text x="210" y="82" font-family="Outfit, sans-serif" font-size="11" fill="#999" letter-spacing="0.08em" style="text-transform:uppercase">What to Get Right</text>
+<text x="520" y="82" font-family="Outfit, sans-serif" font-size="11" fill="#999" letter-spacing="0.08em" style="text-transform:uppercase">What to Defer</text>
+<line x1="30" y1="94" x2="730" y2="94" stroke="#e8e5e0" stroke-width="1"/>
+<rect x="30" y="102" width="700" height="112" rx="2" fill="#1a1a1a" opacity="0.015"/>
+<text x="56" y="132" font-family="Literata, Georgia, serif" font-size="17" fill="#1a1a1a" font-weight="600">Small</text>
+<text x="56" y="150" font-family="Outfit, sans-serif" font-size="12" fill="#888">&lt; $500K / yr</text>
+<text x="56" y="166" font-family="Outfit, sans-serif" font-size="11" fill="#999">1&#8211;3 people (marketing team)</text>
+<rect x="56" y="180" width="40" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
+<text x="210" y="132" font-family="Outfit, sans-serif" font-size="13" fill="#555">Clean UTM discipline across everything.</text>
+<text x="210" y="150" font-family="Outfit, sans-serif" font-size="13" fill="#555">GA4 configured properly &#8212; goals, not vanity.</text>
+<text x="210" y="168" font-family="Outfit, sans-serif" font-size="13" fill="#555">Know your CPL and CAC by channel.</text>
+<text x="210" y="186" font-family="Outfit, sans-serif" font-size="13" fill="#555">Ask &#8220;how did you hear about us?&#8221;</text>
+<text x="520" y="132" font-family="Outfit, sans-serif" font-size="13" fill="#999">MMM. Multi-touch attribution.</text>
+<text x="520" y="150" font-family="Outfit, sans-serif" font-size="13" fill="#999">Brand lift studies.</text>
+<text x="520" y="168" font-family="Outfit, sans-serif" font-size="12" fill="#999" font-style="italic">Anything requiring a data</text>
+<text x="520" y="186" font-family="Outfit, sans-serif" font-size="12" fill="#999" font-style="italic">team you don&#8217;t have.</text>
+<line x1="30" y1="214" x2="730" y2="214" stroke="#e8e5e0" stroke-width="1"/>
+<rect x="30" y="222" width="700" height="112" rx="2" fill="#1a1a1a" opacity="0.015"/>
+<text x="56" y="252" font-family="Literata, Georgia, serif" font-size="17" fill="#1a1a1a" font-weight="600">Mid-Market</text>
+<text x="56" y="270" font-family="Outfit, sans-serif" font-size="12" fill="#888">$500K&#8211;$5M / yr</text>
+<text x="56" y="286" font-family="Outfit, sans-serif" font-size="11" fill="#999">5&#8211;15 people (marketing team)</text>
+<rect x="56" y="300" width="65" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
+<text x="210" y="252" font-family="Outfit, sans-serif" font-size="13" fill="#555">Everything above, plus:</text>
+<text x="210" y="270" font-family="Outfit, sans-serif" font-size="13" fill="#555">Platform-native attribution (not gospel).</text>
+<text x="210" y="288" font-family="Outfit, sans-serif" font-size="13" fill="#555">Basic holdout or geo-lift tests on top channels.</text>
+<text x="210" y="306" font-family="Outfit, sans-serif" font-size="13" fill="#555">Investigate lightweight MMM options.</text>
+<text x="520" y="252" font-family="Outfit, sans-serif" font-size="13" fill="#999">Enterprise MTA platforms.</text>
+<text x="520" y="270" font-family="Outfit, sans-serif" font-size="13" fill="#999">Always-on incrementality.</text>
+<text x="520" y="288" font-family="Outfit, sans-serif" font-size="12" fill="#999" font-style="italic">Perfection. Aim for</text>
+<text x="520" y="306" font-family="Outfit, sans-serif" font-size="12" fill="#999" font-style="italic">directional confidence.</text>
+<line x1="30" y1="334" x2="730" y2="334" stroke="#e8e5e0" stroke-width="1"/>
+<rect x="30" y="342" width="700" height="112" rx="2" fill="#1a1a1a" opacity="0.015"/>
+<text x="56" y="372" font-family="Literata, Georgia, serif" font-size="17" fill="#1a1a1a" font-weight="600">Large</text>
+<text x="56" y="390" font-family="Outfit, sans-serif" font-size="12" fill="#888">$5M&#8211;$50M / yr</text>
+<text x="56" y="406" font-family="Outfit, sans-serif" font-size="11" fill="#999">15&#8211;50 people (marketing team)</text>
+<rect x="56" y="420" width="90" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.4"/>
+<text x="210" y="372" font-family="Outfit, sans-serif" font-size="13" fill="#555">Everything above, plus:</text>
+<text x="210" y="390" font-family="Outfit, sans-serif" font-size="13" fill="#555">MMM running quarterly or faster.</text>
+<text x="210" y="408" font-family="Outfit, sans-serif" font-size="13" fill="#555">Incrementality testing as ongoing program.</text>
+<text x="210" y="426" font-family="Outfit, sans-serif" font-size="13" fill="#555">Triangulate: attribution + MMM + lift.</text>
+<text x="520" y="372" font-family="Outfit, sans-serif" font-size="13" fill="#999">Fully unified measurement.</text>
+<text x="520" y="390" font-family="Outfit, sans-serif" font-size="12" fill="#999" font-style="italic">It doesn&#8217;t exist. Get</text>
+<text x="520" y="408" font-family="Outfit, sans-serif" font-size="12" fill="#999" font-style="italic">comfortable with triangulation.</text>
+<line x1="30" y1="454" x2="730" y2="454" stroke="#e8e5e0" stroke-width="1"/>
+<rect x="30" y="462" width="700" height="112" rx="2" style="fill: var(--color-accent)" opacity="0.04"/>
+<rect x="30" y="462" width="700" height="112" rx="2" fill="none" style="stroke: var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+<text x="56" y="492" font-family="Literata, Georgia, serif" font-size="17" fill="#1a1a1a" font-weight="600">Enterprise</text>
+<text x="56" y="510" font-family="Outfit, sans-serif" font-size="12" fill="#888">$50M+ / yr</text>
+<text x="56" y="526" font-family="Outfit, sans-serif" font-size="11" fill="#999">50+ people (marketing team)</text>
+<rect x="56" y="540" width="115" height="2" rx="1" style="fill: var(--color-accent)" opacity="0.45"/>
+<text x="210" y="492" font-family="Outfit, sans-serif" font-size="13" fill="#555">You have the resources. The question</text>
+<text x="210" y="510" font-family="Outfit, sans-serif" font-size="13" fill="#555">is organizational will, not direction.</text>
+<text x="210" y="528" font-family="Outfit, sans-serif" font-size="13" fill="#555">Full triangulation. Unified data layer.</text>
+<text x="210" y="546" font-family="Outfit, sans-serif" font-size="13" fill="#555">Testing culture embedded in ops.</text>
+<text x="520" y="492" font-family="Outfit, sans-serif" font-size="13" style="fill: var(--color-accent-text)" font-style="italic">Nothing. You should be</text>
+<text x="520" y="510" font-family="Outfit, sans-serif" font-size="13" style="fill: var(--color-accent-text)" font-style="italic">doing all of it. If you&#8217;re not,</text>
+<text x="520" y="528" font-family="Outfit, sans-serif" font-size="13" style="fill: var(--color-accent-text)" font-style="italic">the problem isn&#8217;t budget.</text>
+<text x="380" y="592" font-family="Outfit, sans-serif" font-size="11" fill="#999" text-anchor="middle" font-style="italic">Better measurement at the wrong scale wastes more money than imprecise measurement at the right one.</text>
 </svg>
 </figure>
 
