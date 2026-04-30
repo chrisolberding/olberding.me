@@ -2,7 +2,7 @@
 title: "Practice Cello"
 subtitle: "A structured learning platform for cello students"
 date: 2026-01-15
-description: "A web-based practice companion with curriculum-based lessons, spaced repetition, progress tracking, and audio features for cello students at all levels."
+description: "A web-based practice companion with 140+ structured lessons, session planning, goal tracking, and audio tools including pitch detection and a metronome."
 cardImage: ../../assets/blog/cello-practice-planner.png
 status: "Active development. Content generation is the current focus, with 100+ comprehensive lessons created. The skills system was recently overhauled to support 518 individual skills with lesson relationships. Next phase will add skill-based recommendations and mastery tracking."
 ---
