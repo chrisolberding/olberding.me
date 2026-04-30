@@ -24,6 +24,7 @@ const currentPath = Astro.url.pathname;
   <ul class="mobile-nav__links">
     <li><a href="/" class:list={[{ 'is-active': currentPath === '/' || currentPath.startsWith('/blog') }]}>On Marketing</a></li>
     <li><a href="/personal" class:list={[{ 'is-active': currentPath.startsWith('/personal') }]}>Essays & Miscellany</a></li>
+    <li><a href="/projects" class:list={[{ 'is-active': currentPath.startsWith('/projects') }]}>Projects</a></li>
     <li><a href="/about" class:list={[{ 'is-active': currentPath.startsWith('/about') }]}>Me</a></li>
   </ul>
   <div class="mobile-nav__icons">

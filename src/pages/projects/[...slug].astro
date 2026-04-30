@@ -1,0 +1,213 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import PasswordGate from '../../components/PasswordGate.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('projects')).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+function linkifyStatus(text: string): string {
+  return text.replace(
+    /(?<!\w)([\w-]+(?:\.[\w-]+)+\.\w{2,})(?!\w)/g,
+    '<a href="https://$1" target="_blank" rel="noopener">$1</a>'
+  );
+}
+
+const statusHtml = post.data.status ? linkifyStatus(post.data.status) : '';
+---
+
+<BaseLayout title="Project in Progress | Christopher Olberding" description="Work in progress — shared selectively." noindex>
+  <Header variant="page" />
+  <div class="page-top-border" aria-hidden="true"></div>
+  <div class="scroll-progress scroll-progress--left" aria-hidden="true"></div>
+  <div class="scroll-progress scroll-progress--right" aria-hidden="true"></div>
+
+  <PasswordGate>
+    <main class="project-post">
+      <header class="project-post__header">
+        <h1 class="project-post__title">{post.data.title}</h1>
+        {post.data.subtitle && <p class="project-post__subtitle">{post.data.subtitle}</p>}
+      </header>
+
+      {post.data.status && (
+        <aside class="project-post__status">
+          <span class="project-post__status-label">Status</span>
+          <p set:html={statusHtml} />
+        </aside>
+      )}
+
+      <article class="project-post__body prose">
+        <Content />
+      </article>
+
+      <footer class="project-post__footer">
+        <a href="/projects" class="project-post__back">&larr; All Projects</a>
+      </footer>
+    </main>
+  </PasswordGate>
+
+  <div class="page-bottom-border" aria-hidden="true"></div>
+</BaseLayout>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const bars = document.querySelectorAll('.scroll-progress') as NodeListOf<HTMLElement>;
+    if (bars.length) {
+      function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+        bars.forEach(bar => { bar.style.transform = `scaleY(${pct})`; });
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+  });
+</script>
+
+<style>
+  .page-top-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-accent);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .page-bottom-border {
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-accent);
+  }
+
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: var(--color-accent);
+    transform-origin: top;
+    transform: scaleY(0);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .scroll-progress--left { left: 0; }
+  .scroll-progress--right { right: 0; }
+
+  .project-post {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    padding: 6rem var(--spacing-md) var(--spacing-xl);
+  }
+
+  .project-post__header {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .project-post__title {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--color-text);
+  }
+
+  .project-post__subtitle {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent-text);
+    margin-top: 0.6rem;
+  }
+
+  .project-post__footer {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .project-post__date {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-light);
+  }
+
+  .project-post__back {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text);
+    transition: color 0.2s;
+  }
+
+  .project-post__back:hover {
+    color: var(--color-accent-text);
+  }
+
+  .project-post__status {
+    border-left: 3px solid var(--color-accent);
+    background: var(--color-accent);
+    background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+    padding: 1rem 1.25rem;
+    margin-bottom: var(--spacing-lg);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .project-post__status-label {
+    font-family: 'Outfit', var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-accent-text);
+  }
+
+  .project-post__status p {
+    font-family: 'Literata', var(--font-serif);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--color-text);
+    margin: 0.35rem 0 0;
+  }
+
+  .project-post__status a {
+    color: var(--color-accent-text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .project-post__status a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  .project-post__body :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
+</style>

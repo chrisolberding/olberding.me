@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://olberding.me',
   devToolbar: { enabled: false },
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !page.includes('/projects/') })],
   redirects: {
     '/blog/when-it-all-goes-to-shit': '/blog/when-it-all-goes-to-hell',
   },

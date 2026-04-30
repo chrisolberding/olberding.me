@@ -11,6 +11,7 @@ const blogSchema = ({ image }: { image: Function }) => z.object({
   cardImage: image().optional(),
   cardImageHeight: z.number().optional(),
   cardImagePosition: z.string().optional(),
+  status: z.string().optional(),
 });
 
 const blog = defineCollection({
@@ -23,4 +24,9 @@ const personal = defineCollection({
   schema: blogSchema,
 });
 
-export const collections = { blog, personal };
+const projects = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
+  schema: blogSchema,
+});
+
+export const collections = { blog, personal, projects };

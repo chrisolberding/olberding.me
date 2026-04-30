@@ -6,10 +6,11 @@ interface Props {
   description?: string;
   ogImage?: string;
   ogType?: string;
+  noindex?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://olberding.me');
-const { title, description = 'Chris Olberding — Personal blog and writing.', ogImage = '/og-image.png', ogType = 'website' } = Astro.props;
+const { title, description = 'Chris Olberding — Personal blog and writing.', ogImage = '/og-image.png', ogType = 'website', noindex = false } = Astro.props;
 const ogImageURL = new URL(ogImage, Astro.site || 'https://olberding.me').href;
 ---
 
@@ -22,6 +23,7 @@ const ogImageURL = new URL(ogImage, Astro.site || 'https://olberding.me').href;
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f3ec50" />
     <link rel="canonical" href={canonicalURL.href} />
