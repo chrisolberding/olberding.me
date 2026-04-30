@@ -1,7 +1,7 @@
 ---
 title: "Beyond GEO and SEO: The Case for a Unified Digital Brand Presence Model"
 subtitle: "Search and generative engines are converging. Our frameworks for managing brand visibility should too."
-date: 2026-01-02
+date: 2026-01-16
 description: "SEO and GEO are treated as separate disciplines, but they share a common foundation. It's time for a unified model of digital brand presence."
 draft: true
 ---

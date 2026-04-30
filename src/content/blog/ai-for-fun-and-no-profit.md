@@ -1,7 +1,7 @@
 ---
 title: "Quick Hit: AI for Fun and No Profit"
 subtitle: "Building personal tools with LLMs when there's no product, no users, and no business case."
-date: 2026-03-23
+date: 2026-04-06
 description: "Why make money when you can have fun? Quick post highlighting two personal tools I built for myself recently."
 cardImage: ../../assets/blog/conference-tool-detail.png
 ---

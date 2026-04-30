@@ -1,7 +1,7 @@
 ---
 title: "Making the Invisible Visible: A Practical Guide to Media Mix Modeling for Mid-Sized Companies"
 subtitle: "Attribution models measure correlation. MMM attempts to determine causation. How big do you need to be for it to work, and what should you expect from it?"
-date: 2026-01-12
+date: 2026-01-26
 description: "A practical orientation to media mix modeling for mid-sized companies: what it does, when it makes sense, how it interacts with attribution and incrementality testing, and what your options look like for getting started."
 ---
 

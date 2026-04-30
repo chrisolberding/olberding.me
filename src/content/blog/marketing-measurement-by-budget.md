@@ -1,7 +1,7 @@
 ---
 title: "Right-Sizing Marketing Measurement"
 subtitle: "Measurement should match your capacity to act on what it tells you. Everything beyond that is overhead and noise."
-date: 2026-02-20
+date: 2026-03-06
 description: "A framework for thinking about marketing measurement expectations by organizational size and resource availability, from small businesses getting the basics right to enterprises that need will, not direction."
 cardImage: ../../assets/blog/measurement-scale.svg
 ---
