@@ -9,7 +9,7 @@ status: "Live at jstudyapp.com in active beta. Currently going through significa
 
 A comprehensive Jeopardy study platform that combines a database of over 550,000 historical clues across 9,400+ archived games with spaced repetition algorithms, interactive game board simulation, and research tools for serious preparation.
 
-<img src="/projects/jeopardy-practice.png" alt="Practice mode with spaced repetition flashcards, keyboard shortcuts, and topic filtering" style="border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.1);margin:1.5em 0">
+<img src="/projects/jeopardy-dashboard.png" alt="Logged-in dashboard showing cards due for review, study recommendations, and quick access to practice, play, and guides" style="border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.1);margin:1.5em 0">
 
 ## What It Does
 
