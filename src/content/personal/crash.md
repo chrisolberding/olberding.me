@@ -1,7 +1,7 @@
 ---
 title: "Crash"
 date: 2026-03-17
-description: "After being in a car crash in Minneapolis, I tried to put my feelings and memories into words. Original writing from November, 2024."
+description: "A few weeks after being a passenger in a serious car crash in Minneapolis, I tried to put my feelings and memories into words. Original writing from November, 2024."
 cardImage: ../../assets/personal/crash-car.jpg
 cardImagePosition: center
 ---
