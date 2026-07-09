@@ -1,0 +1,22 @@
+---
+import ResearchLayout from '../../layouts/ResearchLayout.astro';
+import { getResearchTree, entryToSlug } from '../../lib/research';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('research');
+  return entries
+    .filter((e) => entryToSlug(e.id) !== '') // root index is served by /research
+    .map((entry) => ({ params: { slug: entryToSlug(entry.id) }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const nodes = await getResearchTree();
+const { Content } = await render(entry);
+const currentSlug = entryToSlug(entry.id);
+const title = entry.data.title ?? currentSlug.split('/').pop() ?? 'Document';
+---
+
+<ResearchLayout title={title} nodes={nodes} currentSlug={currentSlug}>
+  <Content />
+</ResearchLayout>

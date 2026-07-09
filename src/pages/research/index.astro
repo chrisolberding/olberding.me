@@ -1,0 +1,29 @@
+---
+import ResearchLayout from '../../layouts/ResearchLayout.astro';
+import { getResearchTree } from '../../lib/research';
+import { getCollection, render } from 'astro:content';
+
+const nodes = await getResearchTree();
+const entries = await getCollection('research');
+const home = entries.find(
+  (e) => e.id.toLowerCase() === 'index' || e.id.toLowerCase() === 'readme',
+);
+const rendered = home ? await render(home) : null;
+const Content = rendered?.Content;
+---
+
+<ResearchLayout title="Overview" nodes={nodes} currentSlug="">
+  {Content ? (
+    <Content />
+  ) : nodes.length === 0 ? (
+    <>
+      <h1>Research</h1>
+      <p>No artifacts yet.</p>
+    </>
+  ) : (
+    <>
+      <h1>Research</h1>
+      <p>Select an artifact from the list to begin.</p>
+    </>
+  )}
+</ResearchLayout>

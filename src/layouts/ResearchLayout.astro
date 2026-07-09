@@ -1,0 +1,115 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import PasswordGate from '../components/PasswordGate.astro';
+import ResearchNavTree from '../components/ResearchNavTree.astro';
+import type { NavNode } from '../lib/research';
+
+interface Props {
+  title: string;
+  nodes: NavNode[];
+  currentSlug: string;
+}
+
+const { title, nodes, currentSlug } = Astro.props;
+---
+
+<BaseLayout title={`${title} | Research`} description="Private research artifacts." noindex>
+  <Header variant="page" />
+  <div class="page-top-border" aria-hidden="true"></div>
+
+  <PasswordGate
+    title="Research"
+    description="Private research artifacts. Enter the password to continue."
+    storageKey="research-auth"
+  >
+    <div class="research">
+      <aside class="research__sidebar">
+        <a href="/research" class="research__home">Research</a>
+        <nav class="research__nav">
+          <ResearchNavTree nodes={nodes} currentSlug={currentSlug} />
+        </nav>
+      </aside>
+      <main class="research__main">
+        <article class="research__doc prose">
+          <slot />
+        </article>
+      </main>
+    </div>
+  </PasswordGate>
+</BaseLayout>
+
+<script>
+  // Delegated, idempotent collapse toggling. Bound once on `document`, which survives
+  // View Transitions, and works on markup injected by the password gate (delegation).
+  if (!(window as any).__researchNavBound) {
+    (window as any).__researchNavBound = true;
+    document.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('[data-nav-toggle]');
+      if (!btn) return;
+      const item = btn.closest('.rnav__item');
+      const children = item?.querySelector(':scope > .rnav__children') as HTMLElement | null;
+      if (!children) return;
+      const open = children.classList.toggle('is-open');
+      btn.querySelector('.rnav__chevron')?.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  }
+</script>
+
+<style>
+  .page-top-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-accent);
+    z-index: 400;
+    pointer-events: none;
+  }
+
+  .research {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: var(--spacing-md);
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    padding: 5rem var(--spacing-md) var(--spacing-xl);
+    align-items: start;
+  }
+
+  .research__sidebar {
+    position: sticky;
+    top: 5rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+  }
+
+  .research__home {
+    display: block;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  .research__main { min-width: 0; }
+  .research__doc { max-width: var(--content-max-width); }
+
+  @media (max-width: 860px) {
+    .research {
+      grid-template-columns: 1fr;
+      padding-top: 4.5rem;
+    }
+    .research__sidebar {
+      position: static;
+      max-height: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
