@@ -4,6 +4,7 @@ import {
   entryToSlug,
   stripOrderPrefix,
   prettify,
+  flatten,
 } from '../src/lib/research-tree';
 
 test('stripOrderPrefix removes NN- / NN_ ordering prefixes', () => {
@@ -43,4 +44,21 @@ test('buildTree synthesizes a non-navigable label for folders without an index',
   expect(nodes[0].hasPage).toBe(false);
   expect(nodes[0].title).toBe('Research Notes');
   expect(nodes[0].children[0].slug).toBe('research-notes/one');
+});
+
+test('buildTree honors NN- order prefixes on folder names', () => {
+  const nodes = buildTree([
+    { id: '02-guides/index', title: 'Guides' },
+    { id: '01-market/index', title: 'Market' },
+  ]);
+  expect(nodes.map((n) => n.slug)).toEqual(['market', 'guides']);
+});
+
+test('flatten returns navigable pages depth-first, skipping label-only folders', () => {
+  const nodes = buildTree([
+    { id: '01-aeo', title: 'AEO' },
+    { id: 'notes/one', title: 'One' },
+  ]);
+  // "notes" is a synthesized label-only folder (hasPage:false) → excluded
+  expect(flatten(nodes).map((n) => n.slug)).toEqual(['aeo', 'notes/one']);
 });

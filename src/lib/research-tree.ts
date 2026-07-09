@@ -46,16 +46,20 @@ export function buildTree(entries: RawEntry[]): NavNode[] {
   const folders = new Map<string, NavNode>();
   folders.set('', root);
 
-  function ensureFolder(parts: string[]): NavNode {
+  // Takes RAW path segments so folder-name order prefixes (e.g. "01-market") are honored.
+  function ensureFolder(rawParts: string[]): NavNode {
     let path = '';
     let node = root;
-    for (const part of parts) {
-      path = path ? `${path}/${part}` : part;
+    for (const raw of rawParts) {
+      const { clean, order } = stripOrderPrefix(raw);
+      path = path ? `${path}/${clean}` : clean;
       let child = folders.get(path);
       if (!child) {
-        child = { title: prettify(part), slug: path, order: Infinity, hasPage: false, children: [] };
+        child = { title: prettify(clean), slug: path, order: order ?? Infinity, hasPage: false, children: [] };
         folders.set(path, child);
         node.children.push(child);
+      } else if (order != null && child.order === Infinity) {
+        child.order = order; // adopt folder-name prefix order if not already set
       }
       node = child;
     }
@@ -71,14 +75,13 @@ export function buildTree(entries: RawEntry[]): NavNode[] {
     const order = entry.order ?? prefixOrder ?? Infinity;
 
     if (INDEX_NAMES.has(leafClean.toLowerCase())) {
-      const folderParts = cleanParts.slice(0, -1);
-      const node = ensureFolder(folderParts);
+      const node = ensureFolder(rawParts.slice(0, -1)); // raw → folder order from prefix
       node.hasPage = true;
       if (entry.title) node.title = entry.title;
-      else if (folderParts.length) node.title = prettify(folderParts[folderParts.length - 1]);
-      if (entry.order != null || prefixOrder != null) node.order = order;
+      else if (cleanParts.length > 1) node.title = prettify(cleanParts[cleanParts.length - 2]);
+      if (entry.order != null) node.order = entry.order; // frontmatter overrides folder prefix
     } else {
-      const parent = ensureFolder(cleanParts.slice(0, -1));
+      const parent = ensureFolder(rawParts.slice(0, -1)); // raw
       parent.children.push({
         title: entry.title ?? prettify(leafClean),
         slug: cleanParts.join('/'),
