@@ -1,13 +1,11 @@
 ---
 import ResearchLayout from '../../layouts/ResearchLayout.astro';
-import { getResearchTree } from '../../lib/research';
+import { getResearchTree, entryToSlug } from '../../lib/research';
 import { getCollection, render } from 'astro:content';
 
 const nodes = await getResearchTree();
 const entries = await getCollection('research');
-const home = entries.find(
-  (e) => e.id.toLowerCase() === 'index' || e.id.toLowerCase() === 'readme',
-);
+const home = entries.find((e) => entryToSlug(e.id) === '');
 const rendered = home ? await render(home) : null;
 const Content = rendered?.Content;
 ---

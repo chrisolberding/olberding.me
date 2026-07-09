@@ -1,6 +1,6 @@
 ---
 import ResearchLayout from '../../layouts/ResearchLayout.astro';
-import { getResearchTree, entryToSlug } from '../../lib/research';
+import { getResearchTree, entryToSlug, prettify } from '../../lib/research';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -14,7 +14,7 @@ const { entry } = Astro.props;
 const nodes = await getResearchTree();
 const { Content } = await render(entry);
 const currentSlug = entryToSlug(entry.id);
-const title = entry.data.title ?? currentSlug.split('/').pop() ?? 'Document';
+const title = entry.data.title ?? (prettify(currentSlug.split('/').pop() ?? '') || 'Document');
 ---
 
 <ResearchLayout title={title} nodes={nodes} currentSlug={currentSlug}>

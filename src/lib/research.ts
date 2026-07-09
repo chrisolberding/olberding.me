@@ -1,8 +1,8 @@
 import { getCollection } from 'astro:content';
-import { buildTree, entryToSlug, type NavNode } from './research-tree';
+import { buildTree, entryToSlug, prettify, type NavNode } from './research-tree';
 
 export type { NavNode };
-export { entryToSlug };
+export { entryToSlug, prettify };
 
 export async function getResearchTree(): Promise<NavNode[]> {
   const entries = await getCollection('research');
