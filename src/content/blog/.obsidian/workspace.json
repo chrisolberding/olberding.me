@@ -27,16 +27,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "media-mix-modeling.md",
+                "file": "ai-for-fun-and-no-profit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "media-mix-modeling"
+              "title": "ai-for-fun-and-no-profit"
+            }
+          },
+          {
+            "id": "675c3324311b44e1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -198,8 +210,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "8014c72c458c254e",
+  "active": "675c3324311b44e1",
   "lastOpenFiles": [
+    "when-it-all-goes-to-hell.md",
+    "ai-empowered-marketing-organization.md",
+    "ai-for-fun-and-no-profit.md",
+    "media-mix-modeling.md",
+    "we-compete-on-trust-and-service.md",
+    "what-your-metrics-are-actually-measuring.md",
+    "building-an-ai-empowered-marketing-organization.md",
+    "applying-rigor-to-marketing-projections.md",
     "marketing-organization-agency-models.md",
     "when-it-all-goes-to-shit.md",
     "empathetic-transactionalism.md",
@@ -207,7 +227,6 @@
     "seeing-like-a-cmo.md",
     "distinction-without-difference.md",
     "bill-gates-lied-to-us.md",
-    "ai-empowered-marketing-organization.md",
     "geo-lessons-from-early-seo.md",
     "empathetic-transaction.md",
     "neither-friends-nor-servants.md",

@@ -29,13 +29,4 @@ const projects = defineCollection({
   schema: blogSchema,
 });
 
-const research = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/research' }),
-  schema: z.object({
-    title: z.string().optional(),
-    order: z.number().optional(),
-    description: z.string().optional(),
-  }),
-});
-
-export const collections = { blog, personal, projects, research };
+export const collections = { blog, personal, projects };

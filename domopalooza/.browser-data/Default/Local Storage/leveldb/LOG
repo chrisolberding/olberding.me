@@ -1,0 +1,6 @@
+2026/03/19-01:53:13.648 3e7f03 Reusing MANIFEST /Users/chris/projects/olberding.me-custom/domopalooza/.browser-data/Default/Local Storage/leveldb/MANIFEST-000001
+2026/03/19-01:53:13.650 3e7f03 Recovering log #9
+2026/03/19-01:53:13.650 3e7f03 Reusing old log /Users/chris/projects/olberding.me-custom/domopalooza/.browser-data/Default/Local Storage/leveldb/000009.log 
+2026/03/19-01:59:18.851 3e7f06 Level-0 table #13: started
+2026/03/19-01:59:18.856 3e7f06 Level-0 table #13: 33550 bytes OK
+2026/03/19-01:59:18.858 3e7f06 Delete type=0 #9
